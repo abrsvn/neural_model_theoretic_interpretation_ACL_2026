@@ -4,7 +4,10 @@ Contains the checkpoints, systematicity evaluation sentences, target-weight file
 
 Paper PDF: [Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf](./Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf)
 
-It supports:
+> The systematicity of natural language interpretation—our ability to understand novel expressions by compositionally combining familiar elements—has been central to debates about symbolic versus neural approaches to cognition since Fodor and Pylyshyn (1988). We investigate whether artificial neural networks can learn model-theoretic interpretation functions that generalize systematically to out-of-training-sample sentences, framing interpretation as an encoding task from discrete linguistic input to continuous truth-conditional representations. We extend Frank et al. (2009) with entity-level semantic representations, modern architectures (GRU, LSTM, Attention with AbsPE/RoPE), principled competing event generation, extended systematicity tests (∼350 vs. ∼80 sentences), and a two- dimensional difficulty analysis disaggregating results by modifier complexity. Across 140 trained models (7 architectures), we find that capacity-matched architectures perform comparably on easy tests, but gated recurrent networks (GRU and LSTM) significantly outperform transformer architectures on the hardest compositional generalization test (Basic Event), while ungated SRN does not—indicating that the gating mechanism is a critical factor. Entity vectors significantly improve scores on Basic Event across most architectures, with gated architectures benefiting most, validating formal semantics’ treatment of entities as important theoretical primitives. The extended test set reveals that systematicity difficulty has two dimensions: the type of systematicity test (as in Frank et al. 2009), and the number of modifiers being composed.
+
+
+This repository supports:
 
 - inspecting the model checkpoints in `models/`
 - reevaluating those checkpoints on the four systematicity groups
