@@ -1,0 +1,61 @@
+\scriptsize
+\begin{longtable}{@{}llrrrrrl@{}}
+\caption{Random effects selection for test sentences. All RE structures compared to baseline (1$|$sentence) + (1$|$model) via LRT using the full FE model (arch $\times$ entity $\times$ split). Backward elimination from richest non-singular model; selected RE per group shown in bold. $\Delta$AIC: negative = better than baseline. \texttt{singular}: random-effect covariance estimated at boundary. Covariance upgrade (+cov) tested for final slope terms.}
+\label{tab:test_random_slopes} \\
+\toprule
+\textbf{Test Group} & \textbf{RE Structure} & \textbf{AIC} & $\Delta$\textbf{AIC} & $\chi^2$ & \textbf{df} & $p$ & \textbf{Note} \\
+\midrule
+\endfirsthead
+
+\multicolumn{8}{c}{\scriptsize\textit{(continued)}} \\
+\toprule
+\textbf{Test Group} & \textbf{RE Structure} & \textbf{AIC} & $\Delta$\textbf{AIC} & $\chi^2$ & \textbf{df} & $p$ & \textbf{Note} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{8}{r@{}}{\scriptsize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+Word & baseline & -3253.7 & -- & -- & -- & -- &  \\
+ & + entity slope & -3270.9 & -17.2 & 23.18 & 3 & $<$.001 & singular \\
+ & + is\_recurrent slope & -3254.0 & -0.3 & 6.28 & 3 & 0.10 & singular \\
+ & + split slope & -3247.7 & 6.0 & 0.00 & 3 & 1.00 &  \\
+ & + arch:sentence & -3267.5 & -13.8 & 13.93 & 1 & $<$.001 & \textbf{selected} \\
+ & + entity slope + is\_recurrent slope & -3267.7 & -14.0 & 25.89 & 6 & $<$.001 & singular \\
+ & + entity slope + split slope & -3264.9 & -11.2 & 23.18 & 6 & $<$.001 & singular \\
+ & + is\_recurrent slope + split slope & -3248.6 & 5.1 & 6.81 & 6 & 0.34 & singular \\
+ & + entity slope + is\_recurrent slope + split slope & -3261.7 & -8.0 & 25.89 & 9 & 0.002 & singular \\
+\addlinespace
+Sentence & baseline & -9481.5 & -- & -- & -- & -- &  \\
+ & + entity slope & -9485.5 & -3.9 & 9.93 & 3 & 0.02 & improved \\
+ & + is\_recurrent slope & -9811.4 & -329.9 & 335.72 & 3 & $<$.001 & improved \\
+ & + split slope & -9476.4 & 5.1 & 0.89 & 3 & 0.83 &  \\
+ & + arch:sentence & -10286.9 & -805.4 & 806.63 & 1 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope & -9831.1 & -349.5 & 361.19 & 6 & $<$.001 & improved \\
+ & + entity slope + split slope & -9482.6 & -1.1 & 13.08 & 6 & 0.04 & improved \\
+ & + is\_recurrent slope + split slope & -9805.7 & -324.2 & 335.99 & 6 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope + split slope & -9828.2 & -346.7 & 364.29 & 9 & $<$.001 & singular \\
+\addlinespace
+Complex Event & baseline & -8225.5 & -- & -- & -- & -- &  \\
+ & + entity slope & -8436.5 & -211.0 & 216.92 & 3 & $<$.001 & improved \\
+ & + is\_recurrent slope & -9873.8 & -1648.3 & 1653.56 & 3 & $<$.001 & improved \\
+ & + split slope & -8219.5 & 6.0 & 0.00 & 3 & 1.00 &  \\
+ & + arch:sentence & -9517.0 & -1291.6 & 1292.43 & 1 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope & -10158.4 & -1933.0 & 1944.04 & 6 & $<$.001 & improved \\
+ & + entity slope + split slope & -8367.7 & -142.2 & 220.45 & 6 & $<$.001 & singular \\
+ & + is\_recurrent slope + split slope & -9867.8 & -1642.4 & 1653.62 & 6 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope + split slope & -10156.7 & -1931.3 & 1948.27 & 9 & $<$.001 & singular \\
+\addlinespace
+Basic Event & baseline & -7869.9 & -- & -- & -- & -- &  \\
+ & + entity slope & -8217.5 & -347.6 & 352.76 & 3 & $<$.001 & improved \\
+ & + is\_recurrent slope & -8294.7 & -424.9 & 429.98 & 3 & $<$.001 & improved \\
+ & + split slope & -7864.8 & 5.0 & 1.00 & 3 & 0.80 &  \\
+ & + arch:sentence & -8220.2 & -350.3 & 350.52 & 1 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope & -8683.4 & -813.6 & 823.81 & 6 & $<$.001 & improved \\
+ & + entity slope + split slope & -8211.6 & -341.7 & 352.86 & 6 & $<$.001 & improved \\
+ & + is\_recurrent slope + split slope & -8288.9 & -419.0 & 430.15 & 6 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope + split slope & -8677.5 & -807.6 & 823.88 & 9 & $<$.001 & improved \\
+\end{longtable}
+\normalsize

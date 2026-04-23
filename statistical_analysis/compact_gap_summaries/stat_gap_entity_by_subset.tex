@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Group} & \textbf{Train est.} & \textbf{Train $p$} & \textbf{Test est.} & \textbf{Test $p$} \\
+\midrule
+Word & Ent 0.035 & $<$.001 & Ent 0.034 & $<$.001 \\
+Sentence & NoEnt 0.020 & $<$.001 & Ent 0.001 & 0.997 \\
+Complex & Ent 0.023 & $<$.001 & NoEnt 0.011 & 0.665 \\
+Basic & Ent 0.008 & 0.044 & Ent 0.094 & $<$.001 \\
+\bottomrule
+\end{tabular}
+\caption{\small Entity effects by train/test subset after pooling Split~1 and Split~2. Positive \texttt{Ent} entries mean entity vectors help; \texttt{NoEnt} means the no-entity condition is favored. This table includes both significant and non-significant subset-level effects.}
+\label{tab:gap_entity_by_subset}
+\end{table}

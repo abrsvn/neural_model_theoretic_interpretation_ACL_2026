@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Group} & \textbf{Selected RE} & \textbf{Structure} \\
+\midrule
+Word & arch & (1|sentence) + (1|model\_id) + (1|arch:sentence) \\
+Sentence & arch+gap+rec+splt & (1|sentence) + (1|model\_id) + (0+is\_recurrent|sentence) + (0+split|sentence) + (1|arch:sentence) + (0+train\_or\_test|model\_id) \\
+Complex & arch+ent+gap+splt & (1|sentence) + (1|model\_id) + (0+entity|sentence) + (0+split|sentence) + (1|arch:sentence) + (0+train\_or\_test|model\_id) \\
+Basic & arch+ent+gap+rec+splt & (1|sentence) + (1|model\_id) + (0+entity|sentence) + (0+is\_recurrent|sentence) + (0+split|sentence) + (1|arch:sentence) + (0+train\_or\_test|model\_id) \\
+\bottomrule
+\end{tabular}
+\caption{\small Random-effects selection summary for the generalization-gap analysis pooling Split~1 and Split~2.}
+\label{tab:gap_re_selection}
+\end{table}

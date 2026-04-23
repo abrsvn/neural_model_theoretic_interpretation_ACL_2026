@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}llrr@{}}
+\toprule
+\textbf{Group} & \textbf{Effect} & $F$ & $p$ \\
+\midrule
+Word & Architecture & 2.77 & 0.014 \\
+Word & Entity vectors & 20.86 & $<$.001 \\
+Sentence & Architecture & 30.53 & $<$.001 \\
+Sentence & Train/test subset & 125.98 & $<$.001 \\
+Sentence & Arch $\times$ Entity & 4.23 & $<$.001 \\
+Sentence & Arch $\times$ Train/test & 11.20 & $<$.001 \\
+Sentence & Arch $\times$ Entity $\times$ Train/test & 2.70 & 0.017 \\
+Complex & Architecture & 74.40 & $<$.001 \\
+Complex & Train/test subset & 539.38 & $<$.001 \\
+Complex & Split & 14.19 & $<$.001 \\
+Complex & Arch $\times$ Entity & 2.23 & 0.045 \\
+Complex & Arch $\times$ Train/test & 44.98 & $<$.001 \\
+Complex & Entity $\times$ Train/test & 5.76 & 0.018 \\
+Basic & Architecture & 16.47 & $<$.001 \\
+Basic & Entity vectors & 63.14 & $<$.001 \\
+Basic & Train/test subset & 292.45 & $<$.001 \\
+Basic & Split & 7.43 & 0.007 \\
+Basic & Entity $\times$ Train/test & 67.07 & $<$.001 \\
+\bottomrule
+\end{tabular}
+\caption{\small Significant generalization-gap ANOVA summary from a joint analysis of Split~1 and Split~2, with Split included as a factor.}
+\label{tab:gap_significant_anova}
+\end{table}

@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+& & \textbf{Word} & \textbf{Sent} & \textbf{Cmplx} & \textbf{Basic} \\
+\midrule
+\multirow{2}{*}{SRN} & $-$ent & 1.65 & \textbf{1.16} & 1.35 & 0.66 \\
+ & $+$ent & \textbf{1.73} & 1.12 & \textbf{1.37} & 0.73 \\
+\midrule
+\multirow{2}{*}{GRU} & $-$ent & 1.72 & 1.13 & 1.29 & 0.64 \\
+ & $+$ent & 1.72 & 1.08 & 1.18 & \textbf{0.77} \\
+\midrule
+\multirow{2}{*}{LSTM} & $-$ent & 1.68 & 1.14 & 1.27 & 0.66 \\
+ & $+$ent & 1.71 & 1.12 & 1.24 & 0.76 \\
+\midrule
+\multirow{2}{*}{Attn AbsPE} & $-$ent & 1.71 & 0.95 & 1.04 & 0.58 \\
+ & $+$ent & 1.72 & 1.02 & 1.08 & 0.68 \\
+\midrule
+\multirow{2}{*}{Attn RoPE} & $-$ent & 1.67 & 1.14 & 1.05 & 0.62 \\
+ & $+$ent & 1.70 & 1.12 & 1.04 & 0.68 \\
+\bottomrule
+\end{tabular}
+\caption{\small Test-only advantage scores (described $-$ competing) by architecture, test group and $\pm$entity. Averaged over 10 models per architecture/entity condition. Higher is better.}
+\label{tab:main_results_model}
+\end{table}

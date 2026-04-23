@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "experiments": {
+    "exp_1_entity_vectors": {
+      "without_entity_vectors": {
+        "checkpoint_seeds": {
+          "attn_abspe_l2_h48_nh4_nosem_noent_s1_m0": 675017032311525617,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s1_m1": 3726907386178505336,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s1_m2": 705665256045453074,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s1_m3": 3001672072328034506,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s1_m4": 481388033032807173,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s2_m0": 3491364175765922380,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s2_m1": 6683014252291555956,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s2_m2": 8104248006906998450,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s2_m3": 9160153897101138873,
+          "attn_abspe_l2_h48_nh4_nosem_noent_s2_m4": 2522497589449166774,
+          "attn_rope_l2_h48_nh4_nosem_noent_s1_m0": 675017032311525617,
+          "attn_rope_l2_h48_nh4_nosem_noent_s1_m1": 3726907386178505336,
+          "attn_rope_l2_h48_nh4_nosem_noent_s1_m2": 705665256045453074,
+          "attn_rope_l2_h48_nh4_nosem_noent_s1_m3": 3001672072328034506,
+          "attn_rope_l2_h48_nh4_nosem_noent_s1_m4": 481388033032807173,
+          "attn_rope_l2_h48_nh4_nosem_noent_s2_m0": 3491364175765922380,
+          "attn_rope_l2_h48_nh4_nosem_noent_s2_m1": 6683014252291555956,
+          "attn_rope_l2_h48_nh4_nosem_noent_s2_m2": 8104248006906998450,
+          "attn_rope_l2_h48_nh4_nosem_noent_s2_m3": 9160153897101138873,
+          "attn_rope_l2_h48_nh4_nosem_noent_s2_m4": 2522497589449166774,
+          "lstm_l1_h80_nosem_noent_s1_m0": 675017032311525617,
+          "lstm_l1_h80_nosem_noent_s1_m1": 3726907386178505336,
+          "lstm_l1_h80_nosem_noent_s1_m2": 705665256045453074,
+          "lstm_l1_h80_nosem_noent_s1_m3": 3001672072328034506,
+          "lstm_l1_h80_nosem_noent_s1_m4": 481388033032807173,
+          "lstm_l1_h80_nosem_noent_s2_m0": 3491364175765922380,
+          "lstm_l1_h80_nosem_noent_s2_m1": 6683014252291555956,
+          "lstm_l1_h80_nosem_noent_s2_m2": 8104248006906998450,
+          "lstm_l1_h80_nosem_noent_s2_m3": 9160153897101138873,
+          "lstm_l1_h80_nosem_noent_s2_m4": 2522497589449166774,
+          "srn_l1_h178_nosem_noent_s1_m0": 675017032311525617,
+          "srn_l1_h178_nosem_noent_s1_m1": 3726907386178505336,
+          "srn_l1_h178_nosem_noent_s1_m2": 705665256045453074,
+          "srn_l1_h178_nosem_noent_s1_m3": 3001672072328034506,
+          "srn_l1_h178_nosem_noent_s1_m4": 481388033032807173,
+          "srn_l1_h178_nosem_noent_s2_m0": 3491364175765922380,
+          "srn_l1_h178_nosem_noent_s2_m1": 6683014252291555956,
+          "srn_l1_h178_nosem_noent_s2_m2": 8104248006906998450,
+          "srn_l1_h178_nosem_noent_s2_m3": 9160153897101138873,
+          "srn_l1_h178_nosem_noent_s2_m4": 2522497589449166774
+        }
+      },
+      "with_entity_vectors": {
+        "checkpoint_seeds": {
+          "attn_abspe_l2_h48_nh4_nosem_went_s1_m0": 8847725891807242951,
+          "attn_abspe_l2_h48_nh4_nosem_went_s1_m1": 2368307800102782353,
+          "attn_abspe_l2_h48_nh4_nosem_went_s1_m2": 1357039793266822603,
+          "attn_abspe_l2_h48_nh4_nosem_went_s1_m3": 1346282298767328428,
+          "attn_abspe_l2_h48_nh4_nosem_went_s1_m4": 529733449111939478,
+          "attn_abspe_l2_h48_nh4_nosem_went_s2_m0": 1449226297014787970,
+          "attn_abspe_l2_h48_nh4_nosem_went_s2_m1": 2955411461650140723,
+          "attn_abspe_l2_h48_nh4_nosem_went_s2_m2": 3379055747748732276,
+          "attn_abspe_l2_h48_nh4_nosem_went_s2_m3": 7638006562413832062,
+          "attn_abspe_l2_h48_nh4_nosem_went_s2_m4": 2110117908698299644,
+          "attn_rope_l2_h48_nh4_nosem_went_s1_m0": 8847725891807242951,
+          "attn_rope_l2_h48_nh4_nosem_went_s1_m1": 2368307800102782353,
+          "attn_rope_l2_h48_nh4_nosem_went_s1_m2": 1357039793266822603,
+          "attn_rope_l2_h48_nh4_nosem_went_s1_m3": 1346282298767328428,
+          "attn_rope_l2_h48_nh4_nosem_went_s1_m4": 529733449111939478,
+          "attn_rope_l2_h48_nh4_nosem_went_s2_m0": 1449226297014787970,
+          "attn_rope_l2_h48_nh4_nosem_went_s2_m1": 2955411461650140723,
+          "attn_rope_l2_h48_nh4_nosem_went_s2_m2": 3379055747748732276,
+          "attn_rope_l2_h48_nh4_nosem_went_s2_m3": 7638006562413832062,
+          "attn_rope_l2_h48_nh4_nosem_went_s2_m4": 2110117908698299644,
+          "lstm_l1_h80_nosem_went_s1_m0": 8847725891807242951,
+          "lstm_l1_h80_nosem_went_s1_m1": 2368307800102782353,
+          "lstm_l1_h80_nosem_went_s1_m2": 1357039793266822603,
+          "lstm_l1_h80_nosem_went_s1_m3": 1346282298767328428,
+          "lstm_l1_h80_nosem_went_s1_m4": 529733449111939478,
+          "lstm_l1_h80_nosem_went_s2_m0": 1449226297014787970,
+          "lstm_l1_h80_nosem_went_s2_m1": 2955411461650140723,
+          "lstm_l1_h80_nosem_went_s2_m2": 3379055747748732276,
+          "lstm_l1_h80_nosem_went_s2_m3": 7638006562413832062,
+          "lstm_l1_h80_nosem_went_s2_m4": 2110117908698299644,
+          "srn_l1_h178_nosem_went_s1_m0": 8847725891807242951,
+          "srn_l1_h178_nosem_went_s1_m1": 2368307800102782353,
+          "srn_l1_h178_nosem_went_s1_m2": 1357039793266822603,
+          "srn_l1_h178_nosem_went_s1_m3": 1346282298767328428,
+          "srn_l1_h178_nosem_went_s1_m4": 529733449111939478,
+          "srn_l1_h178_nosem_went_s2_m0": 1449226297014787970,
+          "srn_l1_h178_nosem_went_s2_m1": 2955411461650140723,
+          "srn_l1_h178_nosem_went_s2_m2": 3379055747748732276,
+          "srn_l1_h178_nosem_went_s2_m3": 7638006562413832062,
+          "srn_l1_h178_nosem_went_s2_m4": 2110117908698299644
+        }
+      }
+    },
+    "exp_1_entity_vectors_attn_followup": {
+      "without_entity_vectors": {
+        "checkpoint_seeds": {
+          "attn_abspe_l2_h80_nh4_nosem_noent_s1_m0": 1438170342717479713,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s1_m1": 399511341484362637,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s1_m2": 2492929604271681517,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s1_m3": 7143994189757949401,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s1_m4": 4361456730234540419,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s2_m0": 8819562693136520103,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s2_m1": 6185496590252341897,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s2_m2": 9059927807323794136,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s2_m3": 8974284210998316084,
+          "attn_abspe_l2_h80_nh4_nosem_noent_s2_m4": 8404915256474008156,
+          "attn_rope_l2_h80_nh4_nosem_noent_s1_m0": 1438170342717479713,
+          "attn_rope_l2_h80_nh4_nosem_noent_s1_m1": 399511341484362637,
+          "attn_rope_l2_h80_nh4_nosem_noent_s1_m2": 2492929604271681517,
+          "attn_rope_l2_h80_nh4_nosem_noent_s1_m3": 7143994189757949401,
+          "attn_rope_l2_h80_nh4_nosem_noent_s1_m4": 4361456730234540419,
+          "attn_rope_l2_h80_nh4_nosem_noent_s2_m0": 8819562693136520103,
+          "attn_rope_l2_h80_nh4_nosem_noent_s2_m1": 6185496590252341897,
+          "attn_rope_l2_h80_nh4_nosem_noent_s2_m2": 9059927807323794136,
+          "attn_rope_l2_h80_nh4_nosem_noent_s2_m3": 8974284210998316084,
+          "attn_rope_l2_h80_nh4_nosem_noent_s2_m4": 8404915256474008156
+        }
+      },
+      "with_entity_vectors": {
+        "checkpoint_seeds": {
+          "attn_abspe_l2_h80_nh4_nosem_went_s1_m0": 5956186029776850243,
+          "attn_abspe_l2_h80_nh4_nosem_went_s1_m1": 8449052357802523428,
+          "attn_abspe_l2_h80_nh4_nosem_went_s1_m2": 8836279646614610342,
+          "attn_abspe_l2_h80_nh4_nosem_went_s1_m3": 6495736333809046311,
+          "attn_abspe_l2_h80_nh4_nosem_went_s1_m4": 8257461887323281430,
+          "attn_abspe_l2_h80_nh4_nosem_went_s2_m0": 682675584741690690,
+          "attn_abspe_l2_h80_nh4_nosem_went_s2_m1": 2461455495862093616,
+          "attn_abspe_l2_h80_nh4_nosem_went_s2_m2": 7496973619810877116,
+          "attn_abspe_l2_h80_nh4_nosem_went_s2_m3": 5359337047372645500,
+          "attn_abspe_l2_h80_nh4_nosem_went_s2_m4": 9203265455353574201,
+          "attn_rope_l2_h80_nh4_nosem_went_s1_m0": 5956186029776850243,
+          "attn_rope_l2_h80_nh4_nosem_went_s1_m1": 8449052357802523428,
+          "attn_rope_l2_h80_nh4_nosem_went_s1_m2": 8836279646614610342,
+          "attn_rope_l2_h80_nh4_nosem_went_s1_m3": 6495736333809046311,
+          "attn_rope_l2_h80_nh4_nosem_went_s1_m4": 8257461887323281430,
+          "attn_rope_l2_h80_nh4_nosem_went_s2_m0": 682675584741690690,
+          "attn_rope_l2_h80_nh4_nosem_went_s2_m1": 2461455495862093616,
+          "attn_rope_l2_h80_nh4_nosem_went_s2_m2": 7496973619810877116,
+          "attn_rope_l2_h80_nh4_nosem_went_s2_m3": 5359337047372645500,
+          "attn_rope_l2_h80_nh4_nosem_went_s2_m4": 9203265455353574201
+        }
+      }
+    },
+    "exp_1_entity_vectors_GRU_followup": {
+      "without_entity_vectors": {
+        "checkpoint_seeds": {
+          "gru_l1_h90_nosem_noent_s1_m0": 37583282239519232,
+          "gru_l1_h90_nosem_noent_s1_m1": 4448110346402151183,
+          "gru_l1_h90_nosem_noent_s1_m2": 7690373959844395432,
+          "gru_l1_h90_nosem_noent_s1_m3": 3269361534505474258,
+          "gru_l1_h90_nosem_noent_s1_m4": 4006527005814446024,
+          "gru_l1_h90_nosem_noent_s2_m0": 7483091256022177521,
+          "gru_l1_h90_nosem_noent_s2_m1": 3363668964213434885,
+          "gru_l1_h90_nosem_noent_s2_m2": 3554560204461540766,
+          "gru_l1_h90_nosem_noent_s2_m3": 2572050448622890822,
+          "gru_l1_h90_nosem_noent_s2_m4": 6045402670670178128
+        }
+      },
+      "with_entity_vectors": {
+        "checkpoint_seeds": {
+          "gru_l1_h90_nosem_went_s1_m0": 1463903596961509716,
+          "gru_l1_h90_nosem_went_s1_m1": 15817841345546498,
+          "gru_l1_h90_nosem_went_s1_m2": 8622087178400336302,
+          "gru_l1_h90_nosem_went_s1_m3": 1419970743134414029,
+          "gru_l1_h90_nosem_went_s1_m4": 6679830608853734557,
+          "gru_l1_h90_nosem_went_s2_m0": 6136235815730540082,
+          "gru_l1_h90_nosem_went_s2_m1": 4104889041327069994,
+          "gru_l1_h90_nosem_went_s2_m2": 2373164645310351057,
+          "gru_l1_h90_nosem_went_s2_m3": 8526174428129736908,
+          "gru_l1_h90_nosem_went_s2_m4": 5022844459108604801
+        }
+      }
+    }
+  }
+}

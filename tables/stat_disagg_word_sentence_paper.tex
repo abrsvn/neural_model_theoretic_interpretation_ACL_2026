@@ -1,0 +1,30 @@
+\begin{table}[ht!]
+\centering
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}llcccccc@{}}
+\toprule
+& & \multicolumn{2}{c}{\textbf{Word}} & \multicolumn{4}{c}{\textbf{Sentence}} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-8}
+\textbf{Arch} & & \textbf{Can} & \textbf{+Man} & \textbf{Can} & \textbf{+Loc} & \textbf{+Man} & \textbf{+L+M} \\
+\midrule
+\multirow{2}{*}{SRN} & $-$ent & 1.90 & 1.53 & 1.63 & \textbf{1.31} & \textbf{1.22} & \textbf{0.93} \\
+ & $+$ent & 1.94 & \textbf{1.62} & 1.65 & 1.30 & 1.17 & 0.86 \\
+\midrule
+\multirow{2}{*}{GRU} & $-$ent & \textbf{1.95} & 1.61 & 1.64 & 1.28 & 1.17 & 0.91 \\
+ & $+$ent & \textbf{1.95} & 1.60 & 1.60 & 1.23 & 1.08 & 0.86 \\
+\midrule
+\multirow{2}{*}{LSTM} & $-$ent & 1.92 & 1.56 & 1.69 & 1.30 & 1.20 & 0.90 \\
+ & $+$ent & 1.94 & 1.59 & 1.60 & 1.27 & 1.19 & 0.88 \\
+\midrule
+\multirow{2}{*}{AbsPE} & $-$ent & 1.94 & 1.59 & 1.27 & 1.13 & 0.86 & 0.75 \\
+ & $+$ent & \textbf{1.95} & 1.61 & 1.58 & 1.19 & 0.97 & 0.78 \\
+\midrule
+\multirow{2}{*}{RoPE} & $-$ent & \textbf{1.95} & 1.53 & \textbf{1.72} & \textbf{1.31} & 1.18 & 0.89 \\
+ & $+$ent & \textbf{1.95} & 1.57 & \textbf{1.78} & 1.29 & 1.15 & 0.85 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{\small Test-only advantage scores disaggregated by modifier type and $\pm$entity condition (10 models per cell) for Word and Sentence. \textbf{Can}: canonical (unmodified). \textbf{+Loc}/\textbf{+Man}/\textbf{+L+M}: sentences with location, manner, or both modifiers. The canonical Sentence columns back Observation~2: the AbsPE deficit is already present before any modifier composition is added.}
+\label{tab:disagg_word_sentence}
+\end{table}

@@ -1,0 +1,40 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lllrrrrrr@{}}
+\toprule
+ & \textbf{Category} & \textbf{Phase} & \textbf{$N$} & \textbf{Mean} & \textbf{SD} & \textbf{Median} & \textbf{Min} & \textbf{Max} \\
+\midrule
+\multicolumn{9}{l}{\textit{Split 1}} \\
+\addlinespace[2pt]
+ & Word & Train & 12 & 2.7 & 0.5 & 3 & 2 & 3 \\
+ &  & Test & 12 & 2.7 & 0.5 & 3 & 2 & 3 \\
+\addlinespace[2pt]
+ & Sentence & Train & 160 & 7.0 & 1.4 & 7 & 3 & 8 \\
+ &  & Test & 160 & 7.0 & 1.4 & 7 & 3 & 8 \\
+\addlinespace[2pt]
+ & Complex & Train & 96 & 3.4 & 1.0 & 3 & 2 & 5 \\
+ &  & Test & 144 & 2.5 & 0.8 & 2 & 1 & 4 \\
+\addlinespace[2pt]
+ & Basic & Train & 126 & 2.4 & 0.9 & 2 & 1 & 4 \\
+ &  & Test & 66 & 2.2 & 0.7 & 2 & 1 & 4 \\
+\addlinespace[2pt]
+\addlinespace
+\multicolumn{9}{l}{\textit{Split 2}} \\
+\addlinespace[2pt]
+ & Word & Train & 12 & 2.7 & 0.5 & 3 & 2 & 3 \\
+ &  & Test & 12 & 2.7 & 0.5 & 3 & 2 & 3 \\
+\addlinespace[2pt]
+ & Sentence & Train & 160 & 7.0 & 1.4 & 7 & 3 & 8 \\
+ &  & Test & 160 & 7.0 & 1.4 & 7 & 3 & 8 \\
+\addlinespace[2pt]
+ & Complex & Train & 144 & 2.5 & 0.8 & 2 & 1 & 4 \\
+ &  & Test & 96 & 3.4 & 1.0 & 3 & 2 & 5 \\
+\addlinespace[2pt]
+ & Basic & Train & 134 & 2.4 & 0.8 & 2 & 1 & 4 \\
+ &  & Test & 58 & 2.1 & 0.9 & 2 & 1 & 4 \\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}
+\caption{\small Number of competing events per sentence disaggregated by train/test phase and data split. This shows how the competitor distribution differs between sentences used for training and those reserved for systematicity testing.}
+\label{tab:competing_events_combined_by_phase}
+\end{table}

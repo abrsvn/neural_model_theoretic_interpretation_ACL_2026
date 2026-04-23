@@ -1,0 +1,60 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lllrlrl@{}}
+\toprule
+\textbf{Group} & \textbf{Side} & \textbf{Rank} & \textbf{Type} & \textbf{Mean} & \textbf{N} & \textbf{Example}
+\\
+\midrule
+Word & Easiest & 1 & Soccer/Football | Passive | Bare & 0.250 & 4 & soccer is played by boy
+\\
+Word & Easiest & 2 & Soccer/Football | Active | Bare & 0.236 & 4 & boy plays football
+\\
+Word & Easiest & 3 & Soccer/Football | Passive | Manner & -0.111 & 8 & football is played badly by charlie
+\\
+Word & Hardest & 1 & Soccer/Football | Active | Manner & -0.132 & 8 & charlie plays football well
+\\
+Word & Hardest & 2 & Soccer/Football | Passive | Manner & -0.111 & 8 & soccer is played well by charlie
+\\
+Word & Hardest & 3 & Soccer/Football | Active | Bare & 0.236 & 4 & boy plays soccer
+\\
+Sentence & Easiest & 1 & Beat | Active | Bare & 0.217 & 10 & sophia beats heidi
+\\
+Sentence & Easiest & 2 & Lose | Active | Bare & 0.135 & 10 & boy loses to heidi
+\\
+Sentence & Easiest & 3 & Beat | Active | Location & 0.072 & 70 & sophia beats charlie outside
+\\
+Sentence & Hardest & 1 & Beat | Active | Location+Manner & -0.097 & 140 & sophia beats charlie with difficulty in bathroom
+\\
+Sentence & Hardest & 2 & Lose | Active | Location & 0.055 & 70 & boy loses to sophia in playground
+\\
+Sentence & Hardest & 3 & Beat | Active | Manner & 0.060 & 20 & charlie beats sophia with difficulty
+\\
+Complex & Easiest & 1 & Hide-and-seek | Active | Location & 0.125 & 24 & sophia plays hide-and-seek in playground
+\\
+Complex & Easiest & 2 & Hide-and-seek | Passive | Location & 0.103 & 24 & hide-and-seek is played by sophia in playground
+\\
+Complex & Easiest & 3 & Hide-and-seek | Active | Location+Manner & 0.022 & 48 & heidi plays hide-and-seek well in playground
+\\
+Complex & Hardest & 1 & Chess | Active | Location & -0.109 & 16 & charlie plays chess inside
+\\
+Complex & Hardest & 2 & Chess | Active | Location+Manner & -0.071 & 32 & charlie plays chess badly in playground
+\\
+Complex & Hardest & 3 & Chess | Passive | Location+Manner & -0.071 & 32 & chess is played badly by boy in playground
+\\
+Basic & Easiest & 1 & Ball | Active | Bare & 0.627 & 3 & heidi plays with ball
+\\
+Basic & Easiest & 2 & Ball | Passive | Bare & 0.341 & 3 & ball is played with by heidi
+\\
+Basic & Easiest & 3 & Doll | Active | Bare & 0.127 & 3 & charlie plays with doll
+\\
+Basic & Hardest & 1 & Puzzle/Jigsaw | Active | Location & -0.190 & 16 & heidi plays in bedroom with jigsaw
+\\
+Basic & Hardest & 2 & Puzzle/Jigsaw | Passive | Location & -0.150 & 16 & jigsaw is played with by heidi inside
+\\
+Basic & Hardest & 3 & Puzzle/Jigsaw | Passive | Bare & -0.098 & 4 & jigsaw is played with by heidi
+\\
+\bottomrule
+\end{tabular}
+\caption{\small Test-side sentence-difficulty summary by sentence type. Types combine predicate family, voice, and modifier profile; rows report the top 3 hardest and easiest type averages per group.}
+\label{tab:test_sentence_difficulty_types}
+\end{table}

@@ -1,0 +1,85 @@
+\scriptsize
+\begin{longtable}{@{}llrrr@{}}
+\caption{Sentences with largest recurrent advantage (test sentences). For each sentence, mean advantage is computed for recurrent (SRN, GRU, LSTM) and attention (all Attn variants) models, averaged over entity condition and seed. Gap = recurrent $-$ attention.}
+\label{tab:test_sentence_arch_gap} \\
+\toprule
+\textbf{Test Group} & \textbf{Sentence} & \textbf{Recurrent} & \textbf{Attention} & \textbf{Gap} \\
+\midrule
+\endfirsthead
+
+\multicolumn{5}{c}{\scriptsize\textit{(continued)}} \\
+\toprule
+\textbf{Test Group} & \textbf{Sentence} & \textbf{Recurrent} & \textbf{Attention} & \textbf{Gap} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{5}{r@{}}{\scriptsize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+Word & soccer is played badly by charlie & 1.741 & 1.690 & +0.051 \\
+ & charlie plays football well & 1.415 & 1.378 & +0.037 \\
+ & soccer is played well by charlie & 1.446 & 1.414 & +0.032 \\
+ & charlie plays soccer badly & 1.741 & 1.710 & +0.031 \\
+ & football is played badly by boy & 1.742 & 1.714 & +0.028 \\
+ & boy plays football badly & 1.740 & 1.713 & +0.028 \\
+ & charlie plays football badly & 1.741 & 1.717 & +0.025 \\
+ & boy plays soccer badly & 1.741 & 1.717 & +0.024 \\
+ & boy plays soccer well & 1.414 & 1.392 & +0.023 \\
+ & soccer is played well by boy & 1.450 & 1.429 & +0.022 \\
+ & soccer is played badly by boy & 1.743 & 1.726 & +0.017 \\
+ & football is played badly by charlie & 1.743 & 1.727 & +0.016 \\
+ & charlie plays soccer well & 1.405 & 1.392 & +0.013 \\
+ & football is played well by charlie & 1.450 & 1.441 & +0.009 \\
+ & soccer is played by charlie & 1.944 & 1.937 & +0.007 \\
+\addlinespace
+Sentence & sophia beats charlie & 1.724 & 1.249 & +0.476 \\
+ & sophia beats boy & 1.725 & 1.384 & +0.340 \\
+ & sophia beats charlie with ease & 1.650 & 1.350 & +0.300 \\
+ & boy beats sophia & 1.695 & 1.406 & +0.288 \\
+ & sophia beats boy with ease & 1.651 & 1.388 & +0.263 \\
+ & charlie beats sophia & 1.695 & 1.434 & +0.261 \\
+ & heidi loses to sophia in shower & 1.317 & 1.086 & +0.231 \\
+ & boy beats sophia in shower & 0.957 & 0.730 & +0.227 \\
+ & boy beats sophia in bathroom & 0.957 & 0.733 & +0.224 \\
+ & charlie beats sophia in shower & 0.957 & 0.733 & +0.223 \\
+ & heidi loses to sophia in bathroom & 1.318 & 1.095 & +0.223 \\
+ & sophia beats charlie with difficulty outside & 0.866 & 0.647 & +0.219 \\
+ & sophia beats boy with difficulty outside & 0.866 & 0.651 & +0.215 \\
+ & charlie beats sophia in bathroom & 0.957 & 0.744 & +0.213 \\
+ & charlie beats sophia with difficulty & 0.689 & 0.484 & +0.205 \\
+\addlinespace
+Complex Event & hide-and-seek is played by sophia in bedroom & 1.599 & 1.000 & +0.599 \\
+ & heidi plays chess inside & 1.373 & 0.780 & +0.593 \\
+ & sophia plays hide-and-seek in bedroom & 1.595 & 1.013 & +0.582 \\
+ & hide-and-seek is played by heidi outside & 1.687 & 1.157 & +0.530 \\
+ & heidi plays hide-and-seek outside & 1.690 & 1.163 & +0.527 \\
+ & chess is played by heidi inside & 1.374 & 0.851 & +0.523 \\
+ & heidi plays hide-and-seek in bedroom & 1.551 & 1.030 & +0.520 \\
+ & hide-and-seek is played by heidi in bedroom & 1.544 & 1.024 & +0.520 \\
+ & hide-and-seek is played by charlie outside & 1.398 & 0.879 & +0.519 \\
+ & heidi plays chess in bedroom & 1.458 & 0.948 & +0.510 \\
+ & chess is played by sophia inside & 1.437 & 0.929 & +0.508 \\
+ & hide-and-seek is played by boy outside & 1.398 & 0.897 & +0.501 \\
+ & sophia plays chess inside & 1.403 & 0.903 & +0.500 \\
+ & chess is played by heidi in bedroom & 1.501 & 1.002 & +0.499 \\
+ & charlie plays hide-and-seek outside & 1.382 & 0.893 & +0.488 \\
+\addlinespace
+Basic Event & ball is played with by boy & 1.232 & 0.944 & +0.288 \\
+ & ball is played with by charlie & 1.230 & 0.950 & +0.281 \\
+ & doll is played with inside by boy & 1.179 & 0.899 & +0.280 \\
+ & doll is played with inside by charlie & 1.180 & 0.912 & +0.267 \\
+ & doll is played with in bedroom by boy & 1.173 & 0.926 & +0.247 \\
+ & ball is played with by boy outside & 1.295 & 1.063 & +0.232 \\
+ & doll is played with in bedroom by charlie & 1.175 & 0.943 & +0.231 \\
+ & doll is played with by boy & 1.245 & 1.019 & +0.226 \\
+ & ball is played with by charlie outside & 1.293 & 1.068 & +0.225 \\
+ & doll is played with by charlie & 1.246 & 1.027 & +0.219 \\
+ & doll is played with by boy inside & 1.157 & 0.953 & +0.204 \\
+ & boy plays with doll in bedroom & 1.168 & 0.964 & +0.204 \\
+ & charlie plays with doll inside & 1.156 & 0.953 & +0.203 \\
+ & doll is played with by charlie inside & 1.156 & 0.956 & +0.201 \\
+ & boy plays with doll inside & 1.157 & 0.956 & +0.200 \\
+\end{longtable}
+\normalsize

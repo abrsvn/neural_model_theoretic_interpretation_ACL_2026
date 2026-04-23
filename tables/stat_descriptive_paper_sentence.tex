@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\vspace{-0.5em}
+\small
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{Arch} & \textbf{Ent} & \textbf{Word} & \textbf{Sent} & \textbf{Cmplx} & \textbf{Basic} \\
+\midrule
+\multirow{2}{*}{SRN} & $-$ent & 1.65 & \textbf{1.16} & 1.36 & 0.67 \\
+ & $+$ent & \textbf{1.73} & 1.12 & \textbf{1.37} & 0.74 \\
+\midrule
+\multirow{2}{*}{GRU} & $-$ent & 1.72 & 1.13 & 1.30 & 0.65 \\
+ & $+$ent & 1.72 & 1.08 & 1.20 & \textbf{0.78} \\
+\midrule
+\multirow{2}{*}{LSTM} & $-$ent & 1.68 & 1.14 & 1.28 & 0.67 \\
+ & $+$ent & 1.71 & 1.12 & 1.24 & 0.77 \\
+\midrule
+\multirow{2}{*}{Attn AbsPE} & $-$ent & 1.71 & 0.95 & 1.05 & 0.59 \\
+ & $+$ent & 1.72 & 1.02 & 1.10 & 0.68 \\
+\midrule
+\multirow{2}{*}{Attn RoPE} & $-$ent & 1.67 & 1.14 & 1.07 & 0.63 \\
+ & $+$ent & 1.70 & 1.12 & 1.05 & 0.69 \\
+\bottomrule
+\end{tabular}
+\vspace{-0.7em}
+\caption{\small Experiment 1: test-only advantage (higher is better) by architecture, test group and $\pm$entity, aggregated across all test sentences including modifier variants. GRU \& LSTM $+$ent achieve the highest Basic Event scores (\textbf{0.78} and 0.77; statistically indistinguishable: $p = 1.00$). See Table~\ref{tab:complexity_breakdown} for how modifier complexity affects these aggregate scores.}
+\label{tab:main_results}
+\end{table}

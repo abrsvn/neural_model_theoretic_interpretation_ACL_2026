@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+\textbf{Test Group} & \textbf{Effect} & $F$ & \textbf{df} & $p$ & $\eta^2_p$ \\
+\midrule
+Word & Architecture & 2.55 & 6, 148.5 & 0.02 & 0.093 \\
+ & Entity vectors & 20.45 & 1, 130.2 & $<$.001 & 0.136 \\
+ & Split & 0.00 & 1, 22.2 & 0.95 & 0.000 \\
+\addlinespace
+Sentence & Architecture & 20.72 & 6, 139.0 & $<$.001 & 0.472 \\
+ & Entity vectors & 0.00 & 1, 128.0 & 0.95 & 0.000 \\
+ & Split & 0.18 & 1, 290.4 & 0.67 & 0.001 \\
+ & Arch $\times$ Entity & 3.63 & 6, 124.9 & 0.002 & 0.148 \\
+\addlinespace
+Complex Event & Architecture & 48.76 & 6, 144.5 & $<$.001 & 0.669 \\
+ & Entity vectors & 0.60 & 1, 147.2 & 0.44 & 0.004 \\
+ & Split & 6.91 & 1, 277.8 & 0.009 & 0.024 \\
+\addlinespace
+Basic Event & Architecture & 7.18 & 6, 136.9 & $<$.001 & 0.239 \\
+ & Entity vectors & 59.17 & 1, 188.9 & $<$.001 & 0.238 \\
+ & Split & 15.74 & 1, 130.6 & $<$.001 & 0.108 \\
+ & Arch $\times$ Entity & 0.90 & 6, 112.1 & 0.49 & 0.046 \\
+ & Arch $\times$ Split & 3.43 & 6, 136.9 & 0.003 & 0.131 \\
+ & Entity $\times$ Split & 4.94 & 1, 188.9 & 0.03 & 0.026 \\
+ & Arch $\times$ Entity $\times$ Split & 2.65 & 6, 112.1 & 0.02 & 0.124 \\
+\bottomrule
+\end{tabular}
+\caption{Type III ANOVA for test sentences (Satterthwaite df). Selected fixed-effects structure per group (backward elimination): Word: arch + entity + split; Sentence: arch + entity + split + arch:entity; Complex Event: arch + entity + split; Basic Event: arch * entity * split. Random-effects structure selected separately per group (see Table~\ref{tab:test_random_slopes}).}
+\label{tab:test_anova}
+\end{table}

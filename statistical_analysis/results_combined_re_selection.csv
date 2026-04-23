@@ -1,0 +1,5 @@
+"group","group_name","selected_re","selected_key","reason","aic_selected","aic_baseline","singular_selected"
+"word_group","Word","(1|sentence) + (1|model_id) + (1|arch:sentence)","arch","backward elimination from arch",-7140.2051249864,-7104.36361441076,FALSE
+"sentence_group","Sentence","(1|sentence) + (1|model_id) + (0+is_recurrent|sentence) + (0+split|sentence) + (1|arch:sentence) + (0+train_or_test|model_id)","arch+gap+rec+splt","backward elimination from arch+gap+rec+splt",-45917.9307938165,-39579.0452224527,FALSE
+"complex_event","Complex Event","(1|sentence) + (1|model_id) + (0+entity|sentence) + (0+split|sentence) + (1|arch:sentence) + (0+train_or_test|model_id)","arch+ent+gap+splt","backward elimination from arch+ent+gap+splt",-38867.957487545,-26347.0123201788,FALSE
+"basic_event","Basic Event","(1|sentence) + (1|model_id) + (0+entity|sentence) + (0+is_recurrent|sentence) + (0+split|sentence) + (1|arch:sentence) + (0+train_or_test|model_id)","arch+ent+gap+rec+splt","backward elimination from arch+ent+gap+rec+splt",-53593.0782026564,-46207.5411924312,FALSE

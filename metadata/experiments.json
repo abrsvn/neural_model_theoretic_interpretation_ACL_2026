@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "experiment_id": "exp_1_entity_vectors",
+      "epochs": 750,
+      "entity_conditions": [
+        {
+          "label": "without_entity_vectors",
+          "entity_code": "noent",
+          "concat_entity_vector": false,
+          "output_dim": 150
+        },
+        {
+          "label": "with_entity_vectors",
+          "entity_code": "went",
+          "concat_entity_vector": true,
+          "output_dim": 300
+        }
+      ],
+      "model_families": [
+        {
+          "model_type": "SIMPLE_RN",
+          "paper_label": "SRN",
+          "checkpoint_name_prefix_template": "srn_l1_h178_nosem_{entity_code}",
+          "hidden_dim": 178,
+          "n_layers": 1
+        },
+        {
+          "model_type": "SIMPLE_LSTM",
+          "paper_label": "LSTM",
+          "checkpoint_name_prefix_template": "lstm_l1_h80_nosem_{entity_code}",
+          "hidden_dim": 80,
+          "n_layers": 1
+        },
+        {
+          "model_type": "ABS_ATTN",
+          "paper_label": "AbsPE",
+          "checkpoint_name_prefix_template": "attn_abspe_l2_h48_nh4_nosem_{entity_code}",
+          "hidden_dim": 48,
+          "n_layers": 2,
+          "n_heads": 4
+        },
+        {
+          "model_type": "ROPE_ATTN",
+          "paper_label": "RoPE",
+          "checkpoint_name_prefix_template": "attn_rope_l2_h48_nh4_nosem_{entity_code}",
+          "hidden_dim": 48,
+          "n_layers": 2,
+          "n_heads": 4
+        }
+      ],
+      "checkpoint_name_suffix_template": "_s{split}_m{model_index}_best_model.pt"
+    },
+    {
+      "experiment_id": "exp_1_entity_vectors_attn_followup",
+      "epochs": 750,
+      "entity_conditions": [
+        {
+          "label": "without_entity_vectors",
+          "entity_code": "noent",
+          "concat_entity_vector": false,
+          "output_dim": 150
+        },
+        {
+          "label": "with_entity_vectors",
+          "entity_code": "went",
+          "concat_entity_vector": true,
+          "output_dim": 300
+        }
+      ],
+      "model_families": [
+        {
+          "model_type": "ABS_ATTN",
+          "paper_label": "AbsPE",
+          "checkpoint_name_prefix_template": "attn_abspe_l2_h80_nh4_nosem_{entity_code}",
+          "hidden_dim": 80,
+          "n_layers": 2,
+          "n_heads": 4
+        },
+        {
+          "model_type": "ROPE_ATTN",
+          "paper_label": "RoPE",
+          "checkpoint_name_prefix_template": "attn_rope_l2_h80_nh4_nosem_{entity_code}",
+          "hidden_dim": 80,
+          "n_layers": 2,
+          "n_heads": 4
+        }
+      ],
+      "checkpoint_name_suffix_template": "_s{split}_m{model_index}_best_model.pt"
+    },
+    {
+      "experiment_id": "exp_1_entity_vectors_GRU_followup",
+      "epochs": 750,
+      "entity_conditions": [
+        {
+          "label": "without_entity_vectors",
+          "entity_code": "noent",
+          "concat_entity_vector": false,
+          "output_dim": 150
+        },
+        {
+          "label": "with_entity_vectors",
+          "entity_code": "went",
+          "concat_entity_vector": true,
+          "output_dim": 300
+        }
+      ],
+      "model_families": [
+        {
+          "model_type": "SIMPLE_GRU",
+          "paper_label": "GRU",
+          "checkpoint_name_prefix_template": "gru_l1_h90_nosem_{entity_code}",
+          "hidden_dim": 90,
+          "n_layers": 1
+        }
+      ],
+      "checkpoint_name_suffix_template": "_s{split}_m{model_index}_best_model.pt"
+    }
+  ]
+}

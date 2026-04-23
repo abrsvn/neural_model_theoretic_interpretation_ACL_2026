@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}llrcrrrrr@{}}
+\toprule
+\textbf{Test Group} & \textbf{Architecture} & \textbf{Ent effect} & \textbf{[95\% CI]} & \textbf{SE} & $t$ & \textbf{df} & $p$ & $d$ \\
+\midrule
+Word & All & +0.034 & [0.019, 0.049] & 0.008 & 4.52 & 130.2 & $<$.001 & 0.45 \\
+\addlinespace
+Sentence & SRN & -0.037 & [-0.119, 0.046] & 0.030 & -1.20 & 125.4 & 0.84 & -0.21 \\
+ & GRU & -0.052 & [-0.135, 0.030] & 0.030 & -1.72 & 125.4 & 0.47 & -0.30 \\
+ & LSTM & -0.027 & [-0.110, 0.055] & 0.030 & -0.90 & 125.4 & 0.96 & -0.16 \\
+ & Attn\_AbsPE & +0.071 & [-0.011, 0.154] & 0.030 & 2.36 & 125.4 & 0.13 & 0.41 \\
+ & Attn\_RoPE & -0.022 & [-0.104, 0.061] & 0.030 & -0.71 & 125.4 & 0.99 & -0.12 \\
+ & Attn\_AbsPE\_H80 & -0.024 & [-0.107, 0.059] & 0.030 & -0.79 & 125.4 & 0.98 & -0.14 \\
+ & Attn\_RoPE\_H80 & +0.095 & [0.012, 0.178] & 0.030 & 3.14 & 125.4 & 0.01 & 0.55 \\
+\addlinespace
+Complex Event & All & -0.011 & [-0.040, 0.017] & 0.014 & -0.77 & 147.2 & 0.44 & -0.07 \\
+\addlinespace
+Basic Event & SRN & +0.063 & [-0.009, 0.134] & 0.026 & 2.40 & 126.9 & 0.12 & 0.49 \\
+ & GRU & +0.125 & [0.054, 0.196] & 0.026 & 4.79 & 126.9 & $<$.001 & 0.97 \\
+ & LSTM & +0.106 & [0.034, 0.177] & 0.026 & 4.04 & 126.9 & $<$.001 & 0.82 \\
+ & Attn\_AbsPE & +0.096 & [0.025, 0.168] & 0.026 & 3.69 & 126.9 & 0.002 & 0.75 \\
+ & Attn\_RoPE & +0.063 & [-0.008, 0.134] & 0.026 & 2.40 & 126.9 & 0.12 & 0.49 \\
+ & Attn\_AbsPE\_H80 & +0.071 & [-0.000, 0.142] & 0.026 & 2.72 & 126.9 & 0.05 & 0.55 \\
+ & Attn\_RoPE\_H80 & +0.101 & [0.029, 0.172] & 0.026 & 3.85 & 126.9 & 0.001 & 0.78 \\
+\bottomrule
+\end{tabular}
+\caption{Entity vector effect per architecture for test sentences (ent $-$ noent). Positive: entity vectors improve advantage. $mvt$-adjusted simultaneous $p$ values and confidence intervals. Where the selected model includes no architecture $\times$ entity interaction, a single pooled row (\texttt{All}) is shown.}
+\label{tab:test_entity_effect}
+\end{table}

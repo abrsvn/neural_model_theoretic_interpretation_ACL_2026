@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Subset} & \textbf{Architecture} & \textbf{Word} & \textbf{Sentence} & \textbf{Complex} & \textbf{Basic} & \textbf{Total} \\
+\midrule
+Train & SRN & 0-0 & 4-0 & 4-0 & 4-0 & 12-0 \\
+Train & GRU & 1-0 & 4-0 & 4-0 & 4-0 & 13-0 \\
+Train & LSTM & 0-0 & 4-0 & 4-0 & 4-0 & 12-0 \\
+Train & AbsPE & 0-0 & 1-3 & 0-3 & 2-3 & 3-9 \\
+Train & RoPE & 0-0 & 1-3 & 0-3 & 2-3 & 3-9 \\
+Train & AbsPE H80 & 0-0 & 0-5 & 0-3 & 0-5 & 0-13 \\
+Train & RoPE H80 & 0-1 & 0-3 & 0-3 & 0-5 & 0-12 \\
+Test & SRN & 0-0 & 3-0 & 6-0 & 2-0 & 11-0 \\
+Test & GRU & 0-0 & 2-0 & 4-1 & 3-0 & 9-1 \\
+Test & LSTM & 0-0 & 3-0 & 4-1 & 3-0 & 10-1 \\
+Test & AbsPE & 0-0 & 0-5 & 1-3 & 0-2 & 1-10 \\
+Test & RoPE & 0-0 & 3-0 & 0-3 & 0-0 & 3-3 \\
+Test & AbsPE H80 & 0-0 & 0-5 & 0-4 & 0-3 & 0-12 \\
+Test & RoPE H80 & 0-0 & 2-3 & 0-3 & 0-3 & 2-9 \\
+\bottomrule
+\end{tabular}
+\caption{\small Generalization-gap architecture summary pooled across Split~1 and Split~2. For each architecture, the Word, Sentence, Complex, and Basic cells report the numbers of statistically significant pairwise wins and losses within that category and subset; the Total column aggregates across the four categories.}
+\label{tab:gap_arch_dominance}
+\end{table}

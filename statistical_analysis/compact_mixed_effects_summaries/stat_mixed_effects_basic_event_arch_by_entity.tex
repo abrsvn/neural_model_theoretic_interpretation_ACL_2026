@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Contrast} & \textbf{$-$ent est.} & \textbf{$-$ent $p$} & \textbf{$+$ent est.} & \textbf{$+$ent $p$} \\
+\midrule
+LSTM - GRU & +0.015 & 0.997 & -0.004 & 1.000 \\
+SRN - AbsPE & +0.081 & 0.041 & +0.048 & 0.557 \\
+SRN - RoPE & +0.041 & 0.728 & +0.040 & 0.731 \\
+SRN - AbsPE H80 & +0.076 & 0.068 & +0.068 & 0.146 \\
+SRN - RoPE H80 & +0.097 & 0.007 & +0.059 & 0.292 \\
+LSTM - AbsPE & +0.077 & 0.065 & +0.086 & 0.025 \\
+LSTM - RoPE & +0.036 & 0.821 & +0.079 & 0.053 \\
+LSTM - AbsPE H80 & +0.072 & 0.103 & +0.106 & 0.002 \\
+LSTM - RoPE H80 & +0.092 & 0.012 & +0.097 & 0.006 \\
+GRU - AbsPE & +0.062 & 0.243 & +0.090 & 0.015 \\
+GRU - RoPE & +0.021 & 0.986 & +0.083 & 0.034 \\
+GRU - AbsPE H80 & +0.057 & 0.340 & +0.111 & 0.001 \\
+GRU - RoPE H80 & +0.077 & 0.064 & +0.102 & 0.004 \\
+\bottomrule
+\end{tabular}
+\caption{\small Targeted Basic architecture contrasts by entity condition for the mixed-effects results. Positive estimates favor the architecture on the left of the contrast. These are the key pairwise comparisons cited in Observation~3.}
+\label{tab:basic_event_arch_by_entity}
+\end{table}

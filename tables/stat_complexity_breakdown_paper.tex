@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\vspace{-0.5em}
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Test} & \textbf{Can} & \textbf{+Loc} & \textbf{+Man} & \textbf{+L+M} & \textbf{Agg} \\
+\midrule
+Word & 1.94 & --- & 1.58 & --- & 1.70 \\
+Sentence & 1.62 & 1.26 & 1.12 & 0.86 & 1.10 \\
+Complex & 1.37 & --- & 1.10 & --- & 1.19 \\
+Basic & 0.83 & 0.65 & --- & --- & 0.68 \\
+\bottomrule
+\end{tabular}
+\vspace{-0.7em}
+\caption{\small Experiment 1: test-only advantage by test group and modifier complexity, averaged across all 5 architectures and $\pm$entity settings. \textbf{Can}: canonical (unmodified) sentences. \textbf{+Loc}/\textbf{+Man}/\textbf{+L+M}: sentences with location, manner, or both modifiers. ---: modifier types absent from test group. \textbf{Agg}: aggregate over all test sentences. Canonical column preserves the expected hierarchy Word $>$ Sentence $>$ Complex $>$ Basic. \textbf{Agg} reverses Sentence and Complex because Sentence is 94\% non-canonical vs.\ 67\% for Complex---see \textbf{Observation~1}.}
+\label{tab:complexity_breakdown}
+\end{table}

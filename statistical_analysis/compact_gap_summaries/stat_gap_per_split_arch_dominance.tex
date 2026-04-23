@@ -1,0 +1,40 @@
+\begin{table}[t]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lllccccc@{}}
+\toprule
+\textbf{Split} & \textbf{Subset} & \textbf{Architecture} & \textbf{Word} & \textbf{Sentence} & \textbf{Complex} & \textbf{Basic} & \textbf{Total} \\
+\midrule
+S1 & Train & SRN & 0-0 & 4-0 & 3-0 & 4-0 & 11-0 \\
+S1 & Train & GRU & 0-0 & 4-0 & 2-0 & 4-0 & 10-0 \\
+S1 & Train & LSTM & 0-0 & 4-0 & 2-0 & 4-0 & 10-0 \\
+S1 & Train & AbsPE & 0-0 & 1-3 & 0-1 & 2-3 & 3-7 \\
+S1 & Train & RoPE & 0-0 & 1-3 & 0-0 & 2-3 & 3-6 \\
+S1 & Train & AbsPE H80 & 0-0 & 0-5 & 0-3 & 0-5 & 0-13 \\
+S1 & Train & RoPE H80 & 0-0 & 0-3 & 0-3 & 0-5 & 0-11 \\
+S1 & Test & SRN & 0-0 & 2-0 & 4-0 & 3-0 & 9-0 \\
+S1 & Test & GRU & 0-0 & 2-0 & 4-0 & 3-0 & 9-0 \\
+S1 & Test & LSTM & 0-0 & 2-0 & 4-0 & 4-0 & 10-0 \\
+S1 & Test & AbsPE & 0-0 & 0-4 & 0-3 & 0-3 & 0-10 \\
+S1 & Test & RoPE & 0-0 & 2-0 & 0-3 & 0-1 & 2-4 \\
+S1 & Test & AbsPE H80 & 0-0 & 0-5 & 0-3 & 0-3 & 0-11 \\
+S1 & Test & RoPE H80 & 0-0 & 1-0 & 0-3 & 0-3 & 1-6 \\
+S2 & Train & SRN & 0-0 & 4-0 & 4-0 & 4-0 & 12-0 \\
+S2 & Train & GRU & 0-0 & 4-0 & 2-0 & 4-0 & 10-0 \\
+S2 & Train & LSTM & 0-0 & 4-0 & 3-0 & 4-0 & 11-0 \\
+S2 & Train & AbsPE & 0-0 & 0-3 & 0-3 & 2-3 & 2-9 \\
+S2 & Train & RoPE & 0-0 & 0-3 & 0-2 & 2-3 & 2-8 \\
+S2 & Train & AbsPE H80 & 0-0 & 0-3 & 0-1 & 0-5 & 0-9 \\
+S2 & Train & RoPE H80 & 0-0 & 0-3 & 0-3 & 0-5 & 0-11 \\
+S2 & Test & SRN & 0-0 & 2-0 & 5-0 & 0-0 & 7-0 \\
+S2 & Test & GRU & 0-0 & 2-0 & 4-1 & 0-0 & 6-1 \\
+S2 & Test & LSTM & 0-0 & 2-0 & 4-0 & 0-0 & 6-0 \\
+S2 & Test & AbsPE & 0-0 & 0-4 & 0-3 & 0-0 & 0-7 \\
+S2 & Test & RoPE & 0-0 & 2-0 & 0-3 & 0-0 & 2-3 \\
+S2 & Test & AbsPE H80 & 0-0 & 0-4 & 0-3 & 0-0 & 0-7 \\
+S2 & Test & RoPE H80 & 0-0 & 0-0 & 0-3 & 0-0 & 0-3 \\
+\bottomrule
+\end{tabular}
+\caption{\small Generalization-gap architecture summary shown separately for Split~1 and Split~2. For each architecture, the Word, Sentence, Complex, and Basic cells report the numbers of statistically significant pairwise wins and losses within that category, split, and subset; the Total column aggregates across the four categories.}
+\label{tab:gap_per_split_arch_dominance}
+\end{table}

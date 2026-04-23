@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+ & \textbf{Category} & \textbf{$N$} & \textbf{Mean} & \textbf{SD} & \textbf{Median} & \textbf{Min} & \textbf{Max} \\
+\midrule
+\multicolumn{8}{l}{\textit{Split 1}} \\
+\addlinespace[2pt]
+ & Word & 24 & 2.7 & 0.5 & 3 & 2 & 3 \\
+ & Sentence & 320 & 7.0 & 1.4 & 7 & 3 & 8 \\
+ & Complex & 240 & 2.9 & 1.0 & 3 & 1 & 5 \\
+ & Basic & 192 & 2.3 & 0.9 & 2 & 1 & 4 \\
+\cmidrule(l){2-8}
+ & All & 776 & 4.4 & 2.4 & 3 & 1 & 8 \\
+\addlinespace
+\multicolumn{8}{l}{\textit{Split 2}} \\
+\addlinespace[2pt]
+ & Word & 24 & 2.7 & 0.5 & 3 & 2 & 3 \\
+ & Sentence & 320 & 7.0 & 1.4 & 7 & 3 & 8 \\
+ & Complex & 240 & 2.9 & 1.0 & 3 & 1 & 5 \\
+ & Basic & 192 & 2.3 & 0.9 & 2 & 1 & 4 \\
+\cmidrule(l){2-8}
+ & All & 776 & 4.4 & 2.4 & 3 & 1 & 8 \\
+\bottomrule
+\end{tabular}
+\caption{\small Number of competing events per sentence by test category and data split, pooled across train and test within each split. Word/Sentence/Complex/Basic: systematicity test groups with increasing compositional difficulty. Competitors are produced by substituting one semantic slot at a time in the described event(s).}
+\label{tab:competing_events_combined}
+\end{table}

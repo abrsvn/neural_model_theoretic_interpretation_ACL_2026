@@ -1,0 +1,85 @@
+\scriptsize
+\begin{longtable}{@{}llrrr@{}}
+\caption{Sentences with largest recurrent advantage (train sentences). For each sentence, mean advantage is computed for recurrent (SRN, GRU, LSTM) and attention (all Attn variants) models, averaged over entity condition and seed. Gap = recurrent $-$ attention.}
+\label{tab:train_sentence_arch_gap} \\
+\toprule
+\textbf{Test Group} & \textbf{Sentence} & \textbf{Recurrent} & \textbf{Attention} & \textbf{Gap} \\
+\midrule
+\endfirsthead
+
+\multicolumn{5}{c}{\scriptsize\textit{(continued)}} \\
+\toprule
+\textbf{Test Group} & \textbf{Sentence} & \textbf{Recurrent} & \textbf{Attention} & \textbf{Gap} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{5}{r@{}}{\scriptsize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+Word & charlie plays soccer well & 1.414 & 1.367 & +0.047 \\
+ & football is played badly by charlie & 1.742 & 1.696 & +0.045 \\
+ & soccer is played badly by boy & 1.742 & 1.699 & +0.043 \\
+ & boy plays football well & 1.415 & 1.380 & +0.035 \\
+ & boy plays soccer badly & 1.741 & 1.711 & +0.030 \\
+ & charlie plays football badly & 1.740 & 1.711 & +0.030 \\
+ & boy plays football badly & 1.741 & 1.714 & +0.027 \\
+ & football is played well by charlie & 1.446 & 1.420 & +0.026 \\
+ & charlie plays soccer badly & 1.741 & 1.717 & +0.024 \\
+ & football is played badly by boy & 1.743 & 1.725 & +0.018 \\
+ & soccer is played badly by charlie & 1.743 & 1.727 & +0.016 \\
+ & football is played well by boy & 1.450 & 1.435 & +0.016 \\
+ & boy plays soccer well & 1.404 & 1.389 & +0.015 \\
+ & soccer is played well by charlie & 1.450 & 1.436 & +0.014 \\
+ & soccer is played well by boy & 1.446 & 1.437 & +0.009 \\
+\addlinespace
+Sentence & heidi beats charlie with difficulty & 1.003 & 0.792 & +0.211 \\
+ & heidi beats boy with difficulty & 1.003 & 0.799 & +0.204 \\
+ & charlie beats heidi with difficulty inside & 0.738 & 0.545 & +0.192 \\
+ & sophia beats heidi in shower & 1.331 & 1.144 & +0.187 \\
+ & boy beats heidi with difficulty inside & 0.738 & 0.552 & +0.186 \\
+ & sophia beats heidi in bathroom & 1.332 & 1.146 & +0.185 \\
+ & sophia beats heidi with ease in bathroom & 1.180 & 0.995 & +0.185 \\
+ & sophia beats heidi with ease in shower & 1.180 & 0.995 & +0.185 \\
+ & charlie beats heidi with difficulty in bedroom & 0.752 & 0.569 & +0.183 \\
+ & boy beats heidi with difficulty in bedroom & 0.752 & 0.578 & +0.174 \\
+ & boy beats heidi with difficulty in playground & 0.657 & 0.486 & +0.171 \\
+ & charlie beats heidi with difficulty in playground & 0.657 & 0.487 & +0.170 \\
+ & sophia beats charlie with difficulty outside & 0.902 & 0.737 & +0.165 \\
+ & sophia beats boy with difficulty outside & 0.902 & 0.738 & +0.164 \\
+ & sophia beats heidi with difficulty inside & 0.816 & 0.655 & +0.160 \\
+\addlinespace
+Complex Event & chess is played badly by boy inside & 0.827 & 0.624 & +0.203 \\
+ & charlie plays chess badly inside & 0.833 & 0.630 & +0.203 \\
+ & boy plays chess badly inside & 0.833 & 0.633 & +0.200 \\
+ & chess is played badly by charlie inside & 0.827 & 0.629 & +0.197 \\
+ & chess is played badly by boy in bedroom & 0.816 & 0.632 & +0.185 \\
+ & chess is played badly by charlie in bedroom & 0.816 & 0.636 & +0.180 \\
+ & charlie plays chess badly in bedroom & 0.819 & 0.645 & +0.174 \\
+ & boy plays chess badly in bedroom & 0.819 & 0.647 & +0.173 \\
+ & chess is played badly by boy outside & 0.462 & 0.309 & +0.153 \\
+ & chess is played badly by charlie outside & 0.462 & 0.311 & +0.150 \\
+ & boy plays chess badly outside & 0.435 & 0.296 & +0.138 \\
+ & charlie plays chess badly outside & 0.435 & 0.297 & +0.138 \\
+ & hide-and-seek is played well by boy in playground & 0.496 & 0.364 & +0.132 \\
+ & hide-and-seek is played well by charlie in playgro... & 0.496 & 0.366 & +0.130 \\
+ & hide-and-seek is played well by charlie outside & 0.618 & 0.492 & +0.126 \\
+\addlinespace
+Basic Event & sophia plays with jigsaw inside & 0.765 & 0.643 & +0.121 \\
+ & heidi plays with jigsaw inside & 0.549 & 0.432 & +0.117 \\
+ & sophia plays with puzzle inside & 0.765 & 0.648 & +0.117 \\
+ & heidi plays with puzzle inside & 0.548 & 0.436 & +0.113 \\
+ & doll is played with outside by heidi & 0.875 & 0.763 & +0.112 \\
+ & doll is played with outside by sophia & 0.895 & 0.789 & +0.106 \\
+ & puzzle is played with by heidi inside & 0.515 & 0.411 & +0.104 \\
+ & jigsaw is played with by heidi inside & 0.515 & 0.411 & +0.104 \\
+ & jigsaw is played with by sophia inside & 0.738 & 0.635 & +0.104 \\
+ & puzzle is played with by sophia inside & 0.738 & 0.635 & +0.104 \\
+ & puzzle is played with by heidi in bedroom & 0.524 & 0.422 & +0.102 \\
+ & jigsaw is played with by heidi in bedroom & 0.524 & 0.423 & +0.101 \\
+ & sophia plays in bedroom with jigsaw & 0.756 & 0.655 & +0.101 \\
+ & sophia plays in bedroom with puzzle & 0.756 & 0.656 & +0.100 \\
+ & sophia plays inside with jigsaw & 0.753 & 0.653 & +0.100 \\
+\end{longtable}
+\normalsize

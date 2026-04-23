@@ -1,0 +1,709 @@
+"group","group_name","sentence","intercept","hard_rank","easy_rank"
+"word_group","Word","charlie plays football well",-0.302084154138851,1,24
+"word_group","Word","boy plays soccer well",-0.294346529098644,2,23
+"word_group","Word","charlie plays soccer well",-0.293063297640075,3,22
+"word_group","Word","boy plays football well",-0.290150186012943,4,21
+"word_group","Word","soccer is played well by charlie",-0.262766512107614,5,20
+"word_group","Word","soccer is played well by boy",-0.257830855525665,6,19
+"word_group","Word","football is played well by charlie",-0.251375225870239,7,18
+"word_group","Word","football is played well by boy",-0.246205043337501,8,17
+"word_group","Word","soccer is played badly by charlie",0.020917481237782,9,16
+"word_group","Word","charlie plays football badly",0.0304409238665682,10,15
+"word_group","Word","boy plays soccer badly",0.0304888991309313,11,14
+"word_group","Word","charlie plays soccer badly",0.0314985419197527,12,13
+"word_group","Word","boy plays football badly",0.0331712642719725,13,12
+"word_group","Word","football is played badly by boy",0.0342812354908339,14,11
+"word_group","Word","soccer is played badly by boy",0.0364913926541084,15,10
+"word_group","Word","football is played badly by charlie",0.0368966960086713,16,9
+"word_group","Word","boy plays soccer",0.234252756174898,17,8
+"word_group","Word","charlie plays soccer",0.235595276340036,18,7
+"word_group","Word","charlie plays football",0.235632269441861,19,6
+"word_group","Word","boy plays football",0.23780830817389,20,5
+"word_group","Word","soccer is played by charlie",0.248497615984868,21,4
+"word_group","Word","football is played by charlie",0.25034146839725,22,3
+"word_group","Word","football is played by boy",0.250415315681966,23,2
+"word_group","Word","soccer is played by boy",0.251092358939776,24,1
+"sentence_group","Sentence","sophia beats charlie with difficulty in bathroom",-0.471683881478508,1,320
+"sentence_group","Sentence","sophia beats boy with difficulty in bathroom",-0.471565314774876,2,319
+"sentence_group","Sentence","sophia beats boy with difficulty in shower",-0.469938741990612,3,318
+"sentence_group","Sentence","sophia beats charlie with difficulty in shower",-0.469291937891112,4,317
+"sentence_group","Sentence","sophia beats charlie with ease in playground",-0.43274696079232,5,316
+"sentence_group","Sentence","boy loses to sophia in playground",-0.425357300331583,6,315
+"sentence_group","Sentence","charlie loses to sophia in playground",-0.425278851715888,7,314
+"sentence_group","Sentence","sophia beats boy with ease in playground",-0.4213286290264,8,313
+"sentence_group","Sentence","charlie loses to sophia in shower",-0.397022302101219,9,312
+"sentence_group","Sentence","boy loses to sophia in shower",-0.396177694249449,10,311
+"sentence_group","Sentence","charlie loses to sophia in bathroom",-0.390709045916748,11,310
+"sentence_group","Sentence","boy loses to sophia in bathroom",-0.390127876736443,12,309
+"sentence_group","Sentence","sophia beats charlie with difficulty in playground",-0.351396203400911,13,308
+"sentence_group","Sentence","sophia beats boy with difficulty in playground",-0.348782960825434,14,307
+"sentence_group","Sentence","sophia beats charlie in playground",-0.338546344968929,15,306
+"sentence_group","Sentence","sophia beats charlie with difficulty inside",-0.338262222741583,16,305
+"sentence_group","Sentence","sophia beats charlie with difficulty in bedroom",-0.337959107290186,17,304
+"sentence_group","Sentence","sophia beats boy with difficulty in bedroom",-0.337586301299313,18,303
+"sentence_group","Sentence","boy loses to sophia inside",-0.336973646004958,19,302
+"sentence_group","Sentence","charlie loses to sophia inside",-0.336499325041914,20,301
+"sentence_group","Sentence","charlie beats heidi with difficulty in playground",-0.333731146145884,21,300
+"sentence_group","Sentence","sophia beats boy with difficulty inside",-0.333351784181059,22,299
+"sentence_group","Sentence","sophia beats heidi with difficulty in bathroom",-0.333278299203208,23,298
+"sentence_group","Sentence","sophia beats heidi with difficulty in shower",-0.332396871632924,24,297
+"sentence_group","Sentence","boy beats heidi with difficulty in playground",-0.328920898724131,25,296
+"sentence_group","Sentence","heidi beats boy with difficulty in playground",-0.311852509423056,26,295
+"sentence_group","Sentence","sophia beats boy in playground",-0.309953906051107,27,294
+"sentence_group","Sentence","heidi beats charlie with difficulty in playground",-0.308968945758605,28,293
+"sentence_group","Sentence","charlie loses to sophia in bedroom",-0.300261980209359,29,292
+"sentence_group","Sentence","boy loses to sophia in bedroom",-0.298351285527022,30,291
+"sentence_group","Sentence","heidi beats charlie with difficulty in shower",-0.296030477662556,31,290
+"sentence_group","Sentence","heidi beats boy with difficulty in shower",-0.294858792194912,32,289
+"sentence_group","Sentence","heidi beats boy with difficulty in bathroom",-0.294773805760272,33,288
+"sentence_group","Sentence","heidi beats charlie with difficulty in bathroom",-0.294290699911347,34,287
+"sentence_group","Sentence","sophia beats charlie in bathroom",-0.284777817697223,35,286
+"sentence_group","Sentence","sophia beats charlie in shower",-0.281796250189527,36,285
+"sentence_group","Sentence","heidi beats boy with difficulty in bedroom",-0.276704321886766,37,284
+"sentence_group","Sentence","sophia beats boy in shower",-0.27573251961495,38,283
+"sentence_group","Sentence","charlie loses to heidi in street",-0.274731567147788,39,282
+"sentence_group","Sentence","sophia beats boy in bathroom",-0.273370164237388,40,281
+"sentence_group","Sentence","boy loses to heidi in street",-0.269695571913665,41,280
+"sentence_group","Sentence","sophia beats charlie in bedroom",-0.265117704511741,42,279
+"sentence_group","Sentence","sophia beats boy in bedroom",-0.264633777393452,43,278
+"sentence_group","Sentence","heidi beats charlie with difficulty in bedroom",-0.263825870900023,44,277
+"sentence_group","Sentence","heidi beats charlie with difficulty inside",-0.252894486593771,45,276
+"sentence_group","Sentence","heidi beats boy with difficulty inside",-0.251124085981048,46,275
+"sentence_group","Sentence","sophia beats charlie with ease in shower",-0.249796939207617,47,274
+"sentence_group","Sentence","sophia beats charlie with ease in bathroom",-0.248659643978931,48,273
+"sentence_group","Sentence","charlie beats sophia with difficulty in shower",-0.247019859442673,49,272
+"sentence_group","Sentence","sophia beats charlie with ease in bedroom",-0.243221970618732,50,271
+"sentence_group","Sentence","charlie beats sophia with difficulty in bathroom",-0.242977777926236,51,270
+"sentence_group","Sentence","heidi beats charlie with ease in street",-0.242081550378177,52,269
+"sentence_group","Sentence","sophia beats boy with ease in shower",-0.240848586601223,53,268
+"sentence_group","Sentence","sophia beats boy with ease in bathroom",-0.240165522516784,54,267
+"sentence_group","Sentence","boy beats sophia with difficulty in shower",-0.239980298473176,55,266
+"sentence_group","Sentence","sophia beats boy with ease in bedroom",-0.239707670276099,56,265
+"sentence_group","Sentence","heidi beats boy with ease in street",-0.239690325114555,57,264
+"sentence_group","Sentence","boy beats sophia with difficulty in playground",-0.238624787983843,58,263
+"sentence_group","Sentence","charlie beats heidi with difficulty in bathroom",-0.238153529086356,59,262
+"sentence_group","Sentence","boy beats heidi with difficulty in bathroom",-0.237963585133306,60,261
+"sentence_group","Sentence","boy beats heidi with difficulty in shower",-0.23755015903784,61,260
+"sentence_group","Sentence","boy beats sophia with difficulty in bathroom",-0.236548415104912,62,259
+"sentence_group","Sentence","charlie beats heidi with difficulty in shower",-0.236243617641515,63,258
+"sentence_group","Sentence","charlie beats sophia with difficulty in playground",-0.231880240053798,64,257
+"sentence_group","Sentence","heidi beats charlie with difficulty outside",-0.229899845003065,65,256
+"sentence_group","Sentence","heidi beats boy with difficulty outside",-0.228496555761729,66,255
+"sentence_group","Sentence","sophia beats charlie with ease inside",-0.227183687083709,67,254
+"sentence_group","Sentence","sophia beats charlie inside",-0.223471051770011,68,253
+"sentence_group","Sentence","sophia beats boy with ease inside",-0.220763918741238,69,252
+"sentence_group","Sentence","sophia beats boy inside",-0.21653817720492,70,251
+"sentence_group","Sentence","charlie beats sophia with difficulty in bedroom",-0.216331237822831,71,250
+"sentence_group","Sentence","boy beats sophia with difficulty in bedroom",-0.214515198186567,72,249
+"sentence_group","Sentence","charlie beats heidi with difficulty outside",-0.211924231346044,73,248
+"sentence_group","Sentence","heidi beats sophia with difficulty in street",-0.207941087448837,74,247
+"sentence_group","Sentence","boy beats heidi with difficulty outside",-0.204773848935713,75,246
+"sentence_group","Sentence","charlie beats sophia with difficulty",-0.200169715790917,76,245
+"sentence_group","Sentence","charlie beats sophia with difficulty inside",-0.19978800544188,77,244
+"sentence_group","Sentence","boy beats sophia with difficulty inside",-0.198238376278955,78,243
+"sentence_group","Sentence","boy beats sophia with difficulty",-0.192600173843996,79,242
+"sentence_group","Sentence","charlie loses to heidi outside",-0.187506065874999,80,241
+"sentence_group","Sentence","boy beats heidi with difficulty in bedroom",-0.187267574243305,81,240
+"sentence_group","Sentence","boy loses to heidi outside",-0.186358093623252,82,239
+"sentence_group","Sentence","charlie beats heidi with difficulty in bedroom",-0.186262711309025,83,238
+"sentence_group","Sentence","charlie beats heidi with difficulty",-0.170178211035862,84,237
+"sentence_group","Sentence","boy beats heidi with difficulty",-0.165852769856906,85,236
+"sentence_group","Sentence","charlie beats heidi with difficulty inside",-0.164056071240219,86,235
+"sentence_group","Sentence","boy beats heidi with difficulty inside",-0.16395254007593,87,234
+"sentence_group","Sentence","boy beats heidi with ease in playground",-0.163058761845641,88,233
+"sentence_group","Sentence","heidi beats boy outside",-0.161201915652282,89,232
+"sentence_group","Sentence","charlie beats heidi with ease in playground",-0.158999122299425,90,231
+"sentence_group","Sentence","heidi beats boy in street",-0.15560837608763,91,230
+"sentence_group","Sentence","heidi beats boy with difficulty in street",-0.153853415505283,92,229
+"sentence_group","Sentence","sophia beats heidi with difficulty in bedroom",-0.153578811007133,93,228
+"sentence_group","Sentence","heidi beats charlie outside",-0.152811287762474,94,227
+"sentence_group","Sentence","heidi beats charlie with difficulty in street",-0.15137284450227,95,226
+"sentence_group","Sentence","charlie beats heidi with difficulty in street",-0.151266719566496,96,225
+"sentence_group","Sentence","boy beats heidi with difficulty in street",-0.149919083867352,97,224
+"sentence_group","Sentence","heidi beats sophia with difficulty outside",-0.145110083962105,98,223
+"sentence_group","Sentence","heidi beats charlie in street",-0.143750933217135,99,222
+"sentence_group","Sentence","heidi beats charlie with ease outside",-0.142408710223732,100,221
+"sentence_group","Sentence","boy beats sophia with difficulty outside",-0.141097514712743,101,220
+"sentence_group","Sentence","heidi beats boy with ease outside",-0.139715813077764,102,219
+"sentence_group","Sentence","heidi loses to charlie",-0.137852493446868,103,218
+"sentence_group","Sentence","charlie beats sophia with difficulty outside",-0.137715267255802,104,217
+"sentence_group","Sentence","boy loses to sophia",-0.128382570505759,105,216
+"sentence_group","Sentence","heidi beats sophia with difficulty in playground",-0.125858485537674,106,215
+"sentence_group","Sentence","charlie loses to heidi in playground",-0.118251162973838,107,214
+"sentence_group","Sentence","heidi loses to boy",-0.11641833941737,108,213
+"sentence_group","Sentence","charlie beats heidi with ease in bathroom",-0.108415506486508,109,212
+"sentence_group","Sentence","boy beats heidi with ease in bathroom",-0.106887160550719,110,211
+"sentence_group","Sentence","sophia beats heidi with difficulty inside",-0.106728874461775,111,210
+"sentence_group","Sentence","boy loses to heidi in playground",-0.106018210426882,112,209
+"sentence_group","Sentence","boy beats heidi with ease in shower",-0.104881104059899,113,208
+"sentence_group","Sentence","charlie beats heidi with ease in shower",-0.104769609232523,114,207
+"sentence_group","Sentence","heidi beats charlie with ease in playground",-0.103784136789081,115,206
+"sentence_group","Sentence","heidi beats boy with ease in playground",-0.101600113805202,116,205
+"sentence_group","Sentence","heidi beats sophia with difficulty in bathroom",-0.101548510616074,117,204
+"sentence_group","Sentence","boy beats heidi with ease outside",-0.101047283033689,118,203
+"sentence_group","Sentence","charlie beats heidi with ease outside",-0.099613469926359,119,202
+"sentence_group","Sentence","heidi beats sophia with difficulty in shower",-0.0949113742057771,120,201
+"sentence_group","Sentence","heidi loses to charlie in bathroom",-0.093481908493546,121,200
+"sentence_group","Sentence","heidi beats charlie with difficulty",-0.093287460898825,122,199
+"sentence_group","Sentence","charlie beats sophia with ease in shower",-0.0925114505550845,123,198
+"sentence_group","Sentence","boy beats sophia with difficulty in street",-0.091661757092714,124,197
+"sentence_group","Sentence","charlie beats sophia with difficulty in street",-0.0909296678661032,125,196
+"sentence_group","Sentence","heidi loses to charlie in shower",-0.0899423125415939,126,195
+"sentence_group","Sentence","boy beats sophia with ease in shower",-0.0889730787908045,127,194
+"sentence_group","Sentence","charlie loses to sophia",-0.0881456234842069,128,193
+"sentence_group","Sentence","charlie beats sophia with ease in bathroom",-0.0876308980916218,129,192
+"sentence_group","Sentence","boy beats sophia with ease in street",-0.0855338988279974,130,191
+"sentence_group","Sentence","heidi beats boy with difficulty",-0.0845466197951066,131,190
+"sentence_group","Sentence","boy beats sophia with ease in bathroom",-0.0837189281339273,132,189
+"sentence_group","Sentence","charlie beats sophia with ease in street",-0.0828001932790993,133,188
+"sentence_group","Sentence","sophia beats charlie with difficulty",-0.0817606695153687,134,187
+"sentence_group","Sentence","heidi beats boy in playground",-0.0810941469772236,135,186
+"sentence_group","Sentence","heidi loses to boy in shower",-0.0787830942836928,136,185
+"sentence_group","Sentence","sophia loses to charlie in bathroom",-0.0761495578098793,137,184
+"sentence_group","Sentence","sophia loses to charlie in shower",-0.0760028994011309,138,183
+"sentence_group","Sentence","heidi loses to boy in bathroom",-0.07523439018913,139,182
+"sentence_group","Sentence","sophia loses to boy in shower",-0.0740377229234395,140,181
+"sentence_group","Sentence","sophia beats boy with difficulty",-0.0739712570096068,141,180
+"sentence_group","Sentence","heidi beats charlie in playground",-0.0736825770556038,142,179
+"sentence_group","Sentence","sophia loses to boy in bathroom",-0.0677226311723112,143,178
+"sentence_group","Sentence","charlie beats heidi with ease inside",-0.0645490635000791,144,177
+"sentence_group","Sentence","boy beats heidi with ease",-0.0629643053218768,145,176
+"sentence_group","Sentence","sophia beats heidi with difficulty in playground",-0.0628155871149443,146,175
+"sentence_group","Sentence","charlie beats heidi with ease",-0.0627024204914648,147,174
+"sentence_group","Sentence","heidi beats sophia with difficulty in bedroom",-0.0626169795621725,148,173
+"sentence_group","Sentence","heidi loses to boy in street",-0.0607830889683573,149,172
+"sentence_group","Sentence","boy beats heidi with ease inside",-0.0602378056481464,150,171
+"sentence_group","Sentence","heidi beats sophia with difficulty",-0.0592190081232456,151,170
+"sentence_group","Sentence","heidi beats sophia with difficulty inside",-0.0556598729344315,152,169
+"sentence_group","Sentence","sophia beats charlie with difficulty in street",-0.0524310534173161,153,168
+"sentence_group","Sentence","heidi loses to charlie in street",-0.050345805478201,154,167
+"sentence_group","Sentence","sophia beats boy with difficulty in street",-0.0497452963386262,155,166
+"sentence_group","Sentence","boy beats heidi with ease in bedroom",-0.0479813957200503,156,165
+"sentence_group","Sentence","charlie beats heidi",-0.0418792064687983,157,164
+"sentence_group","Sentence","charlie beats heidi with ease in bedroom",-0.0405492931077734,158,163
+"sentence_group","Sentence","boy beats heidi with ease in street",-0.0394832031151189,159,162
+"sentence_group","Sentence","boy beats heidi in shower",-0.0376616310727085,160,161
+"sentence_group","Sentence","boy beats sophia in bathroom",-0.0361452909148805,161,160
+"sentence_group","Sentence","charlie beats heidi in bathroom",-0.0355338911020937,162,159
+"sentence_group","Sentence","boy beats heidi in bathroom",-0.0354255327845096,163,158
+"sentence_group","Sentence","charlie beats heidi in shower",-0.0347384746034749,164,157
+"sentence_group","Sentence","charlie beats heidi with ease in street",-0.0342742097993654,165,156
+"sentence_group","Sentence","charlie beats sophia in shower",-0.0331612242263666,166,155
+"sentence_group","Sentence","charlie beats sophia in bathroom",-0.0323555223814259,167,154
+"sentence_group","Sentence","boy beats sophia in shower",-0.0323396444081176,168,153
+"sentence_group","Sentence","boy beats heidi",-0.0320119668288855,169,152
+"sentence_group","Sentence","sophia beats charlie with difficulty outside",-0.0273430205284692,170,151
+"sentence_group","Sentence","sophia beats boy with difficulty outside",-0.0183617758817167,171,150
+"sentence_group","Sentence","charlie beats sophia with ease outside",-0.00748225182083019,172,149
+"sentence_group","Sentence","sophia beats heidi with difficulty in street",-0.00628881571987383,173,148
+"sentence_group","Sentence","boy beats sophia with ease outside",-0.00240526825500601,174,147
+"sentence_group","Sentence","sophia beats heidi with difficulty outside",0.000805538044688658,175,146
+"sentence_group","Sentence","sophia beats heidi with difficulty",0.014072698913717,176,145
+"sentence_group","Sentence","boy beats sophia in street",0.0257569341788748,177,144
+"sentence_group","Sentence","sophia loses to charlie in street",0.0308797603183946,178,143
+"sentence_group","Sentence","sophia loses to boy in street",0.0320800619063308,179,142
+"sentence_group","Sentence","boy beats sophia outside",0.0333985476626788,180,141
+"sentence_group","Sentence","charlie beats sophia in street",0.0374084097579617,181,140
+"sentence_group","Sentence","charlie beats sophia outside",0.0396335178313395,182,139
+"sentence_group","Sentence","heidi loses to sophia in shower",0.0561480416402862,183,138
+"sentence_group","Sentence","sophia loses to boy outside",0.0568059603718942,184,137
+"sentence_group","Sentence","heidi loses to sophia in bathroom",0.0628540756122143,185,136
+"sentence_group","Sentence","sophia beats heidi in bathroom",0.0684334737967299,186,135
+"sentence_group","Sentence","sophia loses to charlie outside",0.0695959250148471,187,134
+"sentence_group","Sentence","boy beats heidi in street",0.0700941771206076,188,133
+"sentence_group","Sentence","heidi beats boy inside",0.0709278075149202,189,132
+"sentence_group","Sentence","sophia beats heidi in shower",0.0751404798330447,190,131
+"sentence_group","Sentence","charlie beats heidi in street",0.0763500233094388,191,130
+"sentence_group","Sentence","charlie beats sophia with ease in playground",0.0783809209839216,192,129
+"sentence_group","Sentence","heidi beats charlie inside",0.0785948610712661,193,128
+"sentence_group","Sentence","boy beats sophia with ease in playground",0.0792519489442561,194,127
+"sentence_group","Sentence","heidi loses to charlie inside",0.084498894620332,195,126
+"sentence_group","Sentence","sophia beats heidi with ease in shower",0.0883868109711961,196,125
+"sentence_group","Sentence","sophia beats heidi with ease in bathroom",0.0939856645774763,197,124
+"sentence_group","Sentence","boy beats sophia in playground",0.100946558797381,198,123
+"sentence_group","Sentence","heidi beats sophia with ease in street",0.10902554772241,199,122
+"sentence_group","Sentence","sophia beats heidi with ease inside",0.110778916050116,200,121
+"sentence_group","Sentence","boy beats heidi inside",0.113350969050507,201,120
+"sentence_group","Sentence","heidi beats boy with ease in bathroom",0.114118253112909,202,119
+"sentence_group","Sentence","heidi beats boy with ease in shower",0.115379856578334,203,118
+"sentence_group","Sentence","charlie beats heidi inside",0.116055652258427,204,117
+"sentence_group","Sentence","heidi beats boy in bathroom",0.118785434541614,205,116
+"sentence_group","Sentence","heidi beats charlie in bathroom",0.120851100132796,206,115
+"sentence_group","Sentence","charlie beats sophia in playground",0.123212997092273,207,114
+"sentence_group","Sentence","heidi beats boy with ease inside",0.12499912630762,208,113
+"sentence_group","Sentence","heidi beats charlie with ease in bathroom",0.12526356621302,209,112
+"sentence_group","Sentence","sophia loses to boy in playground",0.125277824223254,210,111
+"sentence_group","Sentence","heidi loses to boy outside",0.125445634070165,211,110
+"sentence_group","Sentence","heidi beats charlie with ease inside",0.125852764576928,212,109
+"sentence_group","Sentence","heidi beats charlie with ease in shower",0.12668288478324,213,108
+"sentence_group","Sentence","heidi beats boy in shower",0.127387377972754,214,107
+"sentence_group","Sentence","heidi beats charlie in shower",0.129069112507441,215,106
+"sentence_group","Sentence","heidi loses to boy inside",0.130790972077252,216,105
+"sentence_group","Sentence","charlie beats heidi outside",0.133202838156723,217,104
+"sentence_group","Sentence","sophia loses to charlie in playground",0.133750295739057,218,103
+"sentence_group","Sentence","charlie beats heidi in bedroom",0.137455924452301,219,102
+"sentence_group","Sentence","boy beats heidi outside",0.139008380506136,220,101
+"sentence_group","Sentence","boy beats heidi in bedroom",0.139174805065933,221,100
+"sentence_group","Sentence","boy beats sophia inside",0.14880423486212,222,99
+"sentence_group","Sentence","heidi loses to charlie in bedroom",0.149100582777753,223,98
+"sentence_group","Sentence","sophia beats heidi with ease in bedroom",0.153725920783442,224,97
+"sentence_group","Sentence","charlie loses to heidi in shower",0.15405760099088,225,96
+"sentence_group","Sentence","charlie beats sophia inside",0.156852737896958,226,95
+"sentence_group","Sentence","charlie loses to heidi inside",0.156924630763224,227,94
+"sentence_group","Sentence","charlie loses to heidi in bathroom",0.158013047545847,228,93
+"sentence_group","Sentence","boy beats sophia in bedroom",0.159177453163527,229,92
+"sentence_group","Sentence","charlie beats sophia with ease",0.160094478912141,230,91
+"sentence_group","Sentence","boy loses to heidi in shower",0.162922801657756,231,90
+"sentence_group","Sentence","heidi loses to charlie outside",0.164412758696376,232,89
+"sentence_group","Sentence","charlie beats heidi in playground",0.166491351150007,233,88
+"sentence_group","Sentence","boy loses to heidi in bathroom",0.167492927389455,234,87
+"sentence_group","Sentence","boy beats heidi in playground",0.171472416836365,235,86
+"sentence_group","Sentence","charlie beats sophia in bedroom",0.172714185283103,236,85
+"sentence_group","Sentence","boy beats sophia with ease",0.183467490493362,237,84
+"sentence_group","Sentence","sophia loses to charlie",0.186127123187585,238,83
+"sentence_group","Sentence","charlie beats sophia with ease inside",0.186294805083052,239,82
+"sentence_group","Sentence","heidi loses to boy in bedroom",0.190590282235114,240,81
+"sentence_group","Sentence","boy beats sophia",0.190597334577846,241,80
+"sentence_group","Sentence","boy beats sophia with ease inside",0.192925045793837,242,79
+"sentence_group","Sentence","boy loses to heidi inside",0.192995934428126,243,78
+"sentence_group","Sentence","charlie beats sophia",0.199031719149083,244,77
+"sentence_group","Sentence","charlie beats sophia with ease in bedroom",0.201957155636399,245,76
+"sentence_group","Sentence","boy beats sophia with ease in bedroom",0.202232786655954,246,75
+"sentence_group","Sentence","sophia loses to boy inside",0.202344689258442,247,74
+"sentence_group","Sentence","heidi beats charlie in bedroom",0.211349309805943,248,73
+"sentence_group","Sentence","heidi beats boy in bedroom",0.216219799101579,249,72
+"sentence_group","Sentence","heidi loses to charlie in playground",0.223383380210366,250,71
+"sentence_group","Sentence","heidi loses to boy in playground",0.223698281767696,251,70
+"sentence_group","Sentence","sophia loses to charlie inside",0.233092838607854,252,69
+"sentence_group","Sentence","sophia beats heidi with ease in playground",0.239799854081713,253,68
+"sentence_group","Sentence","heidi beats charlie with ease",0.249719550292,254,67
+"sentence_group","Sentence","heidi beats sophia in street",0.249765244083878,255,66
+"sentence_group","Sentence","sophia loses to heidi outside",0.253905967491018,256,65
+"sentence_group","Sentence","heidi beats boy with ease",0.254084555359269,257,64
+"sentence_group","Sentence","sophia loses to boy in bedroom",0.259593287467912,258,63
+"sentence_group","Sentence","sophia beats boy",0.261357618965038,259,62
+"sentence_group","Sentence","sophia loses to heidi",0.261705387905941,260,61
+"sentence_group","Sentence","charlie loses to heidi in bedroom",0.262392401880874,261,60
+"sentence_group","Sentence","sophia loses to heidi in playground",0.26853729402076,262,59
+"sentence_group","Sentence","heidi beats charlie with ease in bedroom",0.268672730516943,263,58
+"sentence_group","Sentence","sophia beats heidi inside",0.271977366055426,264,57
+"sentence_group","Sentence","heidi beats boy with ease in bedroom",0.275179990327202,265,56
+"sentence_group","Sentence","sophia loses to charlie in bedroom",0.280261354492095,266,55
+"sentence_group","Sentence","sophia loses to boy",0.286213816695432,267,54
+"sentence_group","Sentence","boy loses to heidi in bedroom",0.286464769570516,268,53
+"sentence_group","Sentence","sophia loses to heidi in street",0.288317071436894,269,52
+"sentence_group","Sentence","sophia beats heidi with ease",0.288399000868502,270,51
+"sentence_group","Sentence","heidi beats sophia outside",0.288779928568582,271,50
+"sentence_group","Sentence","heidi loses to sophia in bedroom",0.291643595745612,272,49
+"sentence_group","Sentence","heidi beats sophia with ease inside",0.296617210513553,273,48
+"sentence_group","Sentence","sophia loses to heidi in shower",0.298255099715367,274,47
+"sentence_group","Sentence","sophia loses to heidi in bathroom",0.298765580913446,275,46
+"sentence_group","Sentence","heidi loses to sophia inside",0.299389451915908,276,45
+"sentence_group","Sentence","heidi beats sophia with ease in bathroom",0.300178362186379,277,44
+"sentence_group","Sentence","heidi beats sophia with ease in shower",0.300509752843066,278,43
+"sentence_group","Sentence","boy loses to sophia outside",0.306858887422823,279,42
+"sentence_group","Sentence","sophia beats heidi in bedroom",0.308745205589286,280,41
+"sentence_group","Sentence","heidi beats boy",0.309071688356454,281,40
+"sentence_group","Sentence","sophia beats charlie",0.309909850768793,282,39
+"sentence_group","Sentence","heidi beats sophia with ease in bedroom",0.310615986788581,283,38
+"sentence_group","Sentence","heidi beats sophia in playground",0.311858092698177,284,37
+"sentence_group","Sentence","heidi beats sophia inside",0.3137478424957,285,36
+"sentence_group","Sentence","heidi beats charlie",0.31475002731438,286,35
+"sentence_group","Sentence","heidi beats sophia with ease in playground",0.315980987339204,287,34
+"sentence_group","Sentence","heidi loses to sophia in playground",0.316557054744901,288,33
+"sentence_group","Sentence","heidi beats sophia",0.317843619526126,289,32
+"sentence_group","Sentence","sophia loses to heidi inside",0.318571219351134,290,31
+"sentence_group","Sentence","heidi beats sophia in bedroom",0.322524502853943,291,30
+"sentence_group","Sentence","sophia beats heidi in playground",0.322812362148143,292,29
+"sentence_group","Sentence","sophia beats heidi with ease outside",0.323618986978201,293,28
+"sentence_group","Sentence","heidi loses to sophia",0.332513171664894,294,27
+"sentence_group","Sentence","heidi beats sophia with ease outside",0.333570017511868,295,26
+"sentence_group","Sentence","sophia beats heidi with ease in street",0.333769920999969,296,25
+"sentence_group","Sentence","heidi beats sophia with ease",0.338447853526901,297,24
+"sentence_group","Sentence","sophia loses to heidi in bedroom",0.339474037588066,298,23
+"sentence_group","Sentence","heidi loses to sophia outside",0.34172811792937,299,22
+"sentence_group","Sentence","sophia beats heidi",0.346131722177625,300,21
+"sentence_group","Sentence","sophia beats heidi outside",0.349131365885657,301,20
+"sentence_group","Sentence","heidi loses to sophia in street",0.352026598336217,302,19
+"sentence_group","Sentence","charlie loses to sophia outside",0.352671643248468,303,18
+"sentence_group","Sentence","sophia beats boy in street",0.353041604986375,304,17
+"sentence_group","Sentence","sophia beats heidi in street",0.35328861168795,305,16
+"sentence_group","Sentence","charlie loses to heidi",0.35944056667286,306,15
+"sentence_group","Sentence","boy loses to sophia in street",0.359478851139133,307,14
+"sentence_group","Sentence","sophia beats charlie in street",0.362623911368162,308,13
+"sentence_group","Sentence","sophia beats boy outside",0.373432381798069,309,12
+"sentence_group","Sentence","sophia beats charlie with ease in street",0.376417651050508,310,11
+"sentence_group","Sentence","sophia beats boy with ease in street",0.379039678308703,311,10
+"sentence_group","Sentence","heidi beats sophia in shower",0.384147554915017,312,9
+"sentence_group","Sentence","heidi beats sophia in bathroom",0.385459526095162,313,8
+"sentence_group","Sentence","sophia beats charlie outside",0.386072766420329,314,7
+"sentence_group","Sentence","charlie loses to sophia in street",0.389997974863234,315,6
+"sentence_group","Sentence","boy loses to heidi",0.399033744172711,316,5
+"sentence_group","Sentence","sophia beats boy with ease outside",0.403438682836858,317,4
+"sentence_group","Sentence","sophia beats charlie with ease outside",0.408011784268335,318,3
+"sentence_group","Sentence","sophia beats charlie with ease",0.480717455373436,319,2
+"sentence_group","Sentence","sophia beats boy with ease",0.482399346981085,320,1
+"complex_event","Complex Event","charlie plays chess badly in playground",-0.655456676107508,1,240
+"complex_event","Complex Event","chess is played badly by boy in playground",-0.647020760099115,2,239
+"complex_event","Complex Event","boy plays chess badly in playground",-0.646705277925819,3,238
+"complex_event","Complex Event","chess is played badly by charlie in playground",-0.643063990651166,4,237
+"complex_event","Complex Event","charlie plays chess badly outside",-0.640851273270441,5,236
+"complex_event","Complex Event","chess is played badly by charlie outside",-0.638522806460211,6,235
+"complex_event","Complex Event","boy plays chess badly outside",-0.635181124346269,7,234
+"complex_event","Complex Event","chess is played badly by boy outside",-0.633703760246301,8,233
+"complex_event","Complex Event","hide-and-seek is played well by boy in playground",-0.565649319072268,9,232
+"complex_event","Complex Event","hide-and-seek is played well by charlie in playground",-0.560222868036919,10,231
+"complex_event","Complex Event","charlie plays hide-and-seek well in playground",-0.557407950740394,11,230
+"complex_event","Complex Event","boy plays hide-and-seek well in playground",-0.557361040680066,12,229
+"complex_event","Complex Event","charlie plays chess inside",-0.438266066654728,13,228
+"complex_event","Complex Event","boy plays hide-and-seek well outside",-0.426611197045998,14,227
+"complex_event","Complex Event","charlie plays hide-and-seek well outside",-0.423643290126674,15,226
+"complex_event","Complex Event","hide-and-seek is played well by boy outside",-0.423376290758842,16,225
+"complex_event","Complex Event","hide-and-seek is played well by charlie outside",-0.420417059144012,17,224
+"complex_event","Complex Event","chess is played badly by boy inside",-0.400208297788159,18,223
+"complex_event","Complex Event","chess is played badly by charlie inside",-0.398062108619775,19,222
+"complex_event","Complex Event","boy plays chess inside",-0.376514215916456,20,221
+"complex_event","Complex Event","hide-and-seek is played badly by heidi in bedroom",-0.371817438899205,21,220
+"complex_event","Complex Event","heidi plays hide-and-seek badly in bedroom",-0.3609474937845,22,219
+"complex_event","Complex Event","charlie plays chess badly inside",-0.355745908136105,23,218
+"complex_event","Complex Event","boy plays chess badly inside",-0.350264550697679,24,217
+"complex_event","Complex Event","heidi plays hide-and-seek badly in bathroom",-0.335819720670914,25,216
+"complex_event","Complex Event","heidi plays hide-and-seek badly in shower",-0.331596222302915,26,215
+"complex_event","Complex Event","chess is played badly by charlie in bedroom",-0.328402740479781,27,214
+"complex_event","Complex Event","chess is played badly by boy in bedroom",-0.319506841667201,28,213
+"complex_event","Complex Event","hide-and-seek is played badly by heidi in shower",-0.311601309525878,29,212
+"complex_event","Complex Event","heidi plays hide-and-seek badly outside",-0.309180434257983,30,211
+"complex_event","Complex Event","hide-and-seek is played badly by heidi in bathroom",-0.306650984576308,31,210
+"complex_event","Complex Event","chess is played by charlie inside",-0.295991137841867,32,209
+"complex_event","Complex Event","chess is played by boy inside",-0.294574036582725,33,208
+"complex_event","Complex Event","hide-and-seek is played badly by heidi inside",-0.290858032314036,34,207
+"complex_event","Complex Event","hide-and-seek is played badly by heidi outside",-0.283507882306488,35,206
+"complex_event","Complex Event","hide-and-seek is played well by sophia outside",-0.270471585929024,36,205
+"complex_event","Complex Event","charlie plays chess badly in bedroom",-0.252427893979638,37,204
+"complex_event","Complex Event","boy plays chess badly in bedroom",-0.24753250008405,38,203
+"complex_event","Complex Event","heidi plays chess inside",-0.243481137628429,39,202
+"complex_event","Complex Event","sophia plays hide-and-seek well outside",-0.233776880450935,40,201
+"complex_event","Complex Event","chess is played by boy outside",-0.228568014192881,41,200
+"complex_event","Complex Event","chess is played by charlie outside",-0.226334756089477,42,199
+"complex_event","Complex Event","sophia plays hide-and-seek well in shower",-0.205320116451937,43,198
+"complex_event","Complex Event","boy plays chess outside",-0.201473383327879,44,197
+"complex_event","Complex Event","heidi plays hide-and-seek badly inside",-0.196360343434604,45,196
+"complex_event","Complex Event","charlie plays chess outside",-0.193502360109026,46,195
+"complex_event","Complex Event","heidi plays hide-and-seek badly in playground",-0.191562642389599,47,194
+"complex_event","Complex Event","sophia plays hide-and-seek well in bathroom",-0.191349772772014,48,193
+"complex_event","Complex Event","charlie plays chess in bedroom",-0.185554113007311,49,192
+"complex_event","Complex Event","boy plays chess in bedroom",-0.177955820042451,50,191
+"complex_event","Complex Event","chess is played well by heidi inside",-0.163530571287451,51,190
+"complex_event","Complex Event","charlie plays chess in playground",-0.161303639590814,52,189
+"complex_event","Complex Event","boy plays chess in playground",-0.156220323441274,53,188
+"complex_event","Complex Event","chess is played well by heidi in playground",-0.15293570713185,54,187
+"complex_event","Complex Event","hide-and-seek is played badly by heidi in playground",-0.151625145668074,55,186
+"complex_event","Complex Event","hide-and-seek is played well by sophia in bedroom",-0.148320138127242,56,185
+"complex_event","Complex Event","hide-and-seek is played well by sophia in shower",-0.145591732027694,57,184
+"complex_event","Complex Event","hide-and-seek is played well by sophia in bathroom",-0.141870710207262,58,183
+"complex_event","Complex Event","chess is played by boy in playground",-0.140154671055554,59,182
+"complex_event","Complex Event","hide-and-seek is played well by sophia inside",-0.136649375780907,60,181
+"complex_event","Complex Event","heidi plays hide-and-seek in bathroom",-0.136460124847778,61,180
+"complex_event","Complex Event","chess is played by charlie in playground",-0.136386030770463,62,179
+"complex_event","Complex Event","heidi plays hide-and-seek in shower",-0.131300884327034,63,178
+"complex_event","Complex Event","heidi plays chess well in playground",-0.121517412077867,64,177
+"complex_event","Complex Event","heidi plays chess badly outside",-0.116113848367142,65,176
+"complex_event","Complex Event","boy plays hide-and-seek well in shower",-0.111493087696124,66,175
+"complex_event","Complex Event","charlie plays hide-and-seek well in shower",-0.111051932164204,67,174
+"complex_event","Complex Event","heidi plays chess well inside",-0.102737133579738,68,173
+"complex_event","Complex Event","chess is played by charlie in bedroom",-0.0909946576560969,69,172
+"complex_event","Complex Event","chess is played badly by heidi outside",-0.0833055653010365,70,171
+"complex_event","Complex Event","chess is played by heidi in playground",-0.074829042764973,71,170
+"complex_event","Complex Event","chess is played by boy in bedroom",-0.0740978811932782,72,169
+"complex_event","Complex Event","hide-and-seek is played well by charlie in shower",-0.0733467276582384,73,168
+"complex_event","Complex Event","hide-and-seek is played well by charlie in bathroom",-0.0649040194180305,74,167
+"complex_event","Complex Event","hide-and-seek is played well by boy in shower",-0.0642753575835927,75,166
+"complex_event","Complex Event","charlie plays hide-and-seek well in bathroom",-0.0637370435235655,76,165
+"complex_event","Complex Event","sophia plays hide-and-seek well inside",-0.0627129231338735,77,164
+"complex_event","Complex Event","hide-and-seek is played well by charlie in bedroom",-0.0618272965465618,78,163
+"complex_event","Complex Event","hide-and-seek is played well by boy in bedroom",-0.0615516205031094,79,162
+"complex_event","Complex Event","chess is played by heidi outside",-0.0589512134899844,80,161
+"complex_event","Complex Event","boy plays hide-and-seek well in bathroom",-0.0589510726538394,81,160
+"complex_event","Complex Event","sophia plays hide-and-seek well in bedroom",-0.0561800457493116,82,159
+"complex_event","Complex Event","sophia plays hide-and-seek well in playground",-0.0518951684344098,83,158
+"complex_event","Complex Event","hide-and-seek is played well by boy in bathroom",-0.0509528903988413,84,157
+"complex_event","Complex Event","chess is played badly by sophia inside",-0.048216988328376,85,156
+"complex_event","Complex Event","sophia plays chess inside",-0.0451873453729354,86,155
+"complex_event","Complex Event","chess is played badly by sophia in playground",-0.0378729536102161,87,154
+"complex_event","Complex Event","charlie plays hide-and-seek well in bedroom",-0.0362327272609281,88,153
+"complex_event","Complex Event","boy plays hide-and-seek well in bedroom",-0.035669660451429,89,152
+"complex_event","Complex Event","hide-and-seek is played by charlie outside",-0.0341740490863525,90,151
+"complex_event","Complex Event","hide-and-seek is played well by sophia in playground",-0.02306230891269,91,150
+"complex_event","Complex Event","chess is played well by heidi outside",-0.0213390296476494,92,149
+"complex_event","Complex Event","chess is played by sophia outside",-0.0207739435225437,93,148
+"complex_event","Complex Event","hide-and-seek is played by heidi in bathroom",-0.0206943770088253,94,147
+"complex_event","Complex Event","hide-and-seek is played by heidi in shower",-0.0166377602978114,95,146
+"complex_event","Complex Event","chess is played badly by sophia outside",-0.0126177010915054,96,145
+"complex_event","Complex Event","hide-and-seek is played by sophia in bedroom",-0.00979908832819722,97,144
+"complex_event","Complex Event","heidi plays chess outside",-0.00581066494947792,98,143
+"complex_event","Complex Event","sophia plays chess badly outside",-0.00460399293520005,99,142
+"complex_event","Complex Event","chess is played well by sophia outside",0.00366207095805388,100,141
+"complex_event","Complex Event","heidi plays chess well outside",0.0138602953240917,101,140
+"complex_event","Complex Event","hide-and-seek is played by boy outside",0.0223711925723344,102,139
+"complex_event","Complex Event","boy plays chess well outside",0.0234522275899353,103,138
+"complex_event","Complex Event","hide-and-seek is played by heidi in bedroom",0.0234699314625162,104,137
+"complex_event","Complex Event","chess is played by heidi inside",0.0254425713615942,105,136
+"complex_event","Complex Event","sophia plays chess badly in playground",0.027795435680303,106,135
+"complex_event","Complex Event","charlie plays chess well outside",0.0284256293225946,107,134
+"complex_event","Complex Event","sophia plays chess well outside",0.0376700170653003,108,133
+"complex_event","Complex Event","hide-and-seek is played by sophia inside",0.0404302511675077,109,132
+"complex_event","Complex Event","hide-and-seek is played by charlie in bedroom",0.0434250370070256,110,131
+"complex_event","Complex Event","charlie plays chess well inside",0.046175001003284,111,130
+"complex_event","Complex Event","hide-and-seek is played by sophia outside",0.0475309861957869,112,129
+"complex_event","Complex Event","boy plays chess well inside",0.0475866795136196,113,128
+"complex_event","Complex Event","charlie plays hide-and-seek in shower",0.0484665062363662,114,127
+"complex_event","Complex Event","hide-and-seek is played by boy in bedroom",0.0498405257072771,115,126
+"complex_event","Complex Event","chess is played well by heidi in bedroom",0.0499345457457694,116,125
+"complex_event","Complex Event","sophia plays hide-and-seek in shower",0.0499796639249782,117,124
+"complex_event","Complex Event","sophia plays hide-and-seek in bathroom",0.0511866018479042,118,123
+"complex_event","Complex Event","chess is played well by charlie outside",0.0520304709616476,119,122
+"complex_event","Complex Event","chess is played well by boy outside",0.0552301039965958,120,121
+"complex_event","Complex Event","charlie plays hide-and-seek badly in shower",0.0554008234134099,121,120
+"complex_event","Complex Event","charlie plays chess well in playground",0.0572957224354736,122,119
+"complex_event","Complex Event","boy plays chess well in playground",0.058499635615167,123,118
+"complex_event","Complex Event","boy plays hide-and-seek badly in shower",0.0597566075186114,124,117
+"complex_event","Complex Event","boy plays chess well in bedroom",0.0598092852411354,125,116
+"complex_event","Complex Event","charlie plays hide-and-seek badly in bathroom",0.060283347175431,126,115
+"complex_event","Complex Event","hide-and-seek is played by heidi inside",0.0621878402585079,127,114
+"complex_event","Complex Event","boy plays hide-and-seek in shower",0.0631828850275774,128,113
+"complex_event","Complex Event","charlie plays chess well in bedroom",0.0635928884917764,129,112
+"complex_event","Complex Event","hide-and-seek is played by charlie in playground",0.0636670969561839,130,111
+"complex_event","Complex Event","boy plays hide-and-seek badly in bathroom",0.0645454609466602,131,110
+"complex_event","Complex Event","charlie plays hide-and-seek in bathroom",0.0649404470823263,132,109
+"complex_event","Complex Event","sophia plays chess badly inside",0.065406285152359,133,108
+"complex_event","Complex Event","heidi plays chess in bedroom",0.0656381666473169,134,107
+"complex_event","Complex Event","hide-and-seek is played by boy in playground",0.0658421254131623,135,106
+"complex_event","Complex Event","sophia plays chess in playground",0.0692775973661876,136,105
+"complex_event","Complex Event","hide-and-seek is played well by boy inside",0.0699517417993971,137,104
+"complex_event","Complex Event","hide-and-seek is played well by charlie inside",0.071272250208775,138,103
+"complex_event","Complex Event","boy plays hide-and-seek in bathroom",0.0728396922352871,139,102
+"complex_event","Complex Event","chess is played well by charlie in playground",0.0740442959386291,140,101
+"complex_event","Complex Event","chess is played well by boy in playground",0.0753754149179591,141,100
+"complex_event","Complex Event","heidi plays chess well in bedroom",0.0763968638058883,142,99
+"complex_event","Complex Event","sophia plays chess outside",0.0808096190542414,143,98
+"complex_event","Complex Event","sophia plays hide-and-seek in bedroom",0.0825175476605879,144,97
+"complex_event","Complex Event","chess is played by sophia inside",0.0883779197845218,145,96
+"complex_event","Complex Event","heidi plays chess in playground",0.0953785103826536,146,95
+"complex_event","Complex Event","heidi plays hide-and-seek in bedroom",0.0958246653807249,147,94
+"complex_event","Complex Event","chess is played by sophia in playground",0.097933234289652,148,93
+"complex_event","Complex Event","boy plays hide-and-seek in playground",0.0986618819805734,149,92
+"complex_event","Complex Event","sophia plays hide-and-seek inside",0.106124623085704,150,91
+"complex_event","Complex Event","boy plays hide-and-seek outside",0.107333583987535,151,90
+"complex_event","Complex Event","charlie plays hide-and-seek in playground",0.107906568061828,152,89
+"complex_event","Complex Event","hide-and-seek is played badly by charlie in shower",0.107938045902366,153,88
+"complex_event","Complex Event","sophia plays chess well inside",0.108081756951886,154,87
+"complex_event","Complex Event","heidi plays hide-and-seek outside",0.108319763056418,155,86
+"complex_event","Complex Event","hide-and-seek is played by heidi outside",0.109486965900754,156,85
+"complex_event","Complex Event","hide-and-seek is played badly by charlie in bathroom",0.109723393812976,157,84
+"complex_event","Complex Event","hide-and-seek is played badly by boy in shower",0.110552675084683,158,83
+"complex_event","Complex Event","charlie plays hide-and-seek outside",0.112221090405015,159,82
+"complex_event","Complex Event","sophia plays hide-and-seek outside",0.11494473277082,160,81
+"complex_event","Complex Event","hide-and-seek is played badly by boy in bathroom",0.116171746532311,161,80
+"complex_event","Complex Event","charlie plays hide-and-seek well inside",0.117251821664233,162,79
+"complex_event","Complex Event","boy plays hide-and-seek well inside",0.118322330044806,163,78
+"complex_event","Complex Event","hide-and-seek is played badly by charlie outside",0.121226981639407,164,77
+"complex_event","Complex Event","sophia plays chess well in bedroom",0.122817557380789,165,76
+"complex_event","Complex Event","hide-and-seek is played by sophia in shower",0.124197318947408,166,75
+"complex_event","Complex Event","chess is played well by charlie inside",0.127536394756185,167,74
+"complex_event","Complex Event","chess is played badly by sophia in bedroom",0.129152559430955,168,73
+"complex_event","Complex Event","sophia plays chess in bedroom",0.130375039360546,169,72
+"complex_event","Complex Event","hide-and-seek is played badly by boy outside",0.131371832153194,170,71
+"complex_event","Complex Event","chess is played well by boy inside",0.133257403441244,171,70
+"complex_event","Complex Event","hide-and-seek is played by sophia in bathroom",0.139262694291369,172,69
+"complex_event","Complex Event","hide-and-seek is played by boy in shower",0.142831546769712,173,68
+"complex_event","Complex Event","chess is played well by sophia inside",0.146586190194251,174,67
+"complex_event","Complex Event","hide-and-seek is played by charlie in shower",0.147373403340485,175,66
+"complex_event","Complex Event","chess is played well by boy in bedroom",0.147419649243987,176,65
+"complex_event","Complex Event","chess is played well by charlie in bedroom",0.150644658917255,177,64
+"complex_event","Complex Event","hide-and-seek is played by charlie in bathroom",0.169780168464177,178,63
+"complex_event","Complex Event","heidi plays chess badly in playground",0.170025805505669,179,62
+"complex_event","Complex Event","charlie plays hide-and-seek badly outside",0.177442934848892,180,61
+"complex_event","Complex Event","hide-and-seek is played by boy in bathroom",0.180234889620856,181,60
+"complex_event","Complex Event","chess is played by heidi in bedroom",0.180370440845191,182,59
+"complex_event","Complex Event","boy plays hide-and-seek badly outside",0.18102092827531,183,58
+"complex_event","Complex Event","chess is played by sophia in bedroom",0.186784628518569,184,57
+"complex_event","Complex Event","charlie plays hide-and-seek badly in playground",0.188942000759505,185,56
+"complex_event","Complex Event","boy plays hide-and-seek in bedroom",0.189887992993268,186,55
+"complex_event","Complex Event","sophia plays hide-and-seek badly in bathroom",0.190212459694129,187,54
+"complex_event","Complex Event","hide-and-seek is played badly by charlie in playground",0.190244302658015,188,53
+"complex_event","Complex Event","heidi plays hide-and-seek well in shower",0.190369770510258,189,52
+"complex_event","Complex Event","boy plays hide-and-seek badly in playground",0.191191652276249,190,51
+"complex_event","Complex Event","heidi plays chess badly inside",0.193698030448789,191,50
+"complex_event","Complex Event","charlie plays hide-and-seek in bedroom",0.193999620798068,192,49
+"complex_event","Complex Event","hide-and-seek is played badly by boy in playground",0.194481210535912,193,48
+"complex_event","Complex Event","heidi plays hide-and-seek inside",0.194860823968789,194,47
+"complex_event","Complex Event","sophia plays hide-and-seek badly in shower",0.195788970571793,195,46
+"complex_event","Complex Event","chess is played badly by heidi in bedroom",0.199951376416289,196,45
+"complex_event","Complex Event","chess is played well by sophia in bedroom",0.201132166910745,197,44
+"complex_event","Complex Event","hide-and-seek is played badly by sophia in bathroom",0.201661483539413,198,43
+"complex_event","Complex Event","hide-and-seek is played by charlie inside",0.203699292269725,199,42
+"complex_event","Complex Event","hide-and-seek is played well by heidi in shower",0.205392476552353,200,41
+"complex_event","Complex Event","hide-and-seek is played by boy inside",0.206057768965884,201,40
+"complex_event","Complex Event","heidi plays chess badly in bedroom",0.207404784803709,202,39
+"complex_event","Complex Event","sophia plays chess badly in bedroom",0.20916220951511,203,38
+"complex_event","Complex Event","hide-and-seek is played badly by sophia in shower",0.209427960434636,204,37
+"complex_event","Complex Event","hide-and-seek is played badly by sophia in bedroom",0.212210729268237,205,36
+"complex_event","Complex Event","chess is played badly by heidi in playground",0.21433765940731,206,35
+"complex_event","Complex Event","hide-and-seek is played well by heidi in bedroom",0.220680420072417,207,34
+"complex_event","Complex Event","sophia plays chess well in playground",0.224758786497561,208,33
+"complex_event","Complex Event","hide-and-seek is played well by heidi in bathroom",0.227681332973604,209,32
+"complex_event","Complex Event","heidi plays hide-and-seek well in bathroom",0.229777581157247,210,31
+"complex_event","Complex Event","hide-and-seek is played badly by sophia inside",0.234003045494773,211,30
+"complex_event","Complex Event","hide-and-seek is played badly by boy in bedroom",0.239254348198095,212,29
+"complex_event","Complex Event","hide-and-seek is played badly by charlie in bedroom",0.246311128145884,213,28
+"complex_event","Complex Event","chess is played badly by heidi inside",0.250435429742349,214,27
+"complex_event","Complex Event","chess is played well by sophia in playground",0.250723882366518,215,26
+"complex_event","Complex Event","boy plays hide-and-seek badly in bedroom",0.25498388878625,216,25
+"complex_event","Complex Event","charlie plays hide-and-seek badly in bedroom",0.256710044068907,217,24
+"complex_event","Complex Event","sophia plays hide-and-seek badly in bedroom",0.267834891108004,218,23
+"complex_event","Complex Event","sophia plays hide-and-seek badly inside",0.269382298740816,219,22
+"complex_event","Complex Event","boy plays hide-and-seek badly inside",0.274702577514528,220,21
+"complex_event","Complex Event","hide-and-seek is played badly by charlie inside",0.274918275754605,221,20
+"complex_event","Complex Event","hide-and-seek is played badly by boy inside",0.275062270179255,222,19
+"complex_event","Complex Event","charlie plays hide-and-seek badly inside",0.276828793380692,223,18
+"complex_event","Complex Event","heidi plays hide-and-seek well in bedroom",0.279644394822309,224,17
+"complex_event","Complex Event","hide-and-seek is played well by heidi inside",0.304065831672301,225,16
+"complex_event","Complex Event","charlie plays hide-and-seek inside",0.307646270308611,226,15
+"complex_event","Complex Event","boy plays hide-and-seek inside",0.316409845243061,227,14
+"complex_event","Complex Event","heidi plays hide-and-seek well inside",0.31833246772421,228,13
+"complex_event","Complex Event","hide-and-seek is played badly by sophia outside",0.338926680405568,229,12
+"complex_event","Complex Event","hide-and-seek is played by heidi in playground",0.346455175907452,230,11
+"complex_event","Complex Event","hide-and-seek is played by sophia in playground",0.365262479615445,231,10
+"complex_event","Complex Event","sophia plays hide-and-seek badly outside",0.373399541698682,232,9
+"complex_event","Complex Event","heidi plays hide-and-seek in playground",0.382142140104963,233,8
+"complex_event","Complex Event","hide-and-seek is played well by heidi outside",0.402240143515567,234,7
+"complex_event","Complex Event","sophia plays hide-and-seek in playground",0.409632603525186,235,6
+"complex_event","Complex Event","heidi plays hide-and-seek well outside",0.415568675505647,236,5
+"complex_event","Complex Event","sophia plays hide-and-seek badly in playground",0.441299855388862,237,4
+"complex_event","Complex Event","hide-and-seek is played badly by sophia in playground",0.442164446883641,238,3
+"complex_event","Complex Event","heidi plays hide-and-seek well in playground",0.501382099817972,239,2
+"complex_event","Complex Event","hide-and-seek is played well by heidi in playground",0.507344903211776,240,1
+"basic_event","Basic Event","ball is played with in playground by heidi",-0.47845442392894,1,124
+"basic_event","Basic Event","heidi plays with ball in playground",-0.462466304201591,2,123
+"basic_event","Basic Event","ball is played with by heidi in playground",-0.461313054289719,3,122
+"basic_event","Basic Event","heidi plays in playground with ball",-0.461112633445133,4,121
+"basic_event","Basic Event","heidi plays in bedroom with jigsaw",-0.272242242721708,5,120
+"basic_event","Basic Event","heidi plays in bedroom with puzzle",-0.2696083426777,6,119
+"basic_event","Basic Event","heidi plays inside with puzzle",-0.267922231105756,7,118
+"basic_event","Basic Event","heidi plays inside with jigsaw",-0.246500670376181,8,117
+"basic_event","Basic Event","heidi plays with jigsaw inside",-0.240212933498957,9,116
+"basic_event","Basic Event","heidi plays with puzzle inside",-0.239516889957881,10,115
+"basic_event","Basic Event","heidi plays with jigsaw in bedroom",-0.216649324146995,11,114
+"basic_event","Basic Event","heidi plays with puzzle in bedroom",-0.216315938089134,12,113
+"basic_event","Basic Event","ball is played with in playground by boy",-0.21349881322889,13,112
+"basic_event","Basic Event","ball is played with in playground by charlie",-0.210635173120218,14,111
+"basic_event","Basic Event","ball is played with by charlie in playground",-0.210159134960513,15,110
+"basic_event","Basic Event","ball is played with by boy in playground",-0.208494765086218,16,109
+"basic_event","Basic Event","charlie plays with ball in playground",-0.205932863649245,17,108
+"basic_event","Basic Event","jigsaw is played with by heidi inside",-0.20590351238391,18,107
+"basic_event","Basic Event","boy plays with ball in playground",-0.202362363917305,19,106
+"basic_event","Basic Event","puzzle is played with by heidi inside",-0.201623684965174,20,105
+"basic_event","Basic Event","puzzle is played with by heidi in bedroom",-0.200545512791472,21,104
+"basic_event","Basic Event","boy plays in playground with ball",-0.198526652992642,22,103
+"basic_event","Basic Event","charlie plays in playground with ball",-0.197452955715301,23,102
+"basic_event","Basic Event","jigsaw is played with by heidi in bedroom",-0.195381835040902,24,101
+"basic_event","Basic Event","jigsaw is played with in bedroom by heidi",-0.170608529090597,25,100
+"basic_event","Basic Event","puzzle is played with in bedroom by heidi",-0.164270971432901,26,99
+"basic_event","Basic Event","jigsaw is played with inside by heidi",-0.160440249538789,27,98
+"basic_event","Basic Event","puzzle is played with inside by heidi",-0.154926712275116,28,97
+"basic_event","Basic Event","sophia plays with puzzle inside",-0.149175671573107,29,96
+"basic_event","Basic Event","sophia plays with jigsaw inside",-0.148300232435712,30,95
+"basic_event","Basic Event","sophia plays inside with puzzle",-0.145994949534525,31,94
+"basic_event","Basic Event","jigsaw is played with in bedroom by sophia",-0.145720710099384,32,93
+"basic_event","Basic Event","sophia plays in bedroom with puzzle",-0.138661039440247,33,92
+"basic_event","Basic Event","heidi plays with jigsaw",-0.134266787632371,34,91
+"basic_event","Basic Event","sophia plays inside with jigsaw",-0.133790380375718,35,90
+"basic_event","Basic Event","puzzle is played with in bedroom by sophia",-0.132053865156945,36,89
+"basic_event","Basic Event","heidi plays with puzzle",-0.127061711894503,37,88
+"basic_event","Basic Event","sophia plays in bedroom with jigsaw",-0.125204747499775,38,87
+"basic_event","Basic Event","jigsaw is played with inside by sophia",-0.12475828545816,39,86
+"basic_event","Basic Event","sophia plays with puzzle in bedroom",-0.122115546132345,40,85
+"basic_event","Basic Event","charlie plays outside with doll",-0.11649041910013,41,84
+"basic_event","Basic Event","puzzle is played with inside by sophia",-0.113830554764014,42,83
+"basic_event","Basic Event","puzzle is played with by sophia in bedroom",-0.112755051241781,43,82
+"basic_event","Basic Event","puzzle is played with by sophia inside",-0.111374717359884,44,81
+"basic_event","Basic Event","boy plays outside with doll",-0.108839169059735,45,80
+"basic_event","Basic Event","jigsaw is played with by sophia inside",-0.108150193967414,46,79
+"basic_event","Basic Event","sophia plays with jigsaw in bedroom",-0.106748075808982,47,78
+"basic_event","Basic Event","jigsaw is played with by heidi",-0.100720093342952,48,77
+"basic_event","Basic Event","puzzle is played with by heidi",-0.0986267866400355,49,76
+"basic_event","Basic Event","puzzle is played with by sophia",-0.0980898482368777,50,75
+"basic_event","Basic Event","doll is played with outside by boy",-0.097790479900087,51,74
+"basic_event","Basic Event","doll is played with outside by charlie",-0.0972407488788815,52,73
+"basic_event","Basic Event","jigsaw is played with by sophia",-0.0929273208041348,53,72
+"basic_event","Basic Event","boy plays with doll outside",-0.0914742554772582,54,71
+"basic_event","Basic Event","jigsaw is played with by sophia in bedroom",-0.0902827818906263,55,70
+"basic_event","Basic Event","charlie plays with doll outside",-0.0881483448237469,56,69
+"basic_event","Basic Event","doll is played with by charlie outside",-0.0860672002837494,57,68
+"basic_event","Basic Event","boy plays in playground with doll",-0.085624094137667,58,67
+"basic_event","Basic Event","doll is played with by boy outside",-0.0822668465224298,59,66
+"basic_event","Basic Event","charlie plays in playground with doll",-0.0818102602908941,60,65
+"basic_event","Basic Event","doll is played with in playground by charlie",-0.072090144458033,61,64
+"basic_event","Basic Event","boy plays with doll in playground",-0.0677355534618371,62,63
+"basic_event","Basic Event","charlie plays with doll in playground",-0.067675765632788,63,62
+"basic_event","Basic Event","doll is played with in playground by boy",-0.0623680128910489,64,61
+"basic_event","Basic Event","doll is played with by boy in playground",-0.0608625001298477,65,60
+"basic_event","Basic Event","sophia plays with puzzle",-0.0575479771264594,66,59
+"basic_event","Basic Event","doll is played with by charlie in playground",-0.0538020576552205,67,58
+"basic_event","Basic Event","sophia plays inside with doll",-0.0483624148173329,68,57
+"basic_event","Basic Event","sophia plays in bedroom with doll",-0.0457466722078791,69,56
+"basic_event","Basic Event","doll is played with inside by sophia",-0.037275164327895,70,55
+"basic_event","Basic Event","sophia plays with doll inside",-0.0339308610158513,71,54
+"basic_event","Basic Event","sophia plays with jigsaw",-0.0299735629688839,72,53
+"basic_event","Basic Event","sophia plays with doll",-0.0223767633028742,73,52
+"basic_event","Basic Event","doll is played with in bedroom by sophia",-0.0206117710594895,74,51
+"basic_event","Basic Event","sophia plays with doll in bedroom",-0.0173788816881535,75,50
+"basic_event","Basic Event","doll is played with inside by boy",-0.017179060517741,76,49
+"basic_event","Basic Event","doll is played with by sophia in bedroom",-0.015503435651301,77,48
+"basic_event","Basic Event","doll is played with by sophia inside",-0.0129970700374749,78,47
+"basic_event","Basic Event","doll is played with inside by charlie",0.00425813656757549,79,46
+"basic_event","Basic Event","doll is played with by sophia",0.0108532520222887,80,45
+"basic_event","Basic Event","doll is played with in bedroom by boy",0.0364230049011139,81,44
+"basic_event","Basic Event","charlie plays with doll inside",0.0467825098035007,82,43
+"basic_event","Basic Event","boy plays with doll inside",0.0527840529523669,83,42
+"basic_event","Basic Event","doll is played with by boy inside",0.0627615628943644,84,41
+"basic_event","Basic Event","doll is played with in bedroom by charlie",0.0631202025225014,85,40
+"basic_event","Basic Event","doll is played with by charlie inside",0.0668082019846127,86,39
+"basic_event","Basic Event","boy plays with doll in bedroom",0.074282049617217,87,38
+"basic_event","Basic Event","charlie plays with doll in bedroom",0.0798446785919853,88,37
+"basic_event","Basic Event","charlie plays in bedroom with doll",0.0896393270823538,89,36
+"basic_event","Basic Event","doll is played with by charlie in bedroom",0.0905865303351167,90,35
+"basic_event","Basic Event","boy plays in bedroom with doll",0.0918735836714744,91,34
+"basic_event","Basic Event","charlie plays inside with doll",0.107871202231023,92,33
+"basic_event","Basic Event","boy plays inside with doll",0.110955829266583,93,32
+"basic_event","Basic Event","doll is played with by boy in bedroom",0.111153977826448,94,31
+"basic_event","Basic Event","doll is played with by boy",0.134567823095043,95,30
+"basic_event","Basic Event","sophia plays with doll outside",0.142247541718622,96,29
+"basic_event","Basic Event","doll is played with by charlie",0.145884462212827,97,28
+"basic_event","Basic Event","sophia plays outside with doll",0.145924378044595,98,27
+"basic_event","Basic Event","doll is played with by sophia outside",0.147489861185525,99,26
+"basic_event","Basic Event","doll is played with outside by sophia",0.171953209273549,100,25
+"basic_event","Basic Event","boy plays with doll",0.19357188167047,101,24
+"basic_event","Basic Event","charlie plays with doll",0.210995638100337,102,23
+"basic_event","Basic Event","sophia plays in playground with doll",0.212864435101722,103,22
+"basic_event","Basic Event","sophia plays with doll in playground",0.232022224002789,104,21
+"basic_event","Basic Event","doll is played with by sophia in playground",0.243974295622236,105,20
+"basic_event","Basic Event","doll is played with in playground by sophia",0.256036425050129,106,19
+"basic_event","Basic Event","ball is played with by boy",0.256156092785281,107,18
+"basic_event","Basic Event","ball is played with by boy outside",0.25966764382724,108,17
+"basic_event","Basic Event","ball is played with by charlie",0.260087444520702,109,16
+"basic_event","Basic Event","ball is played with by charlie outside",0.265967646035669,110,15
+"basic_event","Basic Event","ball is played with outside by boy",0.310208408462717,111,14
+"basic_event","Basic Event","charlie plays with ball outside",0.315092256463204,112,13
+"basic_event","Basic Event","boy plays with ball outside",0.322729450648063,113,12
+"basic_event","Basic Event","ball is played with outside by charlie",0.325591080341508,114,11
+"basic_event","Basic Event","charlie plays outside with ball",0.34536564389588,115,10
+"basic_event","Basic Event","boy plays outside with ball",0.350147414422223,116,9
+"basic_event","Basic Event","ball is played with by heidi",0.506601238584174,117,8
+"basic_event","Basic Event","ball is played with outside by heidi",0.595783842982504,118,7
+"basic_event","Basic Event","charlie plays with ball",0.602839723730461,119,6
+"basic_event","Basic Event","boy plays with ball",0.607372289223805,120,5
+"basic_event","Basic Event","ball is played with by heidi outside",0.622465496693037,121,4
+"basic_event","Basic Event","heidi plays with ball outside",0.656622689816968,122,3
+"basic_event","Basic Event","heidi plays outside with ball",0.661529097548466,123,2
+"basic_event","Basic Event","heidi plays with ball",0.671099820053027,124,1

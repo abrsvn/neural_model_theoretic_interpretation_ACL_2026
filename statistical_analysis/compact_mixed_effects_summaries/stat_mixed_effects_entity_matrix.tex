@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{Phase} & \textbf{Architecture} & \textbf{Word} & \textbf{Sentence} & \textbf{Complex} & \textbf{Basic} \\
+\midrule
+Test & SRN & Ent 0.034 & -- & -- & -- \\
+Test & GRU & Ent 0.034 & -- & -- & Ent 0.125 \\
+Test & LSTM & Ent 0.034 & -- & -- & Ent 0.106 \\
+Test & AbsPE & Ent 0.034 & -- & -- & Ent 0.096 \\
+Test & RoPE & Ent 0.034 & -- & -- & -- \\
+Test & AbsPE H80 & Ent 0.034 & -- & -- & -- \\
+Test & RoPE H80 & Ent 0.034 & Ent 0.095 & -- & Ent 0.101 \\
+Train & SRN & Ent 0.035 & -- & -- & -- \\
+Train & GRU & Ent 0.035 & NoEnt 0.046 & -- & -- \\
+Train & LSTM & Ent 0.035 & NoEnt 0.034 & -- & -- \\
+Train & AbsPE & Ent 0.035 & -- & -- & -- \\
+Train & RoPE & Ent 0.035 & -- & -- & -- \\
+Train & AbsPE H80 & Ent 0.035 & -- & Ent 0.040 & -- \\
+Train & RoPE H80 & Ent 0.035 & -- & Ent 0.056 & Ent 0.031 \\
+\bottomrule
+\end{tabular}
+\caption{\small Entity-effect matrix for the mixed-effects results. Cells show the favored condition and absolute estimate magnitude; \texttt{--} indicates no significant effect.}
+\label{tab:mixed_effects_entity_matrix}
+\end{table}

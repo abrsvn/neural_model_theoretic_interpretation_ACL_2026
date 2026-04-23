@@ -1,0 +1,61 @@
+\scriptsize
+\begin{longtable}{@{}llrrrrrl@{}}
+\caption{Random effects selection for train sentences. All RE structures compared to baseline (1$|$sentence) + (1$|$model) via LRT using the full FE model (arch $\times$ entity $\times$ split). Backward elimination from richest non-singular model; selected RE per group shown in bold. $\Delta$AIC: negative = better than baseline. \texttt{singular}: random-effect covariance estimated at boundary. Covariance upgrade (+cov) tested for final slope terms.}
+\label{tab:train_random_slopes} \\
+\toprule
+\textbf{Test Group} & \textbf{RE Structure} & \textbf{AIC} & $\Delta$\textbf{AIC} & $\chi^2$ & \textbf{df} & $p$ & \textbf{Note} \\
+\midrule
+\endfirsthead
+
+\multicolumn{8}{c}{\scriptsize\textit{(continued)}} \\
+\toprule
+\textbf{Test Group} & \textbf{RE Structure} & \textbf{AIC} & $\Delta$\textbf{AIC} & $\chi^2$ & \textbf{df} & $p$ & \textbf{Note} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{8}{r@{}}{\scriptsize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+Word & baseline & -3265.3 & -- & -- & -- & -- &  \\
+ & + entity slope & -3283.1 & -17.8 & 23.76 & 3 & $<$.001 & singular \\
+ & + is\_recurrent slope & -3267.1 & -1.8 & 7.78 & 3 & 0.05 & singular \\
+ & + split slope & -3259.4 & 6.0 & 0.00 & 3 & 1.00 &  \\
+ & + arch:sentence & -3283.8 & -18.4 & 18.48 & 1 & $<$.001 & \textbf{selected} \\
+ & + entity slope + is\_recurrent slope & -3280.5 & -15.1 & 27.11 & 6 & $<$.001 & singular \\
+ & + entity slope + split slope & -3277.1 & -11.8 & 23.76 & 6 & $<$.001 & singular \\
+ & + is\_recurrent slope + split slope & -3262.3 & 3.1 & 8.84 & 6 & 0.18 & singular \\
+ & + entity slope + is\_recurrent slope + split slope & -3274.5 & -9.1 & 27.11 & 9 & 0.001 & singular \\
+\addlinespace
+Sentence & baseline & -49818.0 & -- & -- & -- & -- &  \\
+ & + entity slope & -50154.4 & -336.4 & 342.18 & 3 & $<$.001 & improved \\
+ & + is\_recurrent slope & -52063.0 & -2245.0 & 2250.36 & 3 & $<$.001 & improved \\
+ & + split slope & -49812.2 & 5.8 & 0.25 & 3 & 0.97 &  \\
+ & + arch:sentence & -51506.5 & -1688.5 & 1688.85 & 1 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope & -52534.6 & -2716.6 & 2727.69 & 6 & $<$.001 & improved \\
+ & + entity slope + split slope & -50148.9 & -331.0 & 342.73 & 6 & $<$.001 & improved \\
+ & + is\_recurrent slope + split slope & -52057.4 & -2239.4 & 2250.72 & 6 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope + split slope & -52528.7 & -2710.7 & 2727.82 & 9 & $<$.001 & improved \\
+\addlinespace
+Complex Event & baseline & -49054.2 & -- & -- & -- & -- &  \\
+ & + entity slope & -49714.8 & -660.6 & 666.43 & 3 & $<$.001 & singular \\
+ & + is\_recurrent slope & -51161.9 & -2107.6 & 2113.21 & 3 & $<$.001 & improved \\
+ & + split slope & -49048.5 & 5.8 & 0.20 & 3 & 0.98 &  \\
+ & + arch:sentence & -50322.4 & -1268.2 & 1268.95 & 1 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope & -51850.6 & -2796.4 & 2808.00 & 6 & $<$.001 & improved \\
+ & + entity slope + split slope & -49708.9 & -654.6 & 666.44 & 6 & $<$.001 & improved \\
+ & + is\_recurrent slope + split slope & -51161.8 & -2107.6 & 2119.33 & 6 & $<$.001 & singular \\
+ & + entity slope + is\_recurrent slope + split slope & -51846.8 & -2792.5 & 2810.22 & 9 & $<$.001 & improved \\
+\addlinespace
+Basic Event & baseline & -64410.0 & -- & -- & -- & -- &  \\
+ & + entity slope & -64829.7 & -419.7 & 425.39 & 3 & $<$.001 & improved \\
+ & + is\_recurrent slope & -66208.6 & -1798.6 & 1803.93 & 3 & $<$.001 & improved \\
+ & + split slope & -64404.4 & 5.6 & 0.37 & 3 & 0.95 & singular \\
+ & + arch:sentence & -66285.3 & -1875.3 & 1875.64 & 1 & $<$.001 & improved \\
+ & + entity slope + is\_recurrent slope & -66726.1 & -2316.1 & 2327.12 & 6 & $<$.001 & \textbf{selected} \\
+ & + entity slope + split slope & -64817.4 & -407.4 & 423.55 & 6 & $<$.001 & singular \\
+ & + is\_recurrent slope + split slope & -66202.6 & -1792.6 & 1807.56 & 6 & $<$.001 & singular \\
+ & + entity slope + is\_recurrent slope + split slope & -66722.4 & -2312.4 & 2329.44 & 9 & $<$.001 & singular \\
+\end{longtable}
+\normalsize

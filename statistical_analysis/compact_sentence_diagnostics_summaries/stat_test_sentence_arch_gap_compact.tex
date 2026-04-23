@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lllr@{}}
+\toprule
+\textbf{Group} & \textbf{Rank} & \textbf{Sentence} & \textbf{Gap} \\
+\midrule
+Word & 1 & soccer is played badly by charlie & +0.051 \\
+Word & 2 & charlie plays football well & +0.037 \\
+Word & 3 & soccer is played well by charlie & +0.032 \\
+Sentence & 1 & sophia beats charlie & +0.476 \\
+Sentence & 2 & sophia beats boy & +0.340 \\
+Sentence & 3 & sophia beats charlie with ease & +0.300 \\
+Complex & 1 & hide-and-seek is played by sophia in bedroom & +0.599 \\
+Complex & 2 & heidi plays chess inside & +0.593 \\
+Complex & 3 & sophia plays hide-and-seek in bedroom & +0.582 \\
+Basic & 1 & ball is played with by boy & +0.288 \\
+Basic & 2 & ball is played with by charlie & +0.281 \\
+Basic & 3 & doll is played with inside by boy & +0.280 \\
+\bottomrule
+\end{tabular}
+\caption{\small Top 3 sentences per group with the largest recurrent-vs-attention advantage gap (test sentences). Gap = mean recurrent advantage (SRN, GRU, LSTM) minus mean attention advantage (all Attn variants), averaging over entity condition and seed.}
+\label{tab:test_sentence_arch_gap_compact}
+\end{table}

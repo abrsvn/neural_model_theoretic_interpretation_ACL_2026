@@ -1,0 +1,36 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lllrr@{}}
+\toprule
+\textbf{Phase} & \textbf{Group} & \textbf{Effect} & $F$ & $p$ \\
+\midrule
+Test & Word & Arch & 2.55 & 0.022 \\
+Test & Word & Entity & 20.45 & $<$.001 \\
+Test & Sentence & Arch & 20.72 & $<$.001 \\
+Test & Sentence & Arch $\times$ Ent & 3.63 & 0.002 \\
+Test & Complex & Arch & 48.76 & $<$.001 \\
+Test & Complex & Split & 6.91 & 0.009 \\
+Test & Basic & Arch & 7.18 & $<$.001 \\
+Test & Basic & Entity & 59.17 & $<$.001 \\
+Test & Basic & Split & 15.74 & $<$.001 \\
+Test & Basic & Arch $\times$ Split & 3.43 & 0.003 \\
+Test & Basic & Entity $\times$ Split & 4.94 & 0.027 \\
+Test & Basic & Arch $\times$ Ent $\times$ Split & 2.65 & 0.019 \\
+Train & Word & Arch & 2.63 & 0.019 \\
+Train & Word & Entity & 19.70 & $<$.001 \\
+Train & Sentence & Arch & 34.54 & $<$.001 \\
+Train & Sentence & Entity & 23.40 & $<$.001 \\
+Train & Sentence & Arch $\times$ Ent & 3.58 & 0.003 \\
+Train & Complex & Arch & 13.42 & $<$.001 \\
+Train & Complex & Entity & 30.98 & $<$.001 \\
+Train & Complex & Arch $\times$ Ent & 2.85 & 0.013 \\
+Train & Complex & Arch $\times$ Split & 2.61 & 0.020 \\
+Train & Basic & Arch & 66.43 & $<$.001 \\
+Train & Basic & Entity & 9.56 & 0.002 \\
+Train & Basic & Split & 4.67 & 0.032 \\
+Train & Basic & Arch $\times$ Ent & 3.08 & 0.008 \\
+\bottomrule
+\end{tabular}
+\caption{\small Significant ANOVA summary for the mixed-effects results.}
+\label{tab:mixed_effects_significant_anova}
+\end{table}

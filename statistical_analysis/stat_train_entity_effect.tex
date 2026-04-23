@@ -1,0 +1,36 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}llrcrrrrr@{}}
+\toprule
+\textbf{Test Group} & \textbf{Architecture} & \textbf{Ent effect} & \textbf{[95\% CI]} & \textbf{SE} & $t$ & \textbf{df} & $p$ & $d$ \\
+\midrule
+Word & All & +0.035 & [0.019, 0.050] & 0.008 & 4.44 & 130.1 & $<$.001 & 0.47 \\
+\addlinespace
+Sentence & SRN & -0.026 & [-0.054, 0.003] & 0.011 & -2.42 & 116.4 & 0.11 & -0.39 \\
+ & GRU & -0.046 & [-0.075, -0.018] & 0.011 & -4.41 & 116.4 & $<$.001 & -0.70 \\
+ & LSTM & -0.034 & [-0.063, -0.005] & 0.011 & -3.23 & 116.4 & 0.01 & -0.51 \\
+ & Attn\_AbsPE & -0.023 & [-0.051, 0.006] & 0.011 & -2.14 & 116.4 & 0.21 & -0.34 \\
+ & Attn\_RoPE & -0.025 & [-0.054, 0.004] & 0.011 & -2.38 & 116.4 & 0.13 & -0.38 \\
+ & Attn\_AbsPE\_H80 & -0.000 & [-0.029, 0.028] & 0.011 & -0.03 & 116.4 & 1.00 & -0.00 \\
+ & Attn\_RoPE\_H80 & +0.011 & [-0.017, 0.040] & 0.011 & 1.09 & 116.4 & 0.89 & 0.17 \\
+\addlinespace
+Complex Event & SRN & +0.010 & [-0.018, 0.039] & 0.010 & 0.99 & 123.2 & 0.93 & 0.23 \\
+ & GRU & +0.013 & [-0.016, 0.041] & 0.010 & 1.24 & 123.2 & 0.82 & 0.28 \\
+ & LSTM & +0.011 & [-0.018, 0.039] & 0.010 & 1.04 & 123.2 & 0.91 & 0.24 \\
+ & Attn\_AbsPE & +0.017 & [-0.011, 0.046] & 0.010 & 1.65 & 123.2 & 0.52 & 0.38 \\
+ & Attn\_RoPE & +0.017 & [-0.011, 0.046] & 0.010 & 1.64 & 123.2 & 0.53 & 0.38 \\
+ & Attn\_AbsPE\_H80 & +0.040 & [0.011, 0.068] & 0.010 & 3.83 & 123.2 & 0.001 & 0.88 \\
+ & Attn\_RoPE\_H80 & +0.056 & [0.027, 0.084] & 0.010 & 5.32 & 123.2 & $<$.001 & 1.22 \\
+\addlinespace
+Basic Event & SRN & +0.005 & [-0.012, 0.022] & 0.006 & 0.78 & 133.4 & 0.98 & 0.14 \\
+ & GRU & +0.001 & [-0.016, 0.018] & 0.006 & 0.16 & 133.4 & 1.00 & 0.03 \\
+ & LSTM & +0.003 & [-0.014, 0.019] & 0.006 & 0.45 & 133.4 & 1.00 & 0.08 \\
+ & Attn\_AbsPE & +0.002 & [-0.014, 0.019] & 0.006 & 0.38 & 133.4 & 1.00 & 0.07 \\
+ & Attn\_RoPE & +0.009 & [-0.008, 0.025] & 0.006 & 1.40 & 133.4 & 0.71 & 0.24 \\
+ & Attn\_AbsPE\_H80 & +0.005 & [-0.012, 0.021] & 0.006 & 0.73 & 133.4 & 0.99 & 0.13 \\
+ & Attn\_RoPE\_H80 & +0.031 & [0.015, 0.048] & 0.006 & 5.09 & 133.4 & $<$.001 & 0.89 \\
+\bottomrule
+\end{tabular}
+\caption{Entity vector effect per architecture for train sentences (ent $-$ noent). Positive: entity vectors improve advantage. $mvt$-adjusted simultaneous $p$ values and confidence intervals. Where the selected model includes no architecture $\times$ entity interaction, a single pooled row (\texttt{All}) is shown.}
+\label{tab:train_entity_effect}
+\end{table}

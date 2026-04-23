@@ -1,0 +1,40 @@
+\begin{table}[t]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lllcccc@{}}
+\toprule
+\textbf{Split} & \textbf{Subset} & \textbf{Architecture} & \textbf{Word} & \textbf{Sentence} & \textbf{Complex} & \textbf{Basic} \\
+\midrule
+S1 & Train & SRN & -- & -- & -- & -- \\
+S1 & Train & GRU & -- & -- & -- & -- \\
+S1 & Train & LSTM & -- & -- & -- & -- \\
+S1 & Train & AbsPE & -- & -- & -- & -- \\
+S1 & Train & RoPE & -- & -- & -- & -- \\
+S1 & Train & AbsPE H80 & -- & -- & -- & -- \\
+S1 & Train & RoPE H80 & -- & -- & Ent 0.073 & Ent 0.042 \\
+S1 & Test & SRN & -- & -- & -- & -- \\
+S1 & Test & GRU & -- & -- & -- & -- \\
+S1 & Test & LSTM & -- & -- & -- & -- \\
+S1 & Test & AbsPE & -- & -- & -- & Ent 0.129 \\
+S1 & Test & RoPE & -- & -- & -- & -- \\
+S1 & Test & AbsPE H80 & -- & -- & -- & Ent 0.126 \\
+S1 & Test & RoPE H80 & -- & -- & -- & Ent 0.188 \\
+S2 & Train & SRN & -- & -- & -- & -- \\
+S2 & Train & GRU & -- & NoEnt 0.051 & -- & -- \\
+S2 & Train & LSTM & -- & -- & -- & -- \\
+S2 & Train & AbsPE & -- & -- & -- & -- \\
+S2 & Train & RoPE & -- & -- & Ent 0.031 & -- \\
+S2 & Train & AbsPE H80 & -- & -- & Ent 0.034 & -- \\
+S2 & Train & RoPE H80 & -- & -- & Ent 0.038 & Ent 0.025 \\
+S2 & Test & SRN & -- & -- & -- & -- \\
+S2 & Test & GRU & -- & -- & -- & Ent 0.150 \\
+S2 & Test & LSTM & -- & -- & -- & Ent 0.133 \\
+S2 & Test & AbsPE & -- & -- & -- & -- \\
+S2 & Test & RoPE & -- & -- & -- & -- \\
+S2 & Test & AbsPE H80 & -- & -- & -- & -- \\
+S2 & Test & RoPE H80 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\caption{\small Entity-effect matrix shown separately for Split~1 and Split~2. Cells show the favored condition and absolute estimate magnitude; \texttt{--} indicates no significant effect.}
+\label{tab:gap_per_split_entity_matrix}
+\end{table}

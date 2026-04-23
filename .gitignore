@@ -3,6 +3,18 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Local editor / indexing artifacts
+tags
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+texput.log
+
 # C extensions
 *.so
 

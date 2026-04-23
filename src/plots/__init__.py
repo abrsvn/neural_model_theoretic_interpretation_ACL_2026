@@ -1,0 +1,1 @@
+"""Plot and table generation."""

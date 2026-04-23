@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lllrr@{}}
+\toprule
+\textbf{Phase} & \textbf{Group} & \textbf{Contrast} & \textbf{Estimate} & $p$ \\
+\midrule
+Test & Sentence & AbsPE - RoPE & -0.144 & $<$.001 \\
+Test & Sentence & AbsPE - RoPE H80 & -0.072 & 0.022 \\
+Test & Sentence & RoPE - AbsPE H80 & +0.166 & $<$.001 \\
+Test & Sentence & RoPE - RoPE H80 & +0.072 & 0.022 \\
+Test & Sentence & AbsPE H80 - RoPE H80 & -0.094 & $<$.001 \\
+Test & Complex & SRN - GRU & +0.121 & $<$.001 \\
+Test & Complex & SRN - LSTM & +0.103 & 0.003 \\
+Test & Complex & AbsPE - AbsPE H80 & +0.089 & 0.017 \\
+Train & Sentence & AbsPE - AbsPE H80 & +0.036 & $<$.001 \\
+Train & Sentence & RoPE - AbsPE H80 & +0.039 & $<$.001 \\
+Train & Sentence & AbsPE H80 - RoPE H80 & -0.023 & 0.045 \\
+Train & Basic & AbsPE - AbsPE H80 & +0.033 & $<$.001 \\
+Train & Basic & AbsPE - RoPE H80 & +0.031 & $<$.001 \\
+Train & Basic & RoPE - AbsPE H80 & +0.036 & $<$.001 \\
+Train & Basic & RoPE - RoPE H80 & +0.034 & $<$.001 \\
+\bottomrule
+\end{tabular}
+\caption{\small Within-family architecture contrasts for the mixed-effects results. These rows capture the recurrent-vs-recurrent and attention-vs-attention exceptions hidden by the dominance summary.}
+\label{tab:mixed_effects_arch_family_exceptions}
+\end{table}

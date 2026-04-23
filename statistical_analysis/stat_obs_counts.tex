@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+\textbf{Group} & \textbf{Split} & \textbf{Train sent.} & \textbf{Test sent.} & \textbf{Models} \\
+\midrule
+Word & S1 & 12 & 12 & 70 \\
+ & S2 & 12 & 12 & 70 \\
+\addlinespace
+Sentence & S1 & 160 & 160 & 70 \\
+ & S2 & 160 & 160 & 70 \\
+\addlinespace
+Complex & S1 & 96 & 144 & 70 \\
+ & S2 & 144 & 96 & 70 \\
+\addlinespace
+Basic & S1 & 126 & 66 & 70 \\
+ & S2 & 134 & 58 & 70 \\
+\bottomrule
+\end{tabular}
+\caption{\small Observation structure per group and split. Total observations per cell = sentences $\times$ models. Grand total: 108,640 observations. The asymmetry in Complex and Basic sentence counts arises from the complementary exclusion structure.}
+\label{tab:obs_counts}
+\end{table}

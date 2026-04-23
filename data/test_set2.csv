@@ -1,0 +1,1287 @@
+sentence,consistent,tokens,test_group,systematicity_pattern,systematicity_pattern_original,complexity_level,modifier_count,described_events,described_event_structure,described_conjuncts,competing_events,has_toys
+ball is played with by boy,True,ball|is|played|with|by|boy,Basic_Event,Basic_Event,True,Canonical,0,(play_toy charlie ball),"EventStructure(event_type='play', agent='charlie', theme='ball')",,(play_toy charlie puzzle)|(play_toy charlie doll),True
+ball is played with by boy in playground,True,ball|is|played|with|by|boy|in|playground,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+ball is played with by boy outside,True,ball|is|played|with|by|boy|outside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+ball is played with by charlie,True,ball|is|played|with|by|charlie,Basic_Event,Basic_Event,True,Canonical,0,(play_toy charlie ball),"EventStructure(event_type='play', agent='charlie', theme='ball')",,(play_toy charlie puzzle)|(play_toy charlie doll),True
+ball is played with by charlie in playground,True,ball|is|played|with|by|charlie|in|playground,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+ball is played with by charlie outside,True,ball|is|played|with|by|charlie|outside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+ball is played with in playground by boy,True,ball|is|played|with|in|playground|by|boy,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+ball is played with in playground by charlie,True,ball|is|played|with|in|playground|by|charlie,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+ball is played with outside by boy,True,ball|is|played|with|outside|by|boy,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+ball is played with outside by charlie,True,ball|is|played|with|outside|by|charlie,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+boy beats sophia,True,boy|beats|sophia,Sentence,Sentence,True,Canonical,0,(and (win charlie) (lose sophia)),"EventStructure(event_type='win', agent='charlie', patient='sophia')",(win charlie)|(lose sophia),(win heidi)|(win sophia)|(lose charlie),False
+boy beats sophia in bathroom,True,boy|beats|sophia|in|bathroom,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy beats sophia in bedroom,True,boy|beats|sophia|in|bedroom,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie bedroom)
+     (lose sophia)
+     (location sophia bedroom))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bedroom')",(win charlie)|(location charlie bedroom)|(lose sophia)|(location sophia bedroom),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy beats sophia in playground,True,boy|beats|sophia|in|playground,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie playground)
+     (lose sophia)
+     (location sophia playground))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='playground')",(win charlie)|(location charlie playground)|(lose sophia)|(location sophia playground),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+boy beats sophia in shower,True,boy|beats|sophia|in|shower,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy beats sophia in street,True,boy|beats|sophia|in|street,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie street)
+     (lose sophia)
+     (location sophia street))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='street')",(win charlie)|(location charlie street)|(lose sophia)|(location sophia street),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+boy beats sophia inside,True,boy|beats|sophia|inside,Sentence,Sentence,False,Location,1,"(or (and (win charlie)
+         (location charlie bathroom)
+         (lose sophia)
+         (location sophia bathroom))
+    (and (win charlie)
+         (location charlie bedroom)
+         (lose sophia)
+         (location sophia bedroom)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'})","(win charlie)|(lose sophia)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy beats sophia outside,True,boy|beats|sophia|outside,Sentence,Sentence,False,Location,1,"(or (and (win charlie)
+         (location charlie playground)
+         (lose sophia)
+         (location sophia playground))
+    (and (win charlie)
+         (location charlie street)
+         (lose sophia)
+         (location sophia street)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'playground', 'street'})","(win charlie)|(lose sophia)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+boy beats sophia with difficulty,True,boy|beats|sophia|with|difficulty,Sentence,Sentence,False,Manner,1,(and (win charlie) (lose sophia) (win_manner with_difficulty)),"EventStructure(event_type='win', agent='charlie', patient='sophia', manner='with_difficulty')",(win charlie)|(lose sophia)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(win_manner with_ease),False
+boy beats sophia with difficulty in bathroom,True,boy|beats|sophia|with|difficulty|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_difficulty')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+boy beats sophia with difficulty in bedroom,True,boy|beats|sophia|with|difficulty|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bedroom)
+     (lose sophia)
+     (location sophia bedroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bedroom', manner='with_difficulty')",(win charlie)|(location charlie bedroom)|(lose sophia)|(location sophia bedroom)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+boy beats sophia with difficulty in playground,True,boy|beats|sophia|with|difficulty|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie playground)
+     (lose sophia)
+     (location sophia playground)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='playground', manner='with_difficulty')",(win charlie)|(location charlie playground)|(lose sophia)|(location sophia playground)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_ease),False
+boy beats sophia with difficulty in shower,True,boy|beats|sophia|with|difficulty|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_difficulty')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+boy beats sophia with difficulty in street,True,boy|beats|sophia|with|difficulty|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie street)
+     (lose sophia)
+     (location sophia street)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='street', manner='with_difficulty')",(win charlie)|(location charlie street)|(lose sophia)|(location sophia street)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_ease),False
+boy beats sophia with difficulty inside,True,boy|beats|sophia|with|difficulty|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie bathroom)
+         (lose sophia)
+         (location sophia bathroom)
+         (win_manner with_difficulty))
+    (and (win charlie)
+         (location charlie bedroom)
+         (lose sophia)
+         (location sophia bedroom)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'}, manner='with_difficulty')","(win charlie)|(lose sophia)|(win_manner with_difficulty)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+boy beats sophia with difficulty outside,True,boy|beats|sophia|with|difficulty|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie playground)
+         (lose sophia)
+         (location sophia playground)
+         (win_manner with_difficulty))
+    (and (win charlie)
+         (location charlie street)
+         (lose sophia)
+         (location sophia street)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'playground', 'street'}, manner='with_difficulty')","(win charlie)|(lose sophia)|(win_manner with_difficulty)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_ease),False
+boy beats sophia with ease,True,boy|beats|sophia|with|ease,Sentence,Sentence,False,Manner,1,(and (win charlie) (lose sophia) (win_manner with_ease)),"EventStructure(event_type='win', agent='charlie', patient='sophia', manner='with_ease')",(win charlie)|(lose sophia)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(win_manner with_difficulty),False
+boy beats sophia with ease in bathroom,True,boy|beats|sophia|with|ease|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_ease')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+boy beats sophia with ease in bedroom,True,boy|beats|sophia|with|ease|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bedroom)
+     (lose sophia)
+     (location sophia bedroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bedroom', manner='with_ease')",(win charlie)|(location charlie bedroom)|(lose sophia)|(location sophia bedroom)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+boy beats sophia with ease in playground,True,boy|beats|sophia|with|ease|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie playground)
+     (lose sophia)
+     (location sophia playground)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='playground', manner='with_ease')",(win charlie)|(location charlie playground)|(lose sophia)|(location sophia playground)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_difficulty),False
+boy beats sophia with ease in shower,True,boy|beats|sophia|with|ease|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_ease')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+boy beats sophia with ease in street,True,boy|beats|sophia|with|ease|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie street)
+     (lose sophia)
+     (location sophia street)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='street', manner='with_ease')",(win charlie)|(location charlie street)|(lose sophia)|(location sophia street)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_difficulty),False
+boy beats sophia with ease inside,True,boy|beats|sophia|with|ease|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie bathroom)
+         (lose sophia)
+         (location sophia bathroom)
+         (win_manner with_ease))
+    (and (win charlie)
+         (location charlie bedroom)
+         (lose sophia)
+         (location sophia bedroom)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'}, manner='with_ease')","(win charlie)|(lose sophia)|(win_manner with_ease)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+boy beats sophia with ease outside,True,boy|beats|sophia|with|ease|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie playground)
+         (lose sophia)
+         (location sophia playground)
+         (win_manner with_ease))
+    (and (win charlie)
+         (location charlie street)
+         (lose sophia)
+         (location sophia street)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'playground', 'street'}, manner='with_ease')","(win charlie)|(lose sophia)|(win_manner with_ease)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_difficulty),False
+boy loses to sophia,True,boy|loses|to|sophia,Sentence,Sentence,True,Canonical,0,(and (lose charlie) (win sophia)),"EventStructure(event_type='lose', agent='charlie', patient='sophia')",(lose charlie)|(win sophia),(lose sophia)|(win charlie)|(win heidi),False
+boy loses to sophia in bathroom,True,boy|loses|to|sophia|in|bathroom,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie bathroom)
+     (win sophia)
+     (location sophia bathroom))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='bathroom')",(lose charlie)|(location charlie bathroom)|(win sophia)|(location sophia bathroom),(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy loses to sophia in bedroom,True,boy|loses|to|sophia|in|bedroom,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie bedroom)
+     (win sophia)
+     (location sophia bedroom))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='bedroom')",(lose charlie)|(location charlie bedroom)|(win sophia)|(location sophia bedroom),(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy loses to sophia in playground,True,boy|loses|to|sophia|in|playground,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie playground)
+     (win sophia)
+     (location sophia playground))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='playground')",(lose charlie)|(location charlie playground)|(win sophia)|(location sophia playground),(lose sophia)|(win charlie)|(win heidi)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+boy loses to sophia in shower,True,boy|loses|to|sophia|in|shower,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie bathroom)
+     (win sophia)
+     (location sophia bathroom))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='bathroom')",(lose charlie)|(location charlie bathroom)|(win sophia)|(location sophia bathroom),(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy loses to sophia in street,True,boy|loses|to|sophia|in|street,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie street)
+     (win sophia)
+     (location sophia street))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='street')",(lose charlie)|(location charlie street)|(win sophia)|(location sophia street),(lose sophia)|(win charlie)|(win heidi)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+boy loses to sophia inside,True,boy|loses|to|sophia|inside,Sentence,Sentence,False,Location,1,"(or (and (lose charlie)
+         (location charlie bathroom)
+         (win sophia)
+         (location sophia bathroom))
+    (and (lose charlie)
+         (location charlie bedroom)
+         (win sophia)
+         (location sophia bedroom)))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'})","(lose charlie)|(win sophia)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+boy loses to sophia outside,True,boy|loses|to|sophia|outside,Sentence,Sentence,False,Location,1,"(or (and (lose charlie)
+         (location charlie playground)
+         (win sophia)
+         (location sophia playground))
+    (and (lose charlie)
+         (location charlie street)
+         (win sophia)
+         (location sophia street)))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location={'playground', 'street'})","(lose charlie)|(win sophia)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(lose sophia)|(win charlie)|(win heidi)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+boy plays chess badly in bedroom,True,boy|plays|chess|badly|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='badly')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie badly),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+boy plays chess badly inside,True,boy|plays|chess|badly|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie badly))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game charlie chess)|(play_manner charlie badly)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+boy plays chess in bedroom,True,boy|plays|chess|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie chess) (location charlie bedroom)),"EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom')",(play_game charlie chess)|(location charlie bedroom),(play_game charlie hide_n_seek)|(location charlie playground),False
+boy plays chess inside,True,boy|plays|chess|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie chess) (location charlie bathroom))
+    (and (play_game charlie chess) (location charlie bedroom)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'})",(play_game charlie chess)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground),False
+boy plays chess well in bedroom,True,boy|plays|chess|well|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='well')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie well),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+boy plays chess well inside,True,boy|plays|chess|well|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie well))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game charlie chess)|(play_manner charlie well)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+boy plays hide-and-seek badly in playground,True,boy|plays|hide-and-seek|badly|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='badly')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well),False
+boy plays hide-and-seek badly outside,True,boy|plays|hide-and-seek|badly|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie badly))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game charlie hide_n_seek)|(play_manner charlie badly)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well)|(play_game charlie soccer),False
+boy plays hide-and-seek in playground,True,boy|plays|hide-and-seek|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie hide_n_seek) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground')",(play_game charlie hide_n_seek)|(location charlie playground),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom),False
+boy plays hide-and-seek outside,True,boy|plays|hide-and-seek|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie hide_n_seek) (location charlie playground))
+    (and (play_game charlie hide_n_seek) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'})",(play_game charlie hide_n_seek)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_game charlie soccer),False
+boy plays hide-and-seek well in playground,True,boy|plays|hide-and-seek|well|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='well')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly),False
+boy plays hide-and-seek well outside,True,boy|plays|hide-and-seek|well|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie well))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game charlie hide_n_seek)|(play_manner charlie well)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly)|(play_game charlie soccer),False
+boy plays in playground with ball,True,boy|plays|in|playground|with|ball,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+boy plays outside with ball,True,boy|plays|outside|with|ball,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+boy plays soccer,True,boy|plays|soccer,Word,Word,True,Canonical,0,(play_game charlie soccer),"EventStructure(event_type='play', agent='charlie', theme='soccer')",,(play_game charlie chess)|(play_game charlie hide_n_seek),False
+boy plays soccer badly,True,boy|plays|soccer|badly,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie badly)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='badly')",(play_game charlie soccer)|(play_manner charlie badly),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie well),False
+boy plays soccer well,True,boy|plays|soccer|well,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie well)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='well')",(play_game charlie soccer)|(play_manner charlie well),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie badly),False
+boy plays with ball,True,boy|plays|with|ball,Basic_Event,Basic_Event,True,Canonical,0,(play_toy charlie ball),"EventStructure(event_type='play', agent='charlie', theme='ball')",,(play_toy charlie puzzle)|(play_toy charlie doll),True
+boy plays with ball in playground,True,boy|plays|with|ball|in|playground,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+boy plays with ball outside,True,boy|plays|with|ball|outside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+charlie beats sophia,True,charlie|beats|sophia,Sentence,Sentence,True,Canonical,0,(and (win charlie) (lose sophia)),"EventStructure(event_type='win', agent='charlie', patient='sophia')",(win charlie)|(lose sophia),(win heidi)|(win sophia)|(lose charlie),False
+charlie beats sophia in bathroom,True,charlie|beats|sophia|in|bathroom,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie beats sophia in bedroom,True,charlie|beats|sophia|in|bedroom,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie bedroom)
+     (lose sophia)
+     (location sophia bedroom))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bedroom')",(win charlie)|(location charlie bedroom)|(lose sophia)|(location sophia bedroom),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie beats sophia in playground,True,charlie|beats|sophia|in|playground,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie playground)
+     (lose sophia)
+     (location sophia playground))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='playground')",(win charlie)|(location charlie playground)|(lose sophia)|(location sophia playground),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+charlie beats sophia in shower,True,charlie|beats|sophia|in|shower,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie beats sophia in street,True,charlie|beats|sophia|in|street,Sentence,Sentence,False,Location,1,"(and (win charlie)
+     (location charlie street)
+     (lose sophia)
+     (location sophia street))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='street')",(win charlie)|(location charlie street)|(lose sophia)|(location sophia street),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+charlie beats sophia inside,True,charlie|beats|sophia|inside,Sentence,Sentence,False,Location,1,"(or (and (win charlie)
+         (location charlie bathroom)
+         (lose sophia)
+         (location sophia bathroom))
+    (and (win charlie)
+         (location charlie bedroom)
+         (lose sophia)
+         (location sophia bedroom)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'})","(win charlie)|(lose sophia)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie beats sophia outside,True,charlie|beats|sophia|outside,Sentence,Sentence,False,Location,1,"(or (and (win charlie)
+         (location charlie playground)
+         (lose sophia)
+         (location sophia playground))
+    (and (win charlie)
+         (location charlie street)
+         (lose sophia)
+         (location sophia street)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'playground', 'street'})","(win charlie)|(lose sophia)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+charlie beats sophia with difficulty,True,charlie|beats|sophia|with|difficulty,Sentence,Sentence,False,Manner,1,(and (win charlie) (lose sophia) (win_manner with_difficulty)),"EventStructure(event_type='win', agent='charlie', patient='sophia', manner='with_difficulty')",(win charlie)|(lose sophia)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(win_manner with_ease),False
+charlie beats sophia with difficulty in bathroom,True,charlie|beats|sophia|with|difficulty|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_difficulty')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+charlie beats sophia with difficulty in bedroom,True,charlie|beats|sophia|with|difficulty|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bedroom)
+     (lose sophia)
+     (location sophia bedroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bedroom', manner='with_difficulty')",(win charlie)|(location charlie bedroom)|(lose sophia)|(location sophia bedroom)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+charlie beats sophia with difficulty in playground,True,charlie|beats|sophia|with|difficulty|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie playground)
+     (lose sophia)
+     (location sophia playground)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='playground', manner='with_difficulty')",(win charlie)|(location charlie playground)|(lose sophia)|(location sophia playground)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_ease),False
+charlie beats sophia with difficulty in shower,True,charlie|beats|sophia|with|difficulty|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_difficulty')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+charlie beats sophia with difficulty in street,True,charlie|beats|sophia|with|difficulty|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie street)
+     (lose sophia)
+     (location sophia street)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='street', manner='with_difficulty')",(win charlie)|(location charlie street)|(lose sophia)|(location sophia street)|(win_manner with_difficulty),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_ease),False
+charlie beats sophia with difficulty inside,True,charlie|beats|sophia|with|difficulty|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie bathroom)
+         (lose sophia)
+         (location sophia bathroom)
+         (win_manner with_difficulty))
+    (and (win charlie)
+         (location charlie bedroom)
+         (lose sophia)
+         (location sophia bedroom)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'}, manner='with_difficulty')","(win charlie)|(lose sophia)|(win_manner with_difficulty)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_ease),False
+charlie beats sophia with difficulty outside,True,charlie|beats|sophia|with|difficulty|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie playground)
+         (lose sophia)
+         (location sophia playground)
+         (win_manner with_difficulty))
+    (and (win charlie)
+         (location charlie street)
+         (lose sophia)
+         (location sophia street)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'playground', 'street'}, manner='with_difficulty')","(win charlie)|(lose sophia)|(win_manner with_difficulty)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_ease),False
+charlie beats sophia with ease,True,charlie|beats|sophia|with|ease,Sentence,Sentence,False,Manner,1,(and (win charlie) (lose sophia) (win_manner with_ease)),"EventStructure(event_type='win', agent='charlie', patient='sophia', manner='with_ease')",(win charlie)|(lose sophia)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(win_manner with_difficulty),False
+charlie beats sophia with ease in bathroom,True,charlie|beats|sophia|with|ease|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_ease')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+charlie beats sophia with ease in bedroom,True,charlie|beats|sophia|with|ease|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bedroom)
+     (lose sophia)
+     (location sophia bedroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bedroom', manner='with_ease')",(win charlie)|(location charlie bedroom)|(lose sophia)|(location sophia bedroom)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+charlie beats sophia with ease in playground,True,charlie|beats|sophia|with|ease|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie playground)
+     (lose sophia)
+     (location sophia playground)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='playground', manner='with_ease')",(win charlie)|(location charlie playground)|(lose sophia)|(location sophia playground)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_difficulty),False
+charlie beats sophia with ease in shower,True,charlie|beats|sophia|with|ease|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie bathroom)
+     (lose sophia)
+     (location sophia bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='bathroom', manner='with_ease')",(win charlie)|(location charlie bathroom)|(lose sophia)|(location sophia bathroom)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+charlie beats sophia with ease in street,True,charlie|beats|sophia|with|ease|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win charlie)
+     (location charlie street)
+     (lose sophia)
+     (location sophia street)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='charlie', patient='sophia', location='street', manner='with_ease')",(win charlie)|(location charlie street)|(lose sophia)|(location sophia street)|(win_manner with_ease),(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_difficulty),False
+charlie beats sophia with ease inside,True,charlie|beats|sophia|with|ease|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie bathroom)
+         (lose sophia)
+         (location sophia bathroom)
+         (win_manner with_ease))
+    (and (win charlie)
+         (location charlie bedroom)
+         (lose sophia)
+         (location sophia bedroom)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'}, manner='with_ease')","(win charlie)|(lose sophia)|(win_manner with_ease)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street)|(win_manner with_difficulty),False
+charlie beats sophia with ease outside,True,charlie|beats|sophia|with|ease|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win charlie)
+         (location charlie playground)
+         (lose sophia)
+         (location sophia playground)
+         (win_manner with_ease))
+    (and (win charlie)
+         (location charlie street)
+         (lose sophia)
+         (location sophia street)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='charlie', patient='sophia', location={'playground', 'street'}, manner='with_ease')","(win charlie)|(lose sophia)|(win_manner with_ease)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(win heidi)|(win sophia)|(lose charlie)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom)|(win_manner with_difficulty),False
+charlie loses to sophia,True,charlie|loses|to|sophia,Sentence,Sentence,True,Canonical,0,(and (lose charlie) (win sophia)),"EventStructure(event_type='lose', agent='charlie', patient='sophia')",(lose charlie)|(win sophia),(lose sophia)|(win charlie)|(win heidi),False
+charlie loses to sophia in bathroom,True,charlie|loses|to|sophia|in|bathroom,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie bathroom)
+     (win sophia)
+     (location sophia bathroom))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='bathroom')",(lose charlie)|(location charlie bathroom)|(win sophia)|(location sophia bathroom),(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie loses to sophia in bedroom,True,charlie|loses|to|sophia|in|bedroom,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie bedroom)
+     (win sophia)
+     (location sophia bedroom))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='bedroom')",(lose charlie)|(location charlie bedroom)|(win sophia)|(location sophia bedroom),(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie loses to sophia in playground,True,charlie|loses|to|sophia|in|playground,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie playground)
+     (win sophia)
+     (location sophia playground))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='playground')",(lose charlie)|(location charlie playground)|(win sophia)|(location sophia playground),(lose sophia)|(win charlie)|(win heidi)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+charlie loses to sophia in shower,True,charlie|loses|to|sophia|in|shower,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie bathroom)
+     (win sophia)
+     (location sophia bathroom))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='bathroom')",(lose charlie)|(location charlie bathroom)|(win sophia)|(location sophia bathroom),(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie loses to sophia in street,True,charlie|loses|to|sophia|in|street,Sentence,Sentence,False,Location,1,"(and (lose charlie)
+     (location charlie street)
+     (win sophia)
+     (location sophia street))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location='street')",(lose charlie)|(location charlie street)|(win sophia)|(location sophia street),(lose sophia)|(win charlie)|(win heidi)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+charlie loses to sophia inside,True,charlie|loses|to|sophia|inside,Sentence,Sentence,False,Location,1,"(or (and (lose charlie)
+         (location charlie bathroom)
+         (win sophia)
+         (location sophia bathroom))
+    (and (lose charlie)
+         (location charlie bedroom)
+         (win sophia)
+         (location sophia bedroom)))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location={'bathroom', 'bedroom'})","(lose charlie)|(win sophia)|(or (and (location charlie bathroom) (location sophia bathroom))
+    (and (location charlie bedroom) (location sophia bedroom)))",(lose sophia)|(win charlie)|(win heidi)|(location charlie playground)|(location sophia playground)|(location charlie street)|(location sophia street),False
+charlie loses to sophia outside,True,charlie|loses|to|sophia|outside,Sentence,Sentence,False,Location,1,"(or (and (lose charlie)
+         (location charlie playground)
+         (win sophia)
+         (location sophia playground))
+    (and (lose charlie)
+         (location charlie street)
+         (win sophia)
+         (location sophia street)))","EventStructure(event_type='lose', agent='charlie', patient='sophia', location={'playground', 'street'})","(lose charlie)|(win sophia)|(or (and (location charlie playground) (location sophia playground))
+    (and (location charlie street) (location sophia street)))",(lose sophia)|(win charlie)|(win heidi)|(location charlie bathroom)|(location sophia bathroom)|(location charlie bedroom)|(location sophia bedroom),False
+charlie plays chess badly in bedroom,True,charlie|plays|chess|badly|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='badly')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie badly),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+charlie plays chess badly inside,True,charlie|plays|chess|badly|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie badly))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game charlie chess)|(play_manner charlie badly)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+charlie plays chess in bedroom,True,charlie|plays|chess|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie chess) (location charlie bedroom)),"EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom')",(play_game charlie chess)|(location charlie bedroom),(play_game charlie hide_n_seek)|(location charlie playground),False
+charlie plays chess inside,True,charlie|plays|chess|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie chess) (location charlie bathroom))
+    (and (play_game charlie chess) (location charlie bedroom)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'})",(play_game charlie chess)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground),False
+charlie plays chess well in bedroom,True,charlie|plays|chess|well|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='well')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie well),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+charlie plays chess well inside,True,charlie|plays|chess|well|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie well))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game charlie chess)|(play_manner charlie well)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+charlie plays football,True,charlie|plays|football,Word,Word,True,Canonical,0,(play_game charlie soccer),"EventStructure(event_type='play', agent='charlie', theme='soccer')",,(play_game charlie chess)|(play_game charlie hide_n_seek),False
+charlie plays football badly,True,charlie|plays|football|badly,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie badly)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='badly')",(play_game charlie soccer)|(play_manner charlie badly),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie well),False
+charlie plays football well,True,charlie|plays|football|well,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie well)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='well')",(play_game charlie soccer)|(play_manner charlie well),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie badly),False
+charlie plays hide-and-seek badly in playground,True,charlie|plays|hide-and-seek|badly|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='badly')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well),False
+charlie plays hide-and-seek badly outside,True,charlie|plays|hide-and-seek|badly|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie badly))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game charlie hide_n_seek)|(play_manner charlie badly)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well)|(play_game charlie soccer),False
+charlie plays hide-and-seek in playground,True,charlie|plays|hide-and-seek|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie hide_n_seek) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground')",(play_game charlie hide_n_seek)|(location charlie playground),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom),False
+charlie plays hide-and-seek outside,True,charlie|plays|hide-and-seek|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie hide_n_seek) (location charlie playground))
+    (and (play_game charlie hide_n_seek) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'})",(play_game charlie hide_n_seek)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_game charlie soccer),False
+charlie plays hide-and-seek well in playground,True,charlie|plays|hide-and-seek|well|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='well')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly),False
+charlie plays hide-and-seek well outside,True,charlie|plays|hide-and-seek|well|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie well))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game charlie hide_n_seek)|(play_manner charlie well)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly)|(play_game charlie soccer),False
+charlie plays in playground with ball,True,charlie|plays|in|playground|with|ball,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+charlie plays outside with ball,True,charlie|plays|outside|with|ball,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+charlie plays with ball,True,charlie|plays|with|ball,Basic_Event,Basic_Event,True,Canonical,0,(play_toy charlie ball),"EventStructure(event_type='play', agent='charlie', theme='ball')",,(play_toy charlie puzzle)|(play_toy charlie doll),True
+charlie plays with ball in playground,True,charlie|plays|with|ball|in|playground,Basic_Event,Basic_Event,False,Location,1,(and (play_toy charlie ball) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='ball', location='playground')",(play_toy charlie ball)|(location charlie playground),(play_toy charlie doll),True
+charlie plays with ball outside,True,charlie|plays|with|ball|outside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy charlie ball) (location charlie playground))
+    (and (play_toy charlie ball) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='ball', location={'playground', 'street'})",(play_toy charlie ball)|(or (location charlie playground) (location charlie street)),(play_toy charlie doll),True
+chess is played badly by boy in bedroom,True,chess|is|played|badly|by|boy|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='badly')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie badly),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+chess is played badly by boy inside,True,chess|is|played|badly|by|boy|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie badly))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game charlie chess)|(play_manner charlie badly)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+chess is played badly by charlie in bedroom,True,chess|is|played|badly|by|charlie|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='badly')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie badly),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+chess is played badly by charlie inside,True,chess|is|played|badly|by|charlie|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie badly))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game charlie chess)|(play_manner charlie badly)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),False
+chess is played badly by heidi in bedroom,True,chess|is|played|badly|by|heidi|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,(and (play_game heidi chess) (location heidi bedroom) (play_manner heidi badly)),"EventStructure(event_type='play', agent='heidi', theme='chess', location='bedroom', manner='badly')",(play_game heidi chess)|(location heidi bedroom)|(play_manner heidi badly),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi well),False
+chess is played badly by heidi inside,True,chess|is|played|badly|by|heidi|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi chess)
+         (location heidi bathroom)
+         (play_manner heidi badly))
+    (and (play_game heidi chess)
+         (location heidi bedroom)
+         (play_manner heidi badly)))","EventStructure(event_type='play', agent='heidi', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game heidi chess)|(play_manner heidi badly)|(or (location heidi bathroom) (location heidi bedroom)),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi well),False
+chess is played badly by sophia in bedroom,True,chess|is|played|badly|by|sophia|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia chess)
+     (location sophia bedroom)
+     (play_manner sophia badly))","EventStructure(event_type='play', agent='sophia', theme='chess', location='bedroom', manner='badly')",(play_game sophia chess)|(location sophia bedroom)|(play_manner sophia badly),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia well),False
+chess is played badly by sophia inside,True,chess|is|played|badly|by|sophia|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia chess)
+         (location sophia bathroom)
+         (play_manner sophia badly))
+    (and (play_game sophia chess)
+         (location sophia bedroom)
+         (play_manner sophia badly)))","EventStructure(event_type='play', agent='sophia', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game sophia chess)|(play_manner sophia badly)|(or (location sophia bathroom) (location sophia bedroom)),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia well),False
+chess is played by boy in bedroom,True,chess|is|played|by|boy|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie chess) (location charlie bedroom)),"EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom')",(play_game charlie chess)|(location charlie bedroom),(play_game charlie hide_n_seek)|(location charlie playground),False
+chess is played by boy inside,True,chess|is|played|by|boy|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie chess) (location charlie bathroom))
+    (and (play_game charlie chess) (location charlie bedroom)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'})",(play_game charlie chess)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground),False
+chess is played by charlie in bedroom,True,chess|is|played|by|charlie|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie chess) (location charlie bedroom)),"EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom')",(play_game charlie chess)|(location charlie bedroom),(play_game charlie hide_n_seek)|(location charlie playground),False
+chess is played by charlie inside,True,chess|is|played|by|charlie|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie chess) (location charlie bathroom))
+    (and (play_game charlie chess) (location charlie bedroom)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'})",(play_game charlie chess)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground),False
+chess is played by heidi in bedroom,True,chess|is|played|by|heidi|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game heidi chess) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='chess', location='bedroom')",(play_game heidi chess)|(location heidi bedroom),(play_game heidi hide_n_seek)|(location heidi playground),False
+chess is played by heidi inside,True,chess|is|played|by|heidi|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game heidi chess) (location heidi bathroom))
+    (and (play_game heidi chess) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='chess', location={'bathroom', 'bedroom'})",(play_game heidi chess)|(or (location heidi bathroom) (location heidi bedroom)),(play_game heidi hide_n_seek)|(location heidi playground),False
+chess is played by sophia in bedroom,True,chess|is|played|by|sophia|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game sophia chess) (location sophia bedroom)),"EventStructure(event_type='play', agent='sophia', theme='chess', location='bedroom')",(play_game sophia chess)|(location sophia bedroom),(play_game sophia hide_n_seek)|(location sophia playground),False
+chess is played by sophia inside,True,chess|is|played|by|sophia|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game sophia chess) (location sophia bathroom))
+    (and (play_game sophia chess) (location sophia bedroom)))","EventStructure(event_type='play', agent='sophia', theme='chess', location={'bathroom', 'bedroom'})",(play_game sophia chess)|(or (location sophia bathroom) (location sophia bedroom)),(play_game sophia hide_n_seek)|(location sophia playground),False
+chess is played well by boy in bedroom,True,chess|is|played|well|by|boy|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='well')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie well),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+chess is played well by boy inside,True,chess|is|played|well|by|boy|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie well))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game charlie chess)|(play_manner charlie well)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+chess is played well by charlie in bedroom,True,chess|is|played|well|by|charlie|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie chess)
+     (location charlie bedroom)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='chess', location='bedroom', manner='well')",(play_game charlie chess)|(location charlie bedroom)|(play_manner charlie well),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+chess is played well by charlie inside,True,chess|is|played|well|by|charlie|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie chess)
+         (location charlie bathroom)
+         (play_manner charlie well))
+    (and (play_game charlie chess)
+         (location charlie bedroom)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game charlie chess)|(play_manner charlie well)|(or (location charlie bathroom) (location charlie bedroom)),(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),False
+chess is played well by heidi in bedroom,True,chess|is|played|well|by|heidi|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,(and (play_game heidi chess) (location heidi bedroom) (play_manner heidi well)),"EventStructure(event_type='play', agent='heidi', theme='chess', location='bedroom', manner='well')",(play_game heidi chess)|(location heidi bedroom)|(play_manner heidi well),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi badly),False
+chess is played well by heidi inside,True,chess|is|played|well|by|heidi|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi chess)
+         (location heidi bathroom)
+         (play_manner heidi well))
+    (and (play_game heidi chess)
+         (location heidi bedroom)
+         (play_manner heidi well)))","EventStructure(event_type='play', agent='heidi', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game heidi chess)|(play_manner heidi well)|(or (location heidi bathroom) (location heidi bedroom)),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi badly),False
+chess is played well by sophia in bedroom,True,chess|is|played|well|by|sophia|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia chess)
+     (location sophia bedroom)
+     (play_manner sophia well))","EventStructure(event_type='play', agent='sophia', theme='chess', location='bedroom', manner='well')",(play_game sophia chess)|(location sophia bedroom)|(play_manner sophia well),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia badly),False
+chess is played well by sophia inside,True,chess|is|played|well|by|sophia|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia chess)
+         (location sophia bathroom)
+         (play_manner sophia well))
+    (and (play_game sophia chess)
+         (location sophia bedroom)
+         (play_manner sophia well)))","EventStructure(event_type='play', agent='sophia', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game sophia chess)|(play_manner sophia well)|(or (location sophia bathroom) (location sophia bedroom)),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia badly),False
+doll is played with by sophia,True,doll|is|played|with|by|sophia,Basic_Event,Basic_Event,True,Canonical,0,(play_toy sophia doll),"EventStructure(event_type='play', agent='sophia', theme='doll')",,(play_toy sophia puzzle)|(play_toy sophia ball),True
+doll is played with by sophia in bedroom,True,doll|is|played|with|by|sophia|in|bedroom,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia bedroom)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='bedroom')",(play_toy sophia doll)|(location sophia bedroom),(play_toy sophia puzzle)|(location sophia playground),True
+doll is played with by sophia in playground,True,doll|is|played|with|by|sophia|in|playground,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia playground)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='playground')",(play_toy sophia doll)|(location sophia playground),(play_toy sophia ball)|(location sophia bedroom),True
+doll is played with by sophia inside,True,doll|is|played|with|by|sophia|inside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia bathroom))
+    (and (play_toy sophia doll) (location sophia bedroom)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'bathroom', 'bedroom'})",(play_toy sophia doll)|(or (location sophia bathroom) (location sophia bedroom)),(location sophia playground)|(play_toy sophia puzzle),True
+doll is played with by sophia outside,True,doll|is|played|with|by|sophia|outside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia playground))
+    (and (play_toy sophia doll) (location sophia street)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'playground', 'street'})",(play_toy sophia doll)|(or (location sophia playground) (location sophia street)),(play_toy sophia ball)|(location sophia bedroom),True
+doll is played with in bedroom by sophia,True,doll|is|played|with|in|bedroom|by|sophia,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia bedroom)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='bedroom')",(play_toy sophia doll)|(location sophia bedroom),(play_toy sophia puzzle)|(location sophia playground),True
+doll is played with in playground by sophia,True,doll|is|played|with|in|playground|by|sophia,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia playground)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='playground')",(play_toy sophia doll)|(location sophia playground),(play_toy sophia ball)|(location sophia bedroom),True
+doll is played with inside by sophia,True,doll|is|played|with|inside|by|sophia,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia bathroom))
+    (and (play_toy sophia doll) (location sophia bedroom)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'bathroom', 'bedroom'})",(play_toy sophia doll)|(or (location sophia bathroom) (location sophia bedroom)),(location sophia playground)|(play_toy sophia puzzle),True
+doll is played with outside by sophia,True,doll|is|played|with|outside|by|sophia,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia playground))
+    (and (play_toy sophia doll) (location sophia street)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'playground', 'street'})",(play_toy sophia doll)|(or (location sophia playground) (location sophia street)),(play_toy sophia ball)|(location sophia bedroom),True
+football is played badly by charlie,True,football|is|played|badly|by|charlie,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie badly)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='badly')",(play_game charlie soccer)|(play_manner charlie badly),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie well),False
+football is played by charlie,True,football|is|played|by|charlie,Word,Word,True,Canonical,0,(play_game charlie soccer),"EventStructure(event_type='play', agent='charlie', theme='soccer')",,(play_game charlie chess)|(play_game charlie hide_n_seek),False
+football is played well by charlie,True,football|is|played|well|by|charlie,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie well)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='well')",(play_game charlie soccer)|(play_manner charlie well),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie badly),False
+heidi beats boy,True,heidi|beats|boy,Sentence,Sentence,True,Canonical,0,(and (win heidi) (lose charlie)),"EventStructure(event_type='win', agent='heidi', patient='charlie')",(win heidi)|(lose charlie),(win charlie)|(win sophia)|(lose heidi),False
+heidi beats boy in bathroom,True,heidi|beats|boy|in|bathroom,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats boy in bedroom,True,heidi|beats|boy|in|bedroom,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi bedroom)
+     (lose charlie)
+     (location charlie bedroom))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bedroom')",(win heidi)|(location heidi bedroom)|(lose charlie)|(location charlie bedroom),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats boy in playground,True,heidi|beats|boy|in|playground,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi playground)
+     (lose charlie)
+     (location charlie playground))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='playground')",(win heidi)|(location heidi playground)|(lose charlie)|(location charlie playground),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi beats boy in shower,True,heidi|beats|boy|in|shower,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats boy in street,True,heidi|beats|boy|in|street,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi street)
+     (lose charlie)
+     (location charlie street))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='street')",(win heidi)|(location heidi street)|(lose charlie)|(location charlie street),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi beats boy inside,True,heidi|beats|boy|inside,Sentence,Sentence,False,Location,1,"(or (and (win heidi)
+         (location heidi bathroom)
+         (lose charlie)
+         (location charlie bathroom))
+    (and (win heidi)
+         (location heidi bedroom)
+         (lose charlie)
+         (location charlie bedroom)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'})","(win heidi)|(lose charlie)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats boy outside,True,heidi|beats|boy|outside,Sentence,Sentence,False,Location,1,"(or (and (win heidi)
+         (location heidi playground)
+         (lose charlie)
+         (location charlie playground))
+    (and (win heidi)
+         (location heidi street)
+         (lose charlie)
+         (location charlie street)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'playground', 'street'})","(win heidi)|(lose charlie)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi beats boy with difficulty,True,heidi|beats|boy|with|difficulty,Sentence,Sentence,False,Manner,1,(and (win heidi) (lose charlie) (win_manner with_difficulty)),"EventStructure(event_type='win', agent='heidi', patient='charlie', manner='with_difficulty')",(win heidi)|(lose charlie)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(win_manner with_ease),False
+heidi beats boy with difficulty in bathroom,True,heidi|beats|boy|with|difficulty|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_difficulty')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats boy with difficulty in bedroom,True,heidi|beats|boy|with|difficulty|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bedroom)
+     (lose charlie)
+     (location charlie bedroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bedroom', manner='with_difficulty')",(win heidi)|(location heidi bedroom)|(lose charlie)|(location charlie bedroom)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats boy with difficulty in playground,True,heidi|beats|boy|with|difficulty|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi playground)
+     (lose charlie)
+     (location charlie playground)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='playground', manner='with_difficulty')",(win heidi)|(location heidi playground)|(lose charlie)|(location charlie playground)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_ease),False
+heidi beats boy with difficulty in shower,True,heidi|beats|boy|with|difficulty|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_difficulty')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats boy with difficulty in street,True,heidi|beats|boy|with|difficulty|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi street)
+     (lose charlie)
+     (location charlie street)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='street', manner='with_difficulty')",(win heidi)|(location heidi street)|(lose charlie)|(location charlie street)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_ease),False
+heidi beats boy with difficulty inside,True,heidi|beats|boy|with|difficulty|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi bathroom)
+         (lose charlie)
+         (location charlie bathroom)
+         (win_manner with_difficulty))
+    (and (win heidi)
+         (location heidi bedroom)
+         (lose charlie)
+         (location charlie bedroom)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'}, manner='with_difficulty')","(win heidi)|(lose charlie)|(win_manner with_difficulty)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats boy with difficulty outside,True,heidi|beats|boy|with|difficulty|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi playground)
+         (lose charlie)
+         (location charlie playground)
+         (win_manner with_difficulty))
+    (and (win heidi)
+         (location heidi street)
+         (lose charlie)
+         (location charlie street)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'playground', 'street'}, manner='with_difficulty')","(win heidi)|(lose charlie)|(win_manner with_difficulty)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_ease),False
+heidi beats boy with ease,True,heidi|beats|boy|with|ease,Sentence,Sentence,False,Manner,1,(and (win heidi) (lose charlie) (win_manner with_ease)),"EventStructure(event_type='win', agent='heidi', patient='charlie', manner='with_ease')",(win heidi)|(lose charlie)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(win_manner with_difficulty),False
+heidi beats boy with ease in bathroom,True,heidi|beats|boy|with|ease|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_ease')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats boy with ease in bedroom,True,heidi|beats|boy|with|ease|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bedroom)
+     (lose charlie)
+     (location charlie bedroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bedroom', manner='with_ease')",(win heidi)|(location heidi bedroom)|(lose charlie)|(location charlie bedroom)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats boy with ease in playground,True,heidi|beats|boy|with|ease|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi playground)
+     (lose charlie)
+     (location charlie playground)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='playground', manner='with_ease')",(win heidi)|(location heidi playground)|(lose charlie)|(location charlie playground)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_difficulty),False
+heidi beats boy with ease in shower,True,heidi|beats|boy|with|ease|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_ease')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats boy with ease in street,True,heidi|beats|boy|with|ease|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi street)
+     (lose charlie)
+     (location charlie street)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='street', manner='with_ease')",(win heidi)|(location heidi street)|(lose charlie)|(location charlie street)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_difficulty),False
+heidi beats boy with ease inside,True,heidi|beats|boy|with|ease|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi bathroom)
+         (lose charlie)
+         (location charlie bathroom)
+         (win_manner with_ease))
+    (and (win heidi)
+         (location heidi bedroom)
+         (lose charlie)
+         (location charlie bedroom)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'}, manner='with_ease')","(win heidi)|(lose charlie)|(win_manner with_ease)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats boy with ease outside,True,heidi|beats|boy|with|ease|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi playground)
+         (lose charlie)
+         (location charlie playground)
+         (win_manner with_ease))
+    (and (win heidi)
+         (location heidi street)
+         (lose charlie)
+         (location charlie street)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'playground', 'street'}, manner='with_ease')","(win heidi)|(lose charlie)|(win_manner with_ease)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_difficulty),False
+heidi beats charlie,True,heidi|beats|charlie,Sentence,Sentence,True,Canonical,0,(and (win heidi) (lose charlie)),"EventStructure(event_type='win', agent='heidi', patient='charlie')",(win heidi)|(lose charlie),(win charlie)|(win sophia)|(lose heidi),False
+heidi beats charlie in bathroom,True,heidi|beats|charlie|in|bathroom,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats charlie in bedroom,True,heidi|beats|charlie|in|bedroom,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi bedroom)
+     (lose charlie)
+     (location charlie bedroom))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bedroom')",(win heidi)|(location heidi bedroom)|(lose charlie)|(location charlie bedroom),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats charlie in playground,True,heidi|beats|charlie|in|playground,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi playground)
+     (lose charlie)
+     (location charlie playground))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='playground')",(win heidi)|(location heidi playground)|(lose charlie)|(location charlie playground),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi beats charlie in shower,True,heidi|beats|charlie|in|shower,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats charlie in street,True,heidi|beats|charlie|in|street,Sentence,Sentence,False,Location,1,"(and (win heidi)
+     (location heidi street)
+     (lose charlie)
+     (location charlie street))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='street')",(win heidi)|(location heidi street)|(lose charlie)|(location charlie street),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi beats charlie inside,True,heidi|beats|charlie|inside,Sentence,Sentence,False,Location,1,"(or (and (win heidi)
+         (location heidi bathroom)
+         (lose charlie)
+         (location charlie bathroom))
+    (and (win heidi)
+         (location heidi bedroom)
+         (lose charlie)
+         (location charlie bedroom)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'})","(win heidi)|(lose charlie)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi beats charlie outside,True,heidi|beats|charlie|outside,Sentence,Sentence,False,Location,1,"(or (and (win heidi)
+         (location heidi playground)
+         (lose charlie)
+         (location charlie playground))
+    (and (win heidi)
+         (location heidi street)
+         (lose charlie)
+         (location charlie street)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'playground', 'street'})","(win heidi)|(lose charlie)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi beats charlie with difficulty,True,heidi|beats|charlie|with|difficulty,Sentence,Sentence,False,Manner,1,(and (win heidi) (lose charlie) (win_manner with_difficulty)),"EventStructure(event_type='win', agent='heidi', patient='charlie', manner='with_difficulty')",(win heidi)|(lose charlie)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(win_manner with_ease),False
+heidi beats charlie with difficulty in bathroom,True,heidi|beats|charlie|with|difficulty|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_difficulty')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats charlie with difficulty in bedroom,True,heidi|beats|charlie|with|difficulty|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bedroom)
+     (lose charlie)
+     (location charlie bedroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bedroom', manner='with_difficulty')",(win heidi)|(location heidi bedroom)|(lose charlie)|(location charlie bedroom)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats charlie with difficulty in playground,True,heidi|beats|charlie|with|difficulty|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi playground)
+     (lose charlie)
+     (location charlie playground)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='playground', manner='with_difficulty')",(win heidi)|(location heidi playground)|(lose charlie)|(location charlie playground)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_ease),False
+heidi beats charlie with difficulty in shower,True,heidi|beats|charlie|with|difficulty|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_difficulty')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats charlie with difficulty in street,True,heidi|beats|charlie|with|difficulty|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi street)
+     (lose charlie)
+     (location charlie street)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='street', manner='with_difficulty')",(win heidi)|(location heidi street)|(lose charlie)|(location charlie street)|(win_manner with_difficulty),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_ease),False
+heidi beats charlie with difficulty inside,True,heidi|beats|charlie|with|difficulty|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi bathroom)
+         (lose charlie)
+         (location charlie bathroom)
+         (win_manner with_difficulty))
+    (and (win heidi)
+         (location heidi bedroom)
+         (lose charlie)
+         (location charlie bedroom)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'}, manner='with_difficulty')","(win heidi)|(lose charlie)|(win_manner with_difficulty)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_ease),False
+heidi beats charlie with difficulty outside,True,heidi|beats|charlie|with|difficulty|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi playground)
+         (lose charlie)
+         (location charlie playground)
+         (win_manner with_difficulty))
+    (and (win heidi)
+         (location heidi street)
+         (lose charlie)
+         (location charlie street)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'playground', 'street'}, manner='with_difficulty')","(win heidi)|(lose charlie)|(win_manner with_difficulty)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_ease),False
+heidi beats charlie with ease,True,heidi|beats|charlie|with|ease,Sentence,Sentence,False,Manner,1,(and (win heidi) (lose charlie) (win_manner with_ease)),"EventStructure(event_type='win', agent='heidi', patient='charlie', manner='with_ease')",(win heidi)|(lose charlie)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(win_manner with_difficulty),False
+heidi beats charlie with ease in bathroom,True,heidi|beats|charlie|with|ease|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_ease')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats charlie with ease in bedroom,True,heidi|beats|charlie|with|ease|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bedroom)
+     (lose charlie)
+     (location charlie bedroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bedroom', manner='with_ease')",(win heidi)|(location heidi bedroom)|(lose charlie)|(location charlie bedroom)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats charlie with ease in playground,True,heidi|beats|charlie|with|ease|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi playground)
+     (lose charlie)
+     (location charlie playground)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='playground', manner='with_ease')",(win heidi)|(location heidi playground)|(lose charlie)|(location charlie playground)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_difficulty),False
+heidi beats charlie with ease in shower,True,heidi|beats|charlie|with|ease|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi bathroom)
+     (lose charlie)
+     (location charlie bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='bathroom', manner='with_ease')",(win heidi)|(location heidi bathroom)|(lose charlie)|(location charlie bathroom)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats charlie with ease in street,True,heidi|beats|charlie|with|ease|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win heidi)
+     (location heidi street)
+     (lose charlie)
+     (location charlie street)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='heidi', patient='charlie', location='street', manner='with_ease')",(win heidi)|(location heidi street)|(lose charlie)|(location charlie street)|(win_manner with_ease),(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_difficulty),False
+heidi beats charlie with ease inside,True,heidi|beats|charlie|with|ease|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi bathroom)
+         (lose charlie)
+         (location charlie bathroom)
+         (win_manner with_ease))
+    (and (win heidi)
+         (location heidi bedroom)
+         (lose charlie)
+         (location charlie bedroom)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'}, manner='with_ease')","(win heidi)|(lose charlie)|(win_manner with_ease)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street)|(win_manner with_difficulty),False
+heidi beats charlie with ease outside,True,heidi|beats|charlie|with|ease|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win heidi)
+         (location heidi playground)
+         (lose charlie)
+         (location charlie playground)
+         (win_manner with_ease))
+    (and (win heidi)
+         (location heidi street)
+         (lose charlie)
+         (location charlie street)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='heidi', patient='charlie', location={'playground', 'street'}, manner='with_ease')","(win heidi)|(lose charlie)|(win_manner with_ease)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(win charlie)|(win sophia)|(lose heidi)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom)|(win_manner with_difficulty),False
+heidi loses to boy,True,heidi|loses|to|boy,Sentence,Sentence,True,Canonical,0,(and (lose heidi) (win charlie)),"EventStructure(event_type='lose', agent='heidi', patient='charlie')",(lose heidi)|(win charlie),(lose charlie)|(win heidi)|(win sophia),False
+heidi loses to boy in bathroom,True,heidi|loses|to|boy|in|bathroom,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi bathroom)
+     (win charlie)
+     (location charlie bathroom))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='bathroom')",(lose heidi)|(location heidi bathroom)|(win charlie)|(location charlie bathroom),(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to boy in bedroom,True,heidi|loses|to|boy|in|bedroom,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi bedroom)
+     (win charlie)
+     (location charlie bedroom))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='bedroom')",(lose heidi)|(location heidi bedroom)|(win charlie)|(location charlie bedroom),(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to boy in playground,True,heidi|loses|to|boy|in|playground,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi playground)
+     (win charlie)
+     (location charlie playground))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='playground')",(lose heidi)|(location heidi playground)|(win charlie)|(location charlie playground),(lose charlie)|(win heidi)|(win sophia)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi loses to boy in shower,True,heidi|loses|to|boy|in|shower,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi bathroom)
+     (win charlie)
+     (location charlie bathroom))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='bathroom')",(lose heidi)|(location heidi bathroom)|(win charlie)|(location charlie bathroom),(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to boy in street,True,heidi|loses|to|boy|in|street,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi street)
+     (win charlie)
+     (location charlie street))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='street')",(lose heidi)|(location heidi street)|(win charlie)|(location charlie street),(lose charlie)|(win heidi)|(win sophia)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi loses to boy inside,True,heidi|loses|to|boy|inside,Sentence,Sentence,False,Location,1,"(or (and (lose heidi)
+         (location heidi bathroom)
+         (win charlie)
+         (location charlie bathroom))
+    (and (lose heidi)
+         (location heidi bedroom)
+         (win charlie)
+         (location charlie bedroom)))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'})","(lose heidi)|(win charlie)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to boy outside,True,heidi|loses|to|boy|outside,Sentence,Sentence,False,Location,1,"(or (and (lose heidi)
+         (location heidi playground)
+         (win charlie)
+         (location charlie playground))
+    (and (lose heidi)
+         (location heidi street)
+         (win charlie)
+         (location charlie street)))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location={'playground', 'street'})","(lose heidi)|(win charlie)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(lose charlie)|(win heidi)|(win sophia)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi loses to charlie,True,heidi|loses|to|charlie,Sentence,Sentence,True,Canonical,0,(and (lose heidi) (win charlie)),"EventStructure(event_type='lose', agent='heidi', patient='charlie')",(lose heidi)|(win charlie),(lose charlie)|(win heidi)|(win sophia),False
+heidi loses to charlie in bathroom,True,heidi|loses|to|charlie|in|bathroom,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi bathroom)
+     (win charlie)
+     (location charlie bathroom))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='bathroom')",(lose heidi)|(location heidi bathroom)|(win charlie)|(location charlie bathroom),(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to charlie in bedroom,True,heidi|loses|to|charlie|in|bedroom,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi bedroom)
+     (win charlie)
+     (location charlie bedroom))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='bedroom')",(lose heidi)|(location heidi bedroom)|(win charlie)|(location charlie bedroom),(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to charlie in playground,True,heidi|loses|to|charlie|in|playground,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi playground)
+     (win charlie)
+     (location charlie playground))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='playground')",(lose heidi)|(location heidi playground)|(win charlie)|(location charlie playground),(lose charlie)|(win heidi)|(win sophia)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi loses to charlie in shower,True,heidi|loses|to|charlie|in|shower,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi bathroom)
+     (win charlie)
+     (location charlie bathroom))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='bathroom')",(lose heidi)|(location heidi bathroom)|(win charlie)|(location charlie bathroom),(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to charlie in street,True,heidi|loses|to|charlie|in|street,Sentence,Sentence,False,Location,1,"(and (lose heidi)
+     (location heidi street)
+     (win charlie)
+     (location charlie street))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location='street')",(lose heidi)|(location heidi street)|(win charlie)|(location charlie street),(lose charlie)|(win heidi)|(win sophia)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi loses to charlie inside,True,heidi|loses|to|charlie|inside,Sentence,Sentence,False,Location,1,"(or (and (lose heidi)
+         (location heidi bathroom)
+         (win charlie)
+         (location charlie bathroom))
+    (and (lose heidi)
+         (location heidi bedroom)
+         (win charlie)
+         (location charlie bedroom)))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location={'bathroom', 'bedroom'})","(lose heidi)|(win charlie)|(or (and (location heidi bathroom) (location charlie bathroom))
+    (and (location heidi bedroom) (location charlie bedroom)))",(lose charlie)|(win heidi)|(win sophia)|(location heidi playground)|(location charlie playground)|(location heidi street)|(location charlie street),False
+heidi loses to charlie outside,True,heidi|loses|to|charlie|outside,Sentence,Sentence,False,Location,1,"(or (and (lose heidi)
+         (location heidi playground)
+         (win charlie)
+         (location charlie playground))
+    (and (lose heidi)
+         (location heidi street)
+         (win charlie)
+         (location charlie street)))","EventStructure(event_type='lose', agent='heidi', patient='charlie', location={'playground', 'street'})","(lose heidi)|(win charlie)|(or (and (location heidi playground) (location charlie playground))
+    (and (location heidi street) (location charlie street)))",(lose charlie)|(win heidi)|(win sophia)|(location heidi bathroom)|(location charlie bathroom)|(location heidi bedroom)|(location charlie bedroom),False
+heidi plays chess badly in bedroom,True,heidi|plays|chess|badly|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,(and (play_game heidi chess) (location heidi bedroom) (play_manner heidi badly)),"EventStructure(event_type='play', agent='heidi', theme='chess', location='bedroom', manner='badly')",(play_game heidi chess)|(location heidi bedroom)|(play_manner heidi badly),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi well),False
+heidi plays chess badly inside,True,heidi|plays|chess|badly|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi chess)
+         (location heidi bathroom)
+         (play_manner heidi badly))
+    (and (play_game heidi chess)
+         (location heidi bedroom)
+         (play_manner heidi badly)))","EventStructure(event_type='play', agent='heidi', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game heidi chess)|(play_manner heidi badly)|(or (location heidi bathroom) (location heidi bedroom)),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi well),False
+heidi plays chess in bedroom,True,heidi|plays|chess|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game heidi chess) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='chess', location='bedroom')",(play_game heidi chess)|(location heidi bedroom),(play_game heidi hide_n_seek)|(location heidi playground),False
+heidi plays chess inside,True,heidi|plays|chess|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game heidi chess) (location heidi bathroom))
+    (and (play_game heidi chess) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='chess', location={'bathroom', 'bedroom'})",(play_game heidi chess)|(or (location heidi bathroom) (location heidi bedroom)),(play_game heidi hide_n_seek)|(location heidi playground),False
+heidi plays chess well in bedroom,True,heidi|plays|chess|well|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,(and (play_game heidi chess) (location heidi bedroom) (play_manner heidi well)),"EventStructure(event_type='play', agent='heidi', theme='chess', location='bedroom', manner='well')",(play_game heidi chess)|(location heidi bedroom)|(play_manner heidi well),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi badly),False
+heidi plays chess well inside,True,heidi|plays|chess|well|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi chess)
+         (location heidi bathroom)
+         (play_manner heidi well))
+    (and (play_game heidi chess)
+         (location heidi bedroom)
+         (play_manner heidi well)))","EventStructure(event_type='play', agent='heidi', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game heidi chess)|(play_manner heidi well)|(or (location heidi bathroom) (location heidi bedroom)),(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi badly),False
+heidi plays hide-and-seek badly in playground,True,heidi|plays|hide-and-seek|badly|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game heidi hide_n_seek)
+     (location heidi playground)
+     (play_manner heidi badly))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location='playground', manner='badly')",(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi badly),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi well),False
+heidi plays hide-and-seek badly outside,True,heidi|plays|hide-and-seek|badly|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi hide_n_seek)
+         (location heidi playground)
+         (play_manner heidi badly))
+    (and (play_game heidi hide_n_seek)
+         (location heidi street)
+         (play_manner heidi badly)))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game heidi hide_n_seek)|(play_manner heidi badly)|(or (location heidi playground) (location heidi street)),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi well)|(play_game heidi soccer),False
+heidi plays hide-and-seek in playground,True,heidi|plays|hide-and-seek|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game heidi hide_n_seek) (location heidi playground)),"EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location='playground')",(play_game heidi hide_n_seek)|(location heidi playground),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom),False
+heidi plays hide-and-seek outside,True,heidi|plays|hide-and-seek|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game heidi hide_n_seek) (location heidi playground))
+    (and (play_game heidi hide_n_seek) (location heidi street)))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location={'playground', 'street'})",(play_game heidi hide_n_seek)|(or (location heidi playground) (location heidi street)),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_game heidi soccer),False
+heidi plays hide-and-seek well in playground,True,heidi|plays|hide-and-seek|well|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game heidi hide_n_seek)
+     (location heidi playground)
+     (play_manner heidi well))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location='playground', manner='well')",(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi well),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi badly),False
+heidi plays hide-and-seek well outside,True,heidi|plays|hide-and-seek|well|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi hide_n_seek)
+         (location heidi playground)
+         (play_manner heidi well))
+    (and (play_game heidi hide_n_seek)
+         (location heidi street)
+         (play_manner heidi well)))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game heidi hide_n_seek)|(play_manner heidi well)|(or (location heidi playground) (location heidi street)),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi badly)|(play_game heidi soccer),False
+heidi plays in bedroom with jigsaw,True,heidi|plays|in|bedroom|with|jigsaw,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays in bedroom with puzzle,True,heidi|plays|in|bedroom|with|puzzle,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays inside with jigsaw,True,heidi|plays|inside|with|jigsaw,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays inside with puzzle,True,heidi|plays|inside|with|puzzle,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays with jigsaw,True,heidi|plays|with|jigsaw,Basic_Event,Basic_Event,True,Canonical,0,(play_toy heidi puzzle),"EventStructure(event_type='play', agent='heidi', theme='puzzle')",,(play_toy heidi ball)|(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays with jigsaw in bedroom,True,heidi|plays|with|jigsaw|in|bedroom,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays with jigsaw inside,True,heidi|plays|with|jigsaw|inside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays with puzzle,True,heidi|plays|with|puzzle,Basic_Event,Basic_Event,True,Canonical,0,(play_toy heidi puzzle),"EventStructure(event_type='play', agent='heidi', theme='puzzle')",,(play_toy heidi ball)|(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays with puzzle in bedroom,True,heidi|plays|with|puzzle|in|bedroom,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+heidi plays with puzzle inside,True,heidi|plays|with|puzzle|inside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+hide-and-seek is played badly by boy in playground,True,hide-and-seek|is|played|badly|by|boy|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='badly')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well),False
+hide-and-seek is played badly by boy outside,True,hide-and-seek|is|played|badly|by|boy|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie badly))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game charlie hide_n_seek)|(play_manner charlie badly)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well)|(play_game charlie soccer),False
+hide-and-seek is played badly by charlie in playground,True,hide-and-seek|is|played|badly|by|charlie|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie badly))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='badly')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie badly),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well),False
+hide-and-seek is played badly by charlie outside,True,hide-and-seek|is|played|badly|by|charlie|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie badly))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie badly)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game charlie hide_n_seek)|(play_manner charlie badly)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie well)|(play_game charlie soccer),False
+hide-and-seek is played badly by heidi in playground,True,hide-and-seek|is|played|badly|by|heidi|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game heidi hide_n_seek)
+     (location heidi playground)
+     (play_manner heidi badly))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location='playground', manner='badly')",(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi badly),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi well),False
+hide-and-seek is played badly by heidi outside,True,hide-and-seek|is|played|badly|by|heidi|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi hide_n_seek)
+         (location heidi playground)
+         (play_manner heidi badly))
+    (and (play_game heidi hide_n_seek)
+         (location heidi street)
+         (play_manner heidi badly)))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game heidi hide_n_seek)|(play_manner heidi badly)|(or (location heidi playground) (location heidi street)),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi well)|(play_game heidi soccer),False
+hide-and-seek is played badly by sophia in playground,True,hide-and-seek|is|played|badly|by|sophia|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia hide_n_seek)
+     (location sophia playground)
+     (play_manner sophia badly))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location='playground', manner='badly')",(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia badly),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia well),False
+hide-and-seek is played badly by sophia outside,True,hide-and-seek|is|played|badly|by|sophia|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia hide_n_seek)
+         (location sophia playground)
+         (play_manner sophia badly))
+    (and (play_game sophia hide_n_seek)
+         (location sophia street)
+         (play_manner sophia badly)))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game sophia hide_n_seek)|(play_manner sophia badly)|(or (location sophia playground) (location sophia street)),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia well)|(play_game sophia soccer),False
+hide-and-seek is played by boy in playground,True,hide-and-seek|is|played|by|boy|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie hide_n_seek) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground')",(play_game charlie hide_n_seek)|(location charlie playground),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom),False
+hide-and-seek is played by boy outside,True,hide-and-seek|is|played|by|boy|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie hide_n_seek) (location charlie playground))
+    (and (play_game charlie hide_n_seek) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'})",(play_game charlie hide_n_seek)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_game charlie soccer),False
+hide-and-seek is played by charlie in playground,True,hide-and-seek|is|played|by|charlie|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game charlie hide_n_seek) (location charlie playground)),"EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground')",(play_game charlie hide_n_seek)|(location charlie playground),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom),False
+hide-and-seek is played by charlie outside,True,hide-and-seek|is|played|by|charlie|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game charlie hide_n_seek) (location charlie playground))
+    (and (play_game charlie hide_n_seek) (location charlie street)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'})",(play_game charlie hide_n_seek)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_game charlie soccer),False
+hide-and-seek is played by heidi in playground,True,hide-and-seek|is|played|by|heidi|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game heidi hide_n_seek) (location heidi playground)),"EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location='playground')",(play_game heidi hide_n_seek)|(location heidi playground),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom),False
+hide-and-seek is played by heidi outside,True,hide-and-seek|is|played|by|heidi|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game heidi hide_n_seek) (location heidi playground))
+    (and (play_game heidi hide_n_seek) (location heidi street)))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location={'playground', 'street'})",(play_game heidi hide_n_seek)|(or (location heidi playground) (location heidi street)),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_game heidi soccer),False
+hide-and-seek is played by sophia in playground,True,hide-and-seek|is|played|by|sophia|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game sophia hide_n_seek) (location sophia playground)),"EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location='playground')",(play_game sophia hide_n_seek)|(location sophia playground),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom),False
+hide-and-seek is played by sophia outside,True,hide-and-seek|is|played|by|sophia|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game sophia hide_n_seek) (location sophia playground))
+    (and (play_game sophia hide_n_seek) (location sophia street)))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location={'playground', 'street'})",(play_game sophia hide_n_seek)|(or (location sophia playground) (location sophia street)),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_game sophia soccer),False
+hide-and-seek is played well by boy in playground,True,hide-and-seek|is|played|well|by|boy|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='well')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly),False
+hide-and-seek is played well by boy outside,True,hide-and-seek|is|played|well|by|boy|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie well))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game charlie hide_n_seek)|(play_manner charlie well)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly)|(play_game charlie soccer),False
+hide-and-seek is played well by charlie in playground,True,hide-and-seek|is|played|well|by|charlie|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game charlie hide_n_seek)
+     (location charlie playground)
+     (play_manner charlie well))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location='playground', manner='well')",(play_game charlie hide_n_seek)|(location charlie playground)|(play_manner charlie well),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly),False
+hide-and-seek is played well by charlie outside,True,hide-and-seek|is|played|well|by|charlie|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game charlie hide_n_seek)
+         (location charlie playground)
+         (play_manner charlie well))
+    (and (play_game charlie hide_n_seek)
+         (location charlie street)
+         (play_manner charlie well)))","EventStructure(event_type='play', agent='charlie', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game charlie hide_n_seek)|(play_manner charlie well)|(or (location charlie playground) (location charlie street)),(play_game charlie chess)|(location charlie bathroom)|(location charlie bedroom)|(play_manner charlie badly)|(play_game charlie soccer),False
+hide-and-seek is played well by heidi in playground,True,hide-and-seek|is|played|well|by|heidi|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game heidi hide_n_seek)
+     (location heidi playground)
+     (play_manner heidi well))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location='playground', manner='well')",(play_game heidi hide_n_seek)|(location heidi playground)|(play_manner heidi well),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi badly),False
+hide-and-seek is played well by heidi outside,True,hide-and-seek|is|played|well|by|heidi|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game heidi hide_n_seek)
+         (location heidi playground)
+         (play_manner heidi well))
+    (and (play_game heidi hide_n_seek)
+         (location heidi street)
+         (play_manner heidi well)))","EventStructure(event_type='play', agent='heidi', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game heidi hide_n_seek)|(play_manner heidi well)|(or (location heidi playground) (location heidi street)),(play_game heidi chess)|(location heidi bathroom)|(location heidi bedroom)|(play_manner heidi badly)|(play_game heidi soccer),False
+hide-and-seek is played well by sophia in playground,True,hide-and-seek|is|played|well|by|sophia|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia hide_n_seek)
+     (location sophia playground)
+     (play_manner sophia well))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location='playground', manner='well')",(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia well),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia badly),False
+hide-and-seek is played well by sophia outside,True,hide-and-seek|is|played|well|by|sophia|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia hide_n_seek)
+         (location sophia playground)
+         (play_manner sophia well))
+    (and (play_game sophia hide_n_seek)
+         (location sophia street)
+         (play_manner sophia well)))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game sophia hide_n_seek)|(play_manner sophia well)|(or (location sophia playground) (location sophia street)),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia badly)|(play_game sophia soccer),False
+jigsaw is played with by heidi,True,jigsaw|is|played|with|by|heidi,Basic_Event,Basic_Event,True,Canonical,0,(play_toy heidi puzzle),"EventStructure(event_type='play', agent='heidi', theme='puzzle')",,(play_toy heidi ball)|(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+jigsaw is played with by heidi in bedroom,True,jigsaw|is|played|with|by|heidi|in|bedroom,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+jigsaw is played with by heidi inside,True,jigsaw|is|played|with|by|heidi|inside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+jigsaw is played with in bedroom by heidi,True,jigsaw|is|played|with|in|bedroom|by|heidi,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+jigsaw is played with inside by heidi,True,jigsaw|is|played|with|inside|by|heidi,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+puzzle is played with by heidi,True,puzzle|is|played|with|by|heidi,Basic_Event,Basic_Event,True,Canonical,0,(play_toy heidi puzzle),"EventStructure(event_type='play', agent='heidi', theme='puzzle')",,(play_toy heidi ball)|(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+puzzle is played with by heidi in bedroom,True,puzzle|is|played|with|by|heidi|in|bedroom,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+puzzle is played with by heidi inside,True,puzzle|is|played|with|by|heidi|inside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+puzzle is played with in bedroom by heidi,True,puzzle|is|played|with|in|bedroom|by|heidi,Basic_Event,Basic_Event,False,Location,1,(and (play_toy heidi puzzle) (location heidi bedroom)),"EventStructure(event_type='play', agent='heidi', theme='puzzle', location='bedroom')",(play_toy heidi puzzle)|(location heidi bedroom),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+puzzle is played with inside by heidi,True,puzzle|is|played|with|inside|by|heidi,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy heidi puzzle) (location heidi bathroom))
+    (and (play_toy heidi puzzle) (location heidi bedroom)))","EventStructure(event_type='play', agent='heidi', theme='puzzle', location={'bathroom', 'bedroom'})",(play_toy heidi puzzle)|(or (location heidi bathroom) (location heidi bedroom)),(play_toy heidi doll)|(play_toy charlie puzzle)|(play_toy sophia puzzle),True
+soccer is played badly by boy,True,soccer|is|played|badly|by|boy,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie badly)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='badly')",(play_game charlie soccer)|(play_manner charlie badly),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie well),False
+soccer is played by boy,True,soccer|is|played|by|boy,Word,Word,True,Canonical,0,(play_game charlie soccer),"EventStructure(event_type='play', agent='charlie', theme='soccer')",,(play_game charlie chess)|(play_game charlie hide_n_seek),False
+soccer is played well by boy,True,soccer|is|played|well|by|boy,Word,Word,False,Manner,1,(and (play_game charlie soccer) (play_manner charlie well)),"EventStructure(event_type='play', agent='charlie', theme='soccer', manner='well')",(play_game charlie soccer)|(play_manner charlie well),(play_game charlie chess)|(play_game charlie hide_n_seek)|(play_manner charlie badly),False
+sophia beats heidi,True,sophia|beats|heidi,Sentence,Sentence,True,Canonical,0,(and (win sophia) (lose heidi)),"EventStructure(event_type='win', agent='sophia', patient='heidi')",(win sophia)|(lose heidi),(win charlie)|(win heidi)|(lose sophia),False
+sophia beats heidi in bathroom,True,sophia|beats|heidi|in|bathroom,Sentence,Sentence,False,Location,1,"(and (win sophia)
+     (location sophia bathroom)
+     (lose heidi)
+     (location heidi bathroom))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bathroom')",(win sophia)|(location sophia bathroom)|(lose heidi)|(location heidi bathroom),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia beats heidi in bedroom,True,sophia|beats|heidi|in|bedroom,Sentence,Sentence,False,Location,1,"(and (win sophia)
+     (location sophia bedroom)
+     (lose heidi)
+     (location heidi bedroom))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bedroom')",(win sophia)|(location sophia bedroom)|(lose heidi)|(location heidi bedroom),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia beats heidi in playground,True,sophia|beats|heidi|in|playground,Sentence,Sentence,False,Location,1,"(and (win sophia)
+     (location sophia playground)
+     (lose heidi)
+     (location heidi playground))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='playground')",(win sophia)|(location sophia playground)|(lose heidi)|(location heidi playground),(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom),False
+sophia beats heidi in shower,True,sophia|beats|heidi|in|shower,Sentence,Sentence,False,Location,1,"(and (win sophia)
+     (location sophia bathroom)
+     (lose heidi)
+     (location heidi bathroom))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bathroom')",(win sophia)|(location sophia bathroom)|(lose heidi)|(location heidi bathroom),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia beats heidi in street,True,sophia|beats|heidi|in|street,Sentence,Sentence,False,Location,1,(and (win sophia) (location sophia street) (lose heidi) (location heidi street)),"EventStructure(event_type='win', agent='sophia', patient='heidi', location='street')",(win sophia)|(location sophia street)|(lose heidi)|(location heidi street),(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom),False
+sophia beats heidi inside,True,sophia|beats|heidi|inside,Sentence,Sentence,False,Location,1,"(or (and (win sophia)
+         (location sophia bathroom)
+         (lose heidi)
+         (location heidi bathroom))
+    (and (win sophia)
+         (location sophia bedroom)
+         (lose heidi)
+         (location heidi bedroom)))","EventStructure(event_type='win', agent='sophia', patient='heidi', location={'bathroom', 'bedroom'})","(win sophia)|(lose heidi)|(or (and (location sophia bathroom) (location heidi bathroom))
+    (and (location sophia bedroom) (location heidi bedroom)))",(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia beats heidi outside,True,sophia|beats|heidi|outside,Sentence,Sentence,False,Location,1,"(or (and (win sophia)
+         (location sophia playground)
+         (lose heidi)
+         (location heidi playground))
+    (and (win sophia)
+         (location sophia street)
+         (lose heidi)
+         (location heidi street)))","EventStructure(event_type='win', agent='sophia', patient='heidi', location={'playground', 'street'})","(win sophia)|(lose heidi)|(or (and (location sophia playground) (location heidi playground))
+    (and (location sophia street) (location heidi street)))",(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom),False
+sophia beats heidi with difficulty,True,sophia|beats|heidi|with|difficulty,Sentence,Sentence,False,Manner,1,(and (win sophia) (lose heidi) (win_manner with_difficulty)),"EventStructure(event_type='win', agent='sophia', patient='heidi', manner='with_difficulty')",(win sophia)|(lose heidi)|(win_manner with_difficulty),(win charlie)|(win heidi)|(lose sophia)|(win_manner with_ease),False
+sophia beats heidi with difficulty in bathroom,True,sophia|beats|heidi|with|difficulty|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia bathroom)
+     (lose heidi)
+     (location heidi bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bathroom', manner='with_difficulty')",(win sophia)|(location sophia bathroom)|(lose heidi)|(location heidi bathroom)|(win_manner with_difficulty),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_ease),False
+sophia beats heidi with difficulty in bedroom,True,sophia|beats|heidi|with|difficulty|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia bedroom)
+     (lose heidi)
+     (location heidi bedroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bedroom', manner='with_difficulty')",(win sophia)|(location sophia bedroom)|(lose heidi)|(location heidi bedroom)|(win_manner with_difficulty),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_ease),False
+sophia beats heidi with difficulty in playground,True,sophia|beats|heidi|with|difficulty|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia playground)
+     (lose heidi)
+     (location heidi playground)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='playground', manner='with_difficulty')",(win sophia)|(location sophia playground)|(lose heidi)|(location heidi playground)|(win_manner with_difficulty),(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom)|(win_manner with_ease),False
+sophia beats heidi with difficulty in shower,True,sophia|beats|heidi|with|difficulty|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia bathroom)
+     (lose heidi)
+     (location heidi bathroom)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bathroom', manner='with_difficulty')",(win sophia)|(location sophia bathroom)|(lose heidi)|(location heidi bathroom)|(win_manner with_difficulty),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_ease),False
+sophia beats heidi with difficulty in street,True,sophia|beats|heidi|with|difficulty|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia street)
+     (lose heidi)
+     (location heidi street)
+     (win_manner with_difficulty))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='street', manner='with_difficulty')",(win sophia)|(location sophia street)|(lose heidi)|(location heidi street)|(win_manner with_difficulty),(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom)|(win_manner with_ease),False
+sophia beats heidi with difficulty inside,True,sophia|beats|heidi|with|difficulty|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win sophia)
+         (location sophia bathroom)
+         (lose heidi)
+         (location heidi bathroom)
+         (win_manner with_difficulty))
+    (and (win sophia)
+         (location sophia bedroom)
+         (lose heidi)
+         (location heidi bedroom)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='sophia', patient='heidi', location={'bathroom', 'bedroom'}, manner='with_difficulty')","(win sophia)|(lose heidi)|(win_manner with_difficulty)|(or (and (location sophia bathroom) (location heidi bathroom))
+    (and (location sophia bedroom) (location heidi bedroom)))",(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_ease),False
+sophia beats heidi with difficulty outside,True,sophia|beats|heidi|with|difficulty|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win sophia)
+         (location sophia playground)
+         (lose heidi)
+         (location heidi playground)
+         (win_manner with_difficulty))
+    (and (win sophia)
+         (location sophia street)
+         (lose heidi)
+         (location heidi street)
+         (win_manner with_difficulty)))","EventStructure(event_type='win', agent='sophia', patient='heidi', location={'playground', 'street'}, manner='with_difficulty')","(win sophia)|(lose heidi)|(win_manner with_difficulty)|(or (and (location sophia playground) (location heidi playground))
+    (and (location sophia street) (location heidi street)))",(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom)|(win_manner with_ease),False
+sophia beats heidi with ease,True,sophia|beats|heidi|with|ease,Sentence,Sentence,False,Manner,1,(and (win sophia) (lose heidi) (win_manner with_ease)),"EventStructure(event_type='win', agent='sophia', patient='heidi', manner='with_ease')",(win sophia)|(lose heidi)|(win_manner with_ease),(win charlie)|(win heidi)|(lose sophia)|(win_manner with_difficulty),False
+sophia beats heidi with ease in bathroom,True,sophia|beats|heidi|with|ease|in|bathroom,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia bathroom)
+     (lose heidi)
+     (location heidi bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bathroom', manner='with_ease')",(win sophia)|(location sophia bathroom)|(lose heidi)|(location heidi bathroom)|(win_manner with_ease),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_difficulty),False
+sophia beats heidi with ease in bedroom,True,sophia|beats|heidi|with|ease|in|bedroom,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia bedroom)
+     (lose heidi)
+     (location heidi bedroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bedroom', manner='with_ease')",(win sophia)|(location sophia bedroom)|(lose heidi)|(location heidi bedroom)|(win_manner with_ease),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_difficulty),False
+sophia beats heidi with ease in playground,True,sophia|beats|heidi|with|ease|in|playground,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia playground)
+     (lose heidi)
+     (location heidi playground)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='playground', manner='with_ease')",(win sophia)|(location sophia playground)|(lose heidi)|(location heidi playground)|(win_manner with_ease),(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom)|(win_manner with_difficulty),False
+sophia beats heidi with ease in shower,True,sophia|beats|heidi|with|ease|in|shower,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia bathroom)
+     (lose heidi)
+     (location heidi bathroom)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='bathroom', manner='with_ease')",(win sophia)|(location sophia bathroom)|(lose heidi)|(location heidi bathroom)|(win_manner with_ease),(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_difficulty),False
+sophia beats heidi with ease in street,True,sophia|beats|heidi|with|ease|in|street,Sentence,Sentence,False,Location+Manner,2,"(and (win sophia)
+     (location sophia street)
+     (lose heidi)
+     (location heidi street)
+     (win_manner with_ease))","EventStructure(event_type='win', agent='sophia', patient='heidi', location='street', manner='with_ease')",(win sophia)|(location sophia street)|(lose heidi)|(location heidi street)|(win_manner with_ease),(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom)|(win_manner with_difficulty),False
+sophia beats heidi with ease inside,True,sophia|beats|heidi|with|ease|inside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win sophia)
+         (location sophia bathroom)
+         (lose heidi)
+         (location heidi bathroom)
+         (win_manner with_ease))
+    (and (win sophia)
+         (location sophia bedroom)
+         (lose heidi)
+         (location heidi bedroom)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='sophia', patient='heidi', location={'bathroom', 'bedroom'}, manner='with_ease')","(win sophia)|(lose heidi)|(win_manner with_ease)|(or (and (location sophia bathroom) (location heidi bathroom))
+    (and (location sophia bedroom) (location heidi bedroom)))",(win charlie)|(win heidi)|(lose sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street)|(win_manner with_difficulty),False
+sophia beats heidi with ease outside,True,sophia|beats|heidi|with|ease|outside,Sentence,Sentence,False,Location+Manner,2,"(or (and (win sophia)
+         (location sophia playground)
+         (lose heidi)
+         (location heidi playground)
+         (win_manner with_ease))
+    (and (win sophia)
+         (location sophia street)
+         (lose heidi)
+         (location heidi street)
+         (win_manner with_ease)))","EventStructure(event_type='win', agent='sophia', patient='heidi', location={'playground', 'street'}, manner='with_ease')","(win sophia)|(lose heidi)|(win_manner with_ease)|(or (and (location sophia playground) (location heidi playground))
+    (and (location sophia street) (location heidi street)))",(win charlie)|(win heidi)|(lose sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom)|(win_manner with_difficulty),False
+sophia loses to heidi,True,sophia|loses|to|heidi,Sentence,Sentence,True,Canonical,0,(and (lose sophia) (win heidi)),"EventStructure(event_type='lose', agent='sophia', patient='heidi')",(lose sophia)|(win heidi),(lose heidi)|(win charlie)|(win sophia),False
+sophia loses to heidi in bathroom,True,sophia|loses|to|heidi|in|bathroom,Sentence,Sentence,False,Location,1,"(and (lose sophia)
+     (location sophia bathroom)
+     (win heidi)
+     (location heidi bathroom))","EventStructure(event_type='lose', agent='sophia', patient='heidi', location='bathroom')",(lose sophia)|(location sophia bathroom)|(win heidi)|(location heidi bathroom),(lose heidi)|(win charlie)|(win sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia loses to heidi in bedroom,True,sophia|loses|to|heidi|in|bedroom,Sentence,Sentence,False,Location,1,"(and (lose sophia)
+     (location sophia bedroom)
+     (win heidi)
+     (location heidi bedroom))","EventStructure(event_type='lose', agent='sophia', patient='heidi', location='bedroom')",(lose sophia)|(location sophia bedroom)|(win heidi)|(location heidi bedroom),(lose heidi)|(win charlie)|(win sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia loses to heidi in playground,True,sophia|loses|to|heidi|in|playground,Sentence,Sentence,False,Location,1,"(and (lose sophia)
+     (location sophia playground)
+     (win heidi)
+     (location heidi playground))","EventStructure(event_type='lose', agent='sophia', patient='heidi', location='playground')",(lose sophia)|(location sophia playground)|(win heidi)|(location heidi playground),(lose heidi)|(win charlie)|(win sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom),False
+sophia loses to heidi in shower,True,sophia|loses|to|heidi|in|shower,Sentence,Sentence,False,Location,1,"(and (lose sophia)
+     (location sophia bathroom)
+     (win heidi)
+     (location heidi bathroom))","EventStructure(event_type='lose', agent='sophia', patient='heidi', location='bathroom')",(lose sophia)|(location sophia bathroom)|(win heidi)|(location heidi bathroom),(lose heidi)|(win charlie)|(win sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia loses to heidi in street,True,sophia|loses|to|heidi|in|street,Sentence,Sentence,False,Location,1,(and (lose sophia) (location sophia street) (win heidi) (location heidi street)),"EventStructure(event_type='lose', agent='sophia', patient='heidi', location='street')",(lose sophia)|(location sophia street)|(win heidi)|(location heidi street),(lose heidi)|(win charlie)|(win sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom),False
+sophia loses to heidi inside,True,sophia|loses|to|heidi|inside,Sentence,Sentence,False,Location,1,"(or (and (lose sophia)
+         (location sophia bathroom)
+         (win heidi)
+         (location heidi bathroom))
+    (and (lose sophia)
+         (location sophia bedroom)
+         (win heidi)
+         (location heidi bedroom)))","EventStructure(event_type='lose', agent='sophia', patient='heidi', location={'bathroom', 'bedroom'})","(lose sophia)|(win heidi)|(or (and (location sophia bathroom) (location heidi bathroom))
+    (and (location sophia bedroom) (location heidi bedroom)))",(lose heidi)|(win charlie)|(win sophia)|(location sophia playground)|(location heidi playground)|(location sophia street)|(location heidi street),False
+sophia loses to heidi outside,True,sophia|loses|to|heidi|outside,Sentence,Sentence,False,Location,1,"(or (and (lose sophia)
+         (location sophia playground)
+         (win heidi)
+         (location heidi playground))
+    (and (lose sophia)
+         (location sophia street)
+         (win heidi)
+         (location heidi street)))","EventStructure(event_type='lose', agent='sophia', patient='heidi', location={'playground', 'street'})","(lose sophia)|(win heidi)|(or (and (location sophia playground) (location heidi playground))
+    (and (location sophia street) (location heidi street)))",(lose heidi)|(win charlie)|(win sophia)|(location sophia bathroom)|(location heidi bathroom)|(location sophia bedroom)|(location heidi bedroom),False
+sophia plays chess badly in bedroom,True,sophia|plays|chess|badly|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia chess)
+     (location sophia bedroom)
+     (play_manner sophia badly))","EventStructure(event_type='play', agent='sophia', theme='chess', location='bedroom', manner='badly')",(play_game sophia chess)|(location sophia bedroom)|(play_manner sophia badly),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia well),False
+sophia plays chess badly inside,True,sophia|plays|chess|badly|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia chess)
+         (location sophia bathroom)
+         (play_manner sophia badly))
+    (and (play_game sophia chess)
+         (location sophia bedroom)
+         (play_manner sophia badly)))","EventStructure(event_type='play', agent='sophia', theme='chess', location={'bathroom', 'bedroom'}, manner='badly')",(play_game sophia chess)|(play_manner sophia badly)|(or (location sophia bathroom) (location sophia bedroom)),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia well),False
+sophia plays chess in bedroom,True,sophia|plays|chess|in|bedroom,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game sophia chess) (location sophia bedroom)),"EventStructure(event_type='play', agent='sophia', theme='chess', location='bedroom')",(play_game sophia chess)|(location sophia bedroom),(play_game sophia hide_n_seek)|(location sophia playground),False
+sophia plays chess inside,True,sophia|plays|chess|inside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game sophia chess) (location sophia bathroom))
+    (and (play_game sophia chess) (location sophia bedroom)))","EventStructure(event_type='play', agent='sophia', theme='chess', location={'bathroom', 'bedroom'})",(play_game sophia chess)|(or (location sophia bathroom) (location sophia bedroom)),(play_game sophia hide_n_seek)|(location sophia playground),False
+sophia plays chess well in bedroom,True,sophia|plays|chess|well|in|bedroom,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia chess)
+     (location sophia bedroom)
+     (play_manner sophia well))","EventStructure(event_type='play', agent='sophia', theme='chess', location='bedroom', manner='well')",(play_game sophia chess)|(location sophia bedroom)|(play_manner sophia well),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia badly),False
+sophia plays chess well inside,True,sophia|plays|chess|well|inside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia chess)
+         (location sophia bathroom)
+         (play_manner sophia well))
+    (and (play_game sophia chess)
+         (location sophia bedroom)
+         (play_manner sophia well)))","EventStructure(event_type='play', agent='sophia', theme='chess', location={'bathroom', 'bedroom'}, manner='well')",(play_game sophia chess)|(play_manner sophia well)|(or (location sophia bathroom) (location sophia bedroom)),(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia badly),False
+sophia plays hide-and-seek badly in playground,True,sophia|plays|hide-and-seek|badly|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia hide_n_seek)
+     (location sophia playground)
+     (play_manner sophia badly))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location='playground', manner='badly')",(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia badly),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia well),False
+sophia plays hide-and-seek badly outside,True,sophia|plays|hide-and-seek|badly|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia hide_n_seek)
+         (location sophia playground)
+         (play_manner sophia badly))
+    (and (play_game sophia hide_n_seek)
+         (location sophia street)
+         (play_manner sophia badly)))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location={'playground', 'street'}, manner='badly')",(play_game sophia hide_n_seek)|(play_manner sophia badly)|(or (location sophia playground) (location sophia street)),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia well)|(play_game sophia soccer),False
+sophia plays hide-and-seek in playground,True,sophia|plays|hide-and-seek|in|playground,Complex_Event,Complex_Event,True,Canonical,1,(and (play_game sophia hide_n_seek) (location sophia playground)),"EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location='playground')",(play_game sophia hide_n_seek)|(location sophia playground),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom),False
+sophia plays hide-and-seek outside,True,sophia|plays|hide-and-seek|outside,Complex_Event,Complex_Event,True,Canonical,1,"(or (and (play_game sophia hide_n_seek) (location sophia playground))
+    (and (play_game sophia hide_n_seek) (location sophia street)))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location={'playground', 'street'})",(play_game sophia hide_n_seek)|(or (location sophia playground) (location sophia street)),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_game sophia soccer),False
+sophia plays hide-and-seek well in playground,True,sophia|plays|hide-and-seek|well|in|playground,Complex_Event,Complex_Event,False,Manner,2,"(and (play_game sophia hide_n_seek)
+     (location sophia playground)
+     (play_manner sophia well))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location='playground', manner='well')",(play_game sophia hide_n_seek)|(location sophia playground)|(play_manner sophia well),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia badly),False
+sophia plays hide-and-seek well outside,True,sophia|plays|hide-and-seek|well|outside,Complex_Event,Complex_Event,False,Manner,2,"(or (and (play_game sophia hide_n_seek)
+         (location sophia playground)
+         (play_manner sophia well))
+    (and (play_game sophia hide_n_seek)
+         (location sophia street)
+         (play_manner sophia well)))","EventStructure(event_type='play', agent='sophia', theme='hide_n_seek', location={'playground', 'street'}, manner='well')",(play_game sophia hide_n_seek)|(play_manner sophia well)|(or (location sophia playground) (location sophia street)),(play_game sophia chess)|(location sophia bathroom)|(location sophia bedroom)|(play_manner sophia badly)|(play_game sophia soccer),False
+sophia plays in bedroom with doll,True,sophia|plays|in|bedroom|with|doll,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia bedroom)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='bedroom')",(play_toy sophia doll)|(location sophia bedroom),(play_toy sophia puzzle)|(location sophia playground),True
+sophia plays in playground with doll,True,sophia|plays|in|playground|with|doll,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia playground)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='playground')",(play_toy sophia doll)|(location sophia playground),(play_toy sophia ball)|(location sophia bedroom),True
+sophia plays inside with doll,True,sophia|plays|inside|with|doll,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia bathroom))
+    (and (play_toy sophia doll) (location sophia bedroom)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'bathroom', 'bedroom'})",(play_toy sophia doll)|(or (location sophia bathroom) (location sophia bedroom)),(location sophia playground)|(play_toy sophia puzzle),True
+sophia plays outside with doll,True,sophia|plays|outside|with|doll,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia playground))
+    (and (play_toy sophia doll) (location sophia street)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'playground', 'street'})",(play_toy sophia doll)|(or (location sophia playground) (location sophia street)),(play_toy sophia ball)|(location sophia bedroom),True
+sophia plays with doll,True,sophia|plays|with|doll,Basic_Event,Basic_Event,True,Canonical,0,(play_toy sophia doll),"EventStructure(event_type='play', agent='sophia', theme='doll')",,(play_toy sophia puzzle)|(play_toy sophia ball),True
+sophia plays with doll in bedroom,True,sophia|plays|with|doll|in|bedroom,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia bedroom)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='bedroom')",(play_toy sophia doll)|(location sophia bedroom),(play_toy sophia puzzle)|(location sophia playground),True
+sophia plays with doll in playground,True,sophia|plays|with|doll|in|playground,Basic_Event,Basic_Event,False,Location,1,(and (play_toy sophia doll) (location sophia playground)),"EventStructure(event_type='play', agent='sophia', theme='doll', location='playground')",(play_toy sophia doll)|(location sophia playground),(play_toy sophia ball)|(location sophia bedroom),True
+sophia plays with doll inside,True,sophia|plays|with|doll|inside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia bathroom))
+    (and (play_toy sophia doll) (location sophia bedroom)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'bathroom', 'bedroom'})",(play_toy sophia doll)|(or (location sophia bathroom) (location sophia bedroom)),(location sophia playground)|(play_toy sophia puzzle),True
+sophia plays with doll outside,True,sophia|plays|with|doll|outside,Basic_Event,Basic_Event,False,Location,1,"(or (and (play_toy sophia doll) (location sophia playground))
+    (and (play_toy sophia doll) (location sophia street)))","EventStructure(event_type='play', agent='sophia', theme='doll', location={'playground', 'street'})",(play_toy sophia doll)|(or (location sophia playground) (location sophia street)),(play_toy sophia ball)|(location sophia bedroom),True

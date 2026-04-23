@@ -1,0 +1,9 @@
+"group","group_name","split","n_obs","n_train","n_test","n_sent","n_model"
+"word_group","Word","S1",1680,840,840,24,70
+"word_group","Word","S2",1680,840,840,24,70
+"sentence_group","Sentence","S1",22400,11200,11200,320,70
+"sentence_group","Sentence","S2",22400,11200,11200,320,70
+"complex_event","Complex Event","S1",16800,6720,10080,240,70
+"complex_event","Complex Event","S2",16800,10080,6720,240,70
+"basic_event","Basic Event","S1",13440,8820,4620,192,70
+"basic_event","Basic Event","S2",13440,9380,4060,192,70

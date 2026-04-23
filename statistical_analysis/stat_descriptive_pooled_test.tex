@@ -1,0 +1,44 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}llrrrrrrr@{}}
+\toprule
+ &  & \multicolumn{3}{c}{\textbf{Sentence-level}} & \multicolumn{4}{c}{\textbf{Model-level}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-9}
+\textbf{Group} & \textbf{Architecture} & $-$ent & $+$ent & $\Delta$ & $-$ent & $+$ent & SE$_{+}$ & $\Delta$ \\
+\midrule
+Word & SRN & 1.654 & \textbf{1.727} & +0.073 & 1.654 & \textbf{1.727} & 0.004 & +0.073 \\
+ & GRU & \textbf{1.723} & 1.715 & -0.007 & \textbf{1.723} & 1.715 & 0.005 & -0.007 \\
+ & LSTM & 1.679 & 1.707 & +0.027 & 1.679 & 1.707 & 0.010 & +0.027 \\
+ & AbsPE & 1.705 & 1.725 & +0.019 & 1.705 & 1.725 & 0.008 & +0.019 \\
+ & RoPE & 1.670 & 1.699 & +0.030 & 1.670 & 1.699 & 0.009 & +0.030 \\
+ & AbsPE H80 & 1.661 & 1.699 & +0.038 & 1.661 & 1.699 & 0.015 & +0.038 \\
+ & RoPE H80 & 1.646 & 1.704 & +0.058 & 1.646 & 1.704 & 0.009 & +0.058 \\
+\addlinespace
+Sentence & SRN & \textbf{1.156} & 1.119 & -0.037 & \textbf{1.156} & 1.119 & 0.010 & -0.037 \\
+ & GRU & 1.132 & 1.080 & -0.052 & 1.132 & 1.080 & 0.009 & -0.052 \\
+ & LSTM & 1.143 & 1.115 & -0.027 & 1.143 & 1.115 & 0.008 & -0.027 \\
+ & AbsPE & 0.953 & 1.024 & +0.071 & 0.953 & 1.024 & 0.025 & +0.071 \\
+ & RoPE & 1.143 & 1.121 & -0.022 & 1.143 & 1.121 & 0.007 & -0.022 \\
+ & AbsPE H80 & 0.978 & 0.954 & -0.024 & 0.978 & 0.954 & 0.019 & -0.024 \\
+ & RoPE H80 & 1.013 & 1.108 & +0.095 & 1.013 & 1.108 & 0.012 & +0.095 \\
+\addlinespace
+Complex & SRN & \textbf{1.357} & \textbf{1.373} & +0.017 & \textbf{1.349} & \textbf{1.369} & 0.012 & +0.020 \\
+ & GRU & 1.300 & 1.196 & -0.104 & 1.290 & 1.185 & 0.032 & -0.105 \\
+ & LSTM & 1.281 & 1.244 & -0.037 & 1.273 & 1.239 & 0.020 & -0.034 \\
+ & AbsPE & 1.054 & 1.099 & +0.046 & 1.041 & 1.082 & 0.042 & +0.042 \\
+ & RoPE & 1.069 & 1.054 & -0.014 & 1.050 & 1.042 & 0.030 & -0.008 \\
+ & AbsPE H80 & 1.003 & 0.971 & -0.031 & 0.979 & 0.965 & 0.042 & -0.014 \\
+ & RoPE H80 & 1.009 & 1.027 & +0.018 & 0.989 & 1.014 & 0.051 & +0.025 \\
+\addlinespace
+Basic & SRN & 0.670 & 0.735 & +0.065 & 0.662 & 0.725 & 0.052 & +0.063 \\
+ & GRU & 0.652 & \textbf{0.775} & +0.124 & 0.643 & \textbf{0.768} & 0.041 & +0.125 \\
+ & LSTM & \textbf{0.670} & 0.773 & +0.104 & \textbf{0.658} & 0.764 & 0.052 & +0.106 \\
+ & AbsPE & 0.586 & 0.685 & +0.099 & 0.581 & 0.678 & 0.039 & +0.096 \\
+ & RoPE & 0.630 & 0.694 & +0.064 & 0.622 & 0.685 & 0.052 & +0.063 \\
+ & AbsPE H80 & 0.590 & 0.665 & +0.075 & 0.586 & 0.657 & 0.045 & +0.071 \\
+ & RoPE H80 & 0.570 & 0.676 & +0.106 & 0.566 & 0.666 & 0.054 & +0.101 \\
+\bottomrule
+\end{tabular}
+\caption{\small Pooled descriptive statistics (test sentences, both splits combined). Sentence-level: mean weighted by observations (splits with more test sentences count more). Model-level: mean weighted equally per model (each of 10 models counts once). SE$_{+}$: standard error for the $+$ent condition across 10 models (5 seeds $\times$ 2 splits). $\Delta$: $+$ent $-$ $-$ent.}
+\label{tab:descriptive_pooled_test}
+\end{table}

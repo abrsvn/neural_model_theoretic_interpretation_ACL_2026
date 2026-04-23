@@ -1,0 +1,117 @@
+\scriptsize
+\begin{longtable}{@{}lrlr@{}}
+\caption{Sentence difficulty ranking from random intercepts (train sentences). Top 10 hardest (most negative) and top 10 easiest (most positive) per test group. Model: selected FE + selected RE per group.}
+\label{tab:train_sentence_difficulty} \\
+\toprule
+\textbf{Test Group} & \textbf{Rank} & \textbf{Sentence} & \textbf{Intercept} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{c}{\scriptsize\textit{(continued)}} \\
+\toprule
+\textbf{Test Group} & \textbf{Rank} & \textbf{Sentence} & \textbf{Intercept} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{4}{r@{}}{\scriptsize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+\multicolumn{4}{l}{\textit{Word -- Hardest}} \\
+ & 1 & charlie plays soccer well & -0.307 \\
+ & 2 & boy plays football well & -0.300 \\
+ & 3 & boy plays soccer well & -0.294 \\
+ & 4 & charlie plays football well & -0.287 \\
+ & 5 & football is played well by charlie & -0.259 \\
+ & 6 & football is played well by boy & -0.253 \\
+ & 7 & soccer is played well by charlie & -0.253 \\
+ & 8 & soccer is played well by boy & -0.249 \\
+ & 9 & football is played badly by charlie & 0.025 \\
+ & 10 & soccer is played badly by boy & 0.026 \\
+\addlinespace[3pt]
+\multicolumn{4}{l}{\textit{Word -- Easiest}} \\
+ & 1 & football is played by boy & +0.252 \\
+ & 2 & soccer is played by charlie & +0.252 \\
+ & 3 & soccer is played by boy & +0.249 \\
+ & 4 & football is played by charlie & +0.248 \\
+ & 5 & charlie plays football & +0.238 \\
+ & 6 & boy plays football & +0.237 \\
+ & 7 & boy plays soccer & +0.236 \\
+ & 8 & charlie plays soccer & +0.235 \\
+ & 9 & soccer is played badly by charlie & +0.038 \\
+ & 10 & football is played badly by boy & +0.037 \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Sentence -- Hardest}} \\
+ & 1 & sophia beats boy with difficulty in bedroom & -0.139 \\
+ & 2 & sophia beats charlie with difficulty in bedroom & -0.139 \\
+ & 3 & sophia beats charlie with difficulty in shower & -0.137 \\
+ & 4 & sophia beats boy with difficulty in bathroom & -0.137 \\
+ & 5 & sophia beats charlie with difficulty in bathroom & -0.137 \\
+ & 6 & sophia beats boy with difficulty in shower & -0.135 \\
+ & 7 & heidi beats charlie with difficulty in bathroom & -0.104 \\
+ & 8 & heidi beats boy with difficulty in bathroom & -0.104 \\
+ & 9 & sophia beats charlie with difficulty inside & -0.103 \\
+ & 10 & sophia beats boy with difficulty inside & -0.102 \\
+\addlinespace[3pt]
+\multicolumn{4}{l}{\textit{Sentence -- Easiest}} \\
+ & 1 & sophia loses to heidi in street & +0.094 \\
+ & 2 & heidi loses to charlie in playground & +0.082 \\
+ & 3 & heidi loses to boy in playground & +0.081 \\
+ & 4 & heidi beats sophia in street & +0.073 \\
+ & 5 & heidi beats sophia with ease in street & +0.073 \\
+ & 6 & boy beats heidi in bedroom & +0.072 \\
+ & 7 & heidi loses to charlie in bedroom & +0.072 \\
+ & 8 & boy beats heidi in playground & +0.070 \\
+ & 9 & charlie beats heidi in playground & +0.070 \\
+ & 10 & charlie beats heidi in bedroom & +0.070 \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Complex Event -- Hardest}} \\
+ & 1 & hide-and-seek is played well by sophia in shower & -0.590 \\
+ & 2 & hide-and-seek is played well by sophia in bathroom & -0.576 \\
+ & 3 & hide-and-seek is played badly by heidi in bathroom & -0.559 \\
+ & 4 & hide-and-seek is played badly by heidi in shower & -0.529 \\
+ & 5 & sophia plays hide-and-seek well in bathroom & -0.519 \\
+ & 6 & sophia plays hide-and-seek well in shower & -0.512 \\
+ & 7 & hide-and-seek is played badly by heidi inside & -0.475 \\
+ & 8 & hide-and-seek is played well by charlie in playgro... & -0.466 \\
+ & 9 & heidi plays hide-and-seek badly inside & -0.466 \\
+ & 10 & hide-and-seek is played well by boy in playground & -0.445 \\
+\addlinespace[3pt]
+\multicolumn{4}{l}{\textit{Complex Event -- Easiest}} \\
+ & 1 & chess is played by heidi in playground & +0.375 \\
+ & 2 & charlie plays chess badly inside & +0.371 \\
+ & 3 & boy plays chess badly inside & +0.345 \\
+ & 4 & charlie plays chess in playground & +0.329 \\
+ & 5 & boy plays chess in playground & +0.321 \\
+ & 6 & heidi plays chess in playground & +0.319 \\
+ & 7 & chess is played badly by boy inside & +0.276 \\
+ & 8 & chess is played by sophia in bedroom & +0.269 \\
+ & 9 & sophia plays hide-and-seek inside & +0.267 \\
+ & 10 & heidi plays chess outside & +0.258 \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Basic Event -- Hardest}} \\
+ & 1 & ball is played with in playground by heidi & -1.228 \\
+ & 2 & ball is played with by heidi in playground & -1.224 \\
+ & 3 & heidi plays with ball in playground & -1.219 \\
+ & 4 & heidi plays in playground with ball & -1.206 \\
+ & 5 & charlie plays in playground with ball & -0.810 \\
+ & 6 & boy plays in playground with ball & -0.804 \\
+ & 7 & ball is played with in playground by charlie & -0.796 \\
+ & 8 & charlie plays with ball in playground & -0.795 \\
+ & 9 & boy plays with ball in playground & -0.791 \\
+ & 10 & ball is played with in playground by boy & -0.789 \\
+\addlinespace[3pt]
+\multicolumn{4}{l}{\textit{Basic Event -- Easiest}} \\
+ & 1 & ball is played with by sophia & +0.479 \\
+ & 2 & boy plays in bedroom with jigsaw & +0.478 \\
+ & 3 & charlie plays in bedroom with jigsaw & +0.474 \\
+ & 4 & charlie plays inside with jigsaw & +0.474 \\
+ & 5 & boy plays inside with jigsaw & +0.472 \\
+ & 6 & jigsaw is played with by boy inside & +0.469 \\
+ & 7 & charlie plays with puzzle inside & +0.468 \\
+ & 8 & charlie plays with jigsaw inside & +0.468 \\
+ & 9 & boy plays with jigsaw in bedroom & +0.467 \\
+ & 10 & boy plays inside with puzzle & +0.465 \\
+\end{longtable}
+\normalsize

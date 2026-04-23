@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{Subset} & \textbf{Architecture} & \textbf{Word} & \textbf{Sentence} & \textbf{Complex} & \textbf{Basic} \\
+\midrule
+Train & SRN & Ent 0.073 & -- & -- & -- \\
+Train & GRU & -- & NoEnt 0.046 & -- & -- \\
+Train & LSTM & -- & NoEnt 0.034 & -- & -- \\
+Train & AbsPE & -- & -- & -- & -- \\
+Train & RoPE & -- & -- & -- & -- \\
+Train & AbsPE H80 & -- & -- & Ent 0.039 & -- \\
+Train & RoPE H80 & Ent 0.066 & -- & Ent 0.054 & Ent 0.031 \\
+Test & SRN & Ent 0.073 & -- & -- & -- \\
+Test & GRU & -- & -- & -- & Ent 0.130 \\
+Test & LSTM & -- & -- & -- & Ent 0.110 \\
+Test & AbsPE & -- & -- & -- & Ent 0.101 \\
+Test & RoPE & -- & -- & -- & -- \\
+Test & AbsPE H80 & -- & -- & -- & -- \\
+Test & RoPE H80 & -- & Ent 0.095 & -- & Ent 0.105 \\
+\bottomrule
+\end{tabular}
+\caption{\small Entity-effect matrix after pooling Split~1 and Split~2. Cells show the favored condition and absolute estimate magnitude; \texttt{--} indicates no significant effect.}
+\label{tab:gap_entity_matrix}
+\end{table}

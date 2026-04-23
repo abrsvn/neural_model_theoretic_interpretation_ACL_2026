@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+\textbf{Test Group} & \textbf{Max $|d|$} & \textbf{Mean ent.\ $d$} & $\eta^2_p$(arch) & $\eta^2_p$(ent) & $\eta^2_p$(split) & $\eta^2_p$(A$\times$E) & $\eta^2_p$(A$\times$S) & $\eta^2_p$(E$\times$S) & $\eta^2_p$(3-way) \\
+\midrule
+Word & 0.65 & 0.47 & 0.094 & 0.131 & 0.000 & -- & -- & -- & -- \\
+Sentence & 1.27 & -0.31 & 0.609 & 0.140 & 0.000 & 0.161 & 0.023 & 0.022 & 0.090 \\
+Complex Event & 0.86 & 0.51 & 0.378 & 0.166 & 0.001 & 0.127 & 0.106 & -- & -- \\
+Basic Event & 1.93 & 0.22 & 0.739 & 0.050 & 0.033 & 0.129 & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\caption{Effect size summary for train sentences. Max $|d|$: largest Cohen's $d$ among architecture pairwise comparisons ($+$ent condition). Mean ent.\ $d$: mean entity benefit $d$ across architectures. $\eta^2_p$: partial eta-squared from Type III ANOVA (\texttt{--} = interaction not in selected model).}
+\label{tab:train_effect_sizes}
+\end{table}
