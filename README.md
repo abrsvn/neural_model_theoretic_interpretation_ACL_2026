@@ -1,6 +1,6 @@
 # "The Learnability of Model-Theoretic Interpretation Functions in Artificial Neural Networks": Reproduction Code
 
-Contains the checkpoints, evaluation rows, target-weight files, and evaluation/regeneration scripts for the ACL 2026 paper "The Learnability of Model-Theoretic Interpretation Functions in Artificial Neural Networks" (Brasoveanu & Dotlacil, ACL 2026).
+Contains the checkpoints, systematicity evaluation sentences, target-weight files, and evaluation scripts for the ACL 2026 paper "The Learnability of Model-Theoretic Interpretation Functions in Artificial Neural Networks" (Brasoveanu & Dotlacil, ACL 2026).
 
 Paper PDF: [Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf](./Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf)
 
