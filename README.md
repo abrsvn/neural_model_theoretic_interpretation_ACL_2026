@@ -6,12 +6,12 @@ Paper PDF: [Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL
 
 It supports:
 
-- inspecting the ACL checkpoints in `models/`
-- reevaluating those checkpoints on the four paper systematicity groups
-- rebuilding 150-dimensional and 300-dimensional supervision targets from formulas
+- inspecting the model checkpoints in `models/`
+- reevaluating those checkpoints on the four systematicity groups
+- rebuilding 150-dimensional and 300-dimensional supervision targets from Z3 formulas
 - regenerating the main paper comparison plots, detailed appendix plots, generalization-gap plots, and the main paper tables
 - regenerating the compact statistical appendix inputs derived from those four-test reevaluation outputs
-- regenerating training-curve and LR-schedule plots from lightweight JSON trajectories
+- regenerating training-curve and LR-schedule plots from JSON training logs
 - regenerating sentence-level comprehension advantage distribution plots and tables
 
 The `data/*.csv` files contain only the rows needed for the evaluation, i.e., the relevant subset of the sentences for the four systematicity tests:
@@ -26,7 +26,7 @@ The included rows satisfy the selection rule:
 - `consistent == True`
 - non-empty `competing_events`
 
-The repository is focused on reevaluation and result regeneration. It does not include model training, microworld generation, grammar generation, or Pool MCMC sampling.
+The repository is focused on reevaluation and result regeneration. It does not include microworld generation, hard and soft constraints, Z3 related infrastructure, Pool MCMC sampling, competitive neural model training, feature-based context-free grammar generation and parsing, sentence-to-Z3 formula translation. training infrastructure etc.
 
 ## Directory Structure
 
@@ -184,16 +184,3 @@ The included scripts write generated outputs under these root-level directories:
 This checkout includes generated outputs in those directories. The shell
 scripts can refresh or regenerate them from the included checkpoints, metadata,
 and evaluation rows.
-
-## Not Included
-
-It does not include:
-
-- microworld generation
-- hard and soft constraints
-- Z3 related infrastructure
-- Pool MCMC sampling
-- grammar generation and parsing
-- competitive neural model training
-- checkpoint import/migration workflows
-- unrelated model families and analysis frameworks that are not needed for the experiments reported in the paper.
