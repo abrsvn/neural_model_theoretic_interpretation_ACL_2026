@@ -2,7 +2,7 @@
 
 Contains the checkpoints, systematicity evaluation sentences, target-weight files, and evaluation scripts for the ACL 2026 paper "The Learnability of Model-Theoretic Interpretation Functions in Artificial Neural Networks" (Brasoveanu & Dotlacil, ACL 2026).
 
-Paper PDF: [Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf](./Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf)
+Paper PDF: [Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf](./Learnability_of_Model_Theoretic_Interpretation_Functions_in_ANNs_ACL_2026.pdf) (the official proceedings paper is available [here](https://aclanthology.org/2026.findings-acl.531/))
 
 Slides PDF: [acl_2026_slides.pdf](./acl_2026_slides.pdf)
 
